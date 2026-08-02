@@ -284,6 +284,16 @@ var tasks = [];
 var view = 'daily';
 var filter = 'all';
 var sortBy = 'completedAt-desc';
+
+// ========== GitHub 同步配置 ==========
+var GH_USER = 'Miapersist';
+var GH_REPO = 'daily-todo';
+var GH_FILE = 'todo-data.json';
+var GH_API = 'https://api.github.com/repos/' + GH_USER + '/' + GH_REPO + '/contents/' + GH_FILE;
+var GH_TOKEN_KEY = 'todo_gh_token';
+var syncEnabled = false;
+var syncPending = false;
+var syncTimer = null;
 var editingId = null;
 var showAddModal = false;
 var undoAction = null;
@@ -319,8 +329,78 @@ function loadPrefs() { try { var r=localStorage.getItem(PREFS_KEY); if(r){ var p
 function savePrefs() { localStorage.setItem(PREFS_KEY, JSON.stringify({view:view,filter:filter,sortBy:sortBy,theme:theme,completePopup:completePopup,wishMode:wishMode})); }
 function applyTheme() { if(theme==='dark'||(theme==='system'&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark'); }
 
-function loadTasks() { try { var r=localStorage.getItem(STORAGE_KEY); if(r) tasks=JSON.parse(r); else{ var bk=localStorage.getItem(BACKUP_KEY); if(bk) tasks=JSON.parse(bk); else tasks=getDefaults(); } } catch(e){ var bk=localStorage.getItem(BACKUP_KEY); if(bk) tasks=JSON.parse(bk); else tasks=getDefaults(); } }
-function saveTasks() { var json=JSON.stringify(tasks); localStorage.setItem(STORAGE_KEY, json); localStorage.setItem(BACKUP_KEY, json); }
+function loadTasks() {
+  // 1. 先加载本地缓存
+  try { var r=localStorage.getItem(STORAGE_KEY); if(r) tasks=JSON.parse(r); else{ var bk=localStorage.getItem(BACKUP_KEY); if(bk) tasks=JSON.parse(bk); else tasks=getDefaults(); } } catch(e){ var bk=localStorage.getItem(BACKUP_KEY); if(bk) tasks=JSON.parse(bk); else tasks=getDefaults(); }
+  // 2. 异步从 GitHub 拉取最新数据
+  syncFromGithub();
+}
+function saveTasks() {
+  var json=JSON.stringify(tasks);
+  localStorage.setItem(STORAGE_KEY, json);
+  localStorage.setItem(BACKUP_KEY, json);
+  // 去重去空格保存后触发同步
+  scheduleSync();
+}
+
+// ========== GitHub 同步核心逻辑 ==========
+function getToken() { return localStorage.getItem(GH_TOKEN_KEY); }
+function setToken(t) { if(t) localStorage.setItem(GH_TOKEN_KEY, t); else localStorage.removeItem(GH_TOKEN_KEY); }
+
+function syncFromGithub() {
+  var token = getToken();
+  if (!token) return;
+  syncEnabled = true;
+  fetch(GH_API, { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github.v3+json' } })
+    .then(function(r) { if (!r.ok) throw new Error('GitHub 请求失败: ' + r.status); return r.json(); })
+    .then(function(data) {
+      var remote = JSON.parse(decodeURIComponent(escape(atob(data.content.replace(/\s/g, '')))));
+      if (!Array.isArray(remote)) return;
+      // 合并：远端有的 ID 覆盖本地，远端没有的 ID 保留本地新增的
+      var localMap = {}; tasks.forEach(function(t) { localMap[t.id] = t; });
+      var remoteMap = {}; remote.forEach(function(t) { remoteMap[t.id] = t; });
+      // 远端数据覆盖本地同名 ID
+      remote.forEach(function(t) { localMap[t.id] = t; });
+      tasks = Object.values(localMap);
+      tasks.sort(function(a, b) { return b.id - a.id; });
+      var json = JSON.stringify(tasks);
+      localStorage.setItem(STORAGE_KEY, json);
+      localStorage.setItem(BACKUP_KEY, json);
+      console.log('[同步] 从 GitHub 拉取成功，共 ' + tasks.length + ' 条');
+      render();
+    })
+    .catch(function(err) { console.warn('[同步] 拉取失败: ' + err.message); });
+}
+
+function scheduleSync() {
+  if (!syncEnabled && !getToken()) return;
+  syncEnabled = true;
+  if (syncTimer) clearTimeout(syncTimer);
+  syncTimer = setTimeout(syncToGithub, 800);
+}
+
+function syncToGithub() {
+  var token = getToken();
+  if (!token) return;
+  var json = JSON.stringify(tasks);
+  // 先获取当前文件的 sha
+  fetch(GH_API, { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github.v3+json' } })
+    .then(function(r) { if (!r.ok && r.status !== 404) throw new Error('获取文件信息失败'); return r.status === 404 ? null : r.json(); })
+    .then(function(data) {
+      var body = {
+        message: '同步待办数据 ' + new Date().toLocaleString('zh-CN'),
+        content: btoa(unescape(encodeURIComponent(json)))
+      };
+      if (data && data.sha) body.sha = data.sha;
+      return fetch(GH_API, {
+        method: 'PUT',
+        headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+    })
+    .then(function(r) { if (!r.ok) throw new Error('上传失败'); console.log('[同步] 上传成功'); })
+    .catch(function(err) { console.warn('[同步] 上传失败: ' + err.message); });
+}
 
 function getDefaults() {
   var t=todayStr(),t2=addDays(t,1),sat=addDays(t,6-new Date().getDay()),sun=addDays(t,7-new Date().getDay());
@@ -682,11 +762,14 @@ function sparkCelebration(el) {
 function render() {
   if(wishMode)document.documentElement.classList.add('wish'); else document.documentElement.classList.remove('wish');
   var st=window.pageYOffset||document.documentElement.scrollTop;
+  var syncIcon = getToken() ? (syncEnabled ? '🟢' : '🔴') : '⚪';
+  var syncTitle = getToken() ? (syncEnabled ? '已开启多端同步' : '同步中...') : '点击设置同步Token';
   var h='<div class="header"><h1>'+T('待办','许愿池')+'</h1><div class="header-actions">'+
     '<button class="btn sm" onclick="W.openReport()" title="'+T('本周小结','愿望清单')+'">小结</button>'+
     '<button class="btn sm" onclick="W.archiveDone()" title="'+T('归档本周已完成','收入许愿瓶')+'">归档</button>'+
     '<button class="btn sm" onclick="W.toggleCompletePopup()" title="'+(completePopup?(wishMode?'许愿仪式开→关闭':'完成弹窗开→关闭'):(wishMode?'许愿仪式关→开启':'完成弹窗关→开启'))+'" style="'+(completePopup?'background:var(--primary);color:#fff;border-color:var(--primary);':'opacity:.5;')+'">弹窗</button>'+
     '<button class="btn sm" onclick="W.toggleWish()" style="background:linear-gradient(135deg,'+(wishMode?'#f472b6,#fb7185':'var(--primary)')+';color:#fff;border:0;">'+T('🔮','📋')+'</button>'+
+    '<button class="btn sm" onclick="W.showTokenDialog()" title="'+syncTitle+'" style="font-size:14px;padding:4px 8px;">'+syncIcon+'</button>'+
     '<button class="theme-btn" onclick="W.toggleTheme()">'+(theme==='dark'?'☀':'☾')+'</button></div></div>';
   if(view==='daily')h+=renderDaily();
   else if(view==='calendar')h+=renderCalendar();
@@ -829,6 +912,57 @@ window.W={
     var el=document.getElementById('import_text'); if(!el)return; var json=(el.value||'').trim(); if(!json)return;
     try{ var data=JSON.parse(json); if(!Array.isArray(data))throw new Error('格式错误'); var existingIds={}; tasks.forEach(function(t){existingIds[t.id]=t;}); var added=0,updated=0; data.forEach(function(t){ if(existingIds[t.id]){ Object.assign(existingIds[t.id],t); updated++; }else{ tasks.push(t); added++; } }); saveTasks(); showImport=false; render(); alert('导入成功！新增 '+added+' 条，更新 '+updated+' 条，共 '+tasks.length+' 条'); }
     catch(e){ alert('导入失败：'+e.message); }
+  },
+  // ========== 多端同步 Token 管理 ==========
+  showTokenDialog: function() {
+    var token = getToken();
+    var html = '<div class="modal-overlay" onclick="W.closeTokenDialog()"><div class="modal" onclick="event.stopPropagation()" style="max-width:420px;">'+
+      '<h3>多端同步设置</h3>'+
+      '<p style="font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.6;">'+
+      '通过 GitHub 实现多设备数据同步。<br>'+
+      '首次使用需要 GitHub Personal Access Token。<br>'+
+      '<a href="https://github.com/settings/tokens" target="_blank" style="color:var(--primary);">点击创建 Token →</a> 勾选 <b>public_repo</b> 权限即可。</p>'+
+      '<label>GitHub Token</label>'+
+      '<input id="gh_token_input" type="password" value="'+(token ? token : '')+'" placeholder="粘贴你的 Token..." style="padding:7px 10px;">'+
+      '<div style="display:flex;gap:8px;margin-top:4px;font-size:12px;color:var(--text3);">'+
+      (token ? '<span>当前已设置 Token（仅存于本设备本地存储，不会上传）</span>' : '<span>Token 仅保存在当前设备浏览器中，不会上传到任何服务器</span>')+
+      '</div>'+
+      '<div class="modal-footer btn-row" style="margin-top:16px;">'+
+      '<button class="btn" onclick="W.closeTokenDialog()">取消</button>'+
+      (token ? '<button class="btn" onclick="W.clearToken()" style="color:#e11d48;">清除Token</button>' : '')+
+      '<button class="btn primary" onclick="W.saveToken()">保存并同步</button></div></div></div>';
+    var root = document.getElementById('modals-root');
+    if (!root) { root = document.createElement('div'); root.id = 'modals-root'; document.body.appendChild(root); }
+    root.innerHTML += html;
+    setTimeout(function() { var inp = document.getElementById('gh_token_input'); if (inp) inp.focus(); }, 100);
+  },
+  closeTokenDialog: function() {
+    var root = document.getElementById('modals-root');
+    if (root) {
+      var overlays = root.querySelectorAll('.modal-overlay');
+      if (overlays.length > 0) overlays[overlays.length - 1].remove();
+    }
+  },
+  saveToken: function() {
+    var inp = document.getElementById('gh_token_input');
+    if (!inp || !inp.value.trim()) { alert('请粘贴 GitHub Token'); return; }
+    var token = inp.value.trim();
+    // 验证 Token 格式（ghp_ 或 github_pat_ 开头）
+    if (!token.match(/^(ghp_|github_pat_)/)) { alert('Token 格式不正确，应以 ghp_ 或 github_pat_ 开头'); return; }
+    setToken(token);
+    syncEnabled = true;
+    W.closeTokenDialog();
+    render();
+    // 立即触发一次同步
+    syncFromGithub();
+    alert('Token 已保存！正在从 GitHub 同步数据...\n之后每次修改都会自动同步。\n其他设备也设置同一个 Token 即可共享数据。');
+  },
+  clearToken: function() {
+    if (!confirm('确定清除 Token？\n清除后将不再自动同步。')) return;
+    setToken(null);
+    syncEnabled = false;
+    W.closeTokenDialog();
+    render();
   }
 };
 
@@ -838,7 +972,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='1'){ window.W.setView('daily'); }
   if(e.key==='2'){ window.W.setView('calendar'); }
   if(e.key==='3'){ window.W.setView('master'); }
-  if(e.key==='Escape'){ if(showReport){ W.closeReport(); return; } if(completeTaskId!==null){ completeTaskId=null; render(); return; } if(showAddModal){ showAddModal=false; editingId=null; render(); } if(showImport){ W.closeImport(); } }
+  if(e.key==='Escape'){ if(showReport){ W.closeReport(); return; } if(completeTaskId!==null){ completeTaskId=null; render(); return; } if(showAddModal){ showAddModal=false; editingId=null; render(); } if(showImport){ W.closeImport(); } W.closeTokenDialog(); }
 });
 
 loadPrefs(); loadTasks(); applyTheme();

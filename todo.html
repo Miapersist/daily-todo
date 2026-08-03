@@ -605,11 +605,10 @@ function renderAddModal() {
 function renderImportPanel() {
   if(!showImport)return'';
   return '<div class="modal-overlay" onclick="W.closeImport()"><div class="modal" onclick="event.stopPropagation()"><h3>导入/导出数据</h3>'+
-    '<div class="modal-body"><label>导出 JSON（复制下面内容）</label><textarea id="export_text" readonly style="min-height:120px;">'+escapeHtml(JSON.stringify(tasks,null,2))+'</textarea>'+
-    '<button class="btn sm" onclick="W.copyExport()" style="margin-bottom:12px;">复制到剪贴板</button>'+
-    '<button class="btn sm" onclick="W.downloadBackup()" style="margin-bottom:12px;margin-left:4px;">下载备份文件</button>'+
-    '<label>导入 JSON（粘贴后点导入）</label><textarea id="import_text" placeholder="粘贴 JSON 数据..." style="min-height:100px;"></textarea></div>'+
-    '<div class="modal-footer btn-row"><button class="btn" onclick="W.closeImport()">关闭</button><button class="btn" onclick="W.restoreBackup()" style="background:#fef0f0;border-color:#fda4af;color:#e11d48;">恢复备份</button><button class="btn primary" onclick="W.doImport()">导入</button></div></div></div>';
+    '<label>导入 JSON（粘贴后点导入）</label><textarea id="import_text" placeholder="粘贴 JSON 数据..." style="min-height:60px;"></textarea>'+
+    '<div class="btn-row" style="margin-bottom:12px;"><button class="btn" onclick="W.closeImport()">关闭</button><button class="btn" onclick="W.restoreBackup()" style="background:#fef0f0;border-color:#fda4af;color:#e11d48;">恢复备份</button><button class="btn primary" onclick="W.doImport()">导入</button></div>'+
+    '<label>导出 JSON</label><textarea id="export_text" readonly style="min-height:80px;">'+escapeHtml(JSON.stringify(tasks,null,2))+'</textarea>'+
+    '<div class="btn-row"><button class="btn sm" onclick="W.copyExport()">复制到剪贴板</button><button class="btn sm" onclick="W.downloadBackup()" style="margin-left:4px;">下载备份文件</button></div></div></div>';
 }
 
 function renderToast() {

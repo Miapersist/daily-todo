@@ -403,25 +403,13 @@ function syncToGithub() {
 }
 
 function getDefaults() {
-  var t=todayStr(),t2=addDays(t,1),sat=addDays(t,6-new Date().getDay()),sun=addDays(t,7-new Date().getDay());
   return [
-    {id:1,title:'市况测试杨系演示',detail:'14:30 已确认，下午开会',day:t,priority:'高',type:'工作',blocking:null,completed:false},
-    {id:2,title:'市况delta值确认',detail:'14:30 找学浩',day:t,priority:'高',type:'工作',blocking:null,completed:false},
-    {id:3,title:'车型会议纪要梳理发布',detail:'慧芬下午看，没问题发群',day:t,priority:'中',type:'工作',blocking:null,completed:false},
-    {id:4,title:'市况初始化安排',detail:'下午梳理需补充内容',day:t,priority:'中',type:'工作',blocking:null,completed:false},
-    {id:5,title:'市况剩余字段跟研发确认',detail:'确认方案后写变更单',day:t,priority:'中',type:'工作',blocking:'变更签字',completed:false},
-    {id:6,title:'国际定价bug沟通',detail:'已群沟通定清/金永',day:t,priority:'中',type:'工作',blocking:'资源协调',completed:false},
-    {id:7,title:'市况测试报告签字邱科',detail:'上午找了还没签',day:t,priority:'中',type:'工作',blocking:'邱科签字',completed:false},
-    {id:8,title:'国内启境问题',detail:'已提供方案',day:t,priority:'中',type:'工作',blocking:'金永改时间',completed:false},
-    {id:9,title:'研究远程打卡',detail:'',day:t,priority:'低',type:'个人',blocking:null,completed:false},
-    {id:10,title:'健身',detail:'',day:t,priority:'低',type:'个人',blocking:null,completed:false},
-    {id:11,title:'权限详设 / 报表蓝图',detail:'先问业务流程',day:t2,priority:'高',type:'工作',blocking:null,completed:false},
-    {id:12,title:'换电表',detail:'预计 19:30',day:t2,priority:'中',type:'个人',blocking:null,completed:false},
-    {id:13,title:'配眼镜',detail:'',day:sat,priority:'低',type:'个人',blocking:null,completed:false},
-    {id:14,title:'打羽毛球',detail:'下午',day:sat,priority:'低',type:'个人',blocking:null,completed:false},
-    {id:15,title:'看电影',detail:'上午 跟依婷',day:sun,priority:'低',type:'个人',blocking:null,completed:false},
-    {id:16,title:'房子方案了解',detail:'',day:null,priority:'低',type:'个人',blocking:null,completed:false},
-    {id:17,title:'中级项目',detail:'',day:null,priority:'低',type:'个人',blocking:null,completed:false}
+    {id:11,title:'权限详设 / 报表蓝图',detail:'先问业务流程',day:'8/1',priority:'高',type:'工作',blocking:null,completed:false,createdAt:'7/31',startedAt:'7/31'},
+    {id:17,title:'中级项目',detail:'',day:'9/30',priority:'高',type:'个人',blocking:null,completed:false,createdAt:'7/31',startedAt:'7/31'},
+    {id:318,title:'车型蓝图评审(内部跟敏周、之后跟慧芬)',detail:'',day:'7/31',priority:'高',type:'工作',blocking:null,completed:false,createdAt:'7/31',startedAt:null},
+    {id:319,title:'3.ibom改造影响初步排查',detail:'',day:'7/31',priority:'高',type:'工作',blocking:'定清没空 下周一看',completed:false,createdAt:'7/31',startedAt:null},
+    {id:320,title:'报价单、定价单：导出底稿显示6位数',detail:'',day:'8/3',priority:'中',type:'工作',blocking:null,completed:false,createdAt:'7/31',startedAt:null},
+    {id:321,title:'车型项目排期-甘特图补充',detail:'',day:'7/31',priority:'中',type:'工作',blocking:null,completed:false,createdAt:'7/31',startedAt:null}
   ];
 }
 

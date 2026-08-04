@@ -608,12 +608,12 @@ function renderCompleteDialog() {
 function renderAddModal() {
   if(!showAddModal)return'';
   var t=editingId!==null?tasks.find(function(x){return x.id===editingId;}):null;
-  var title=t?t.title:'',detail=t?(t.detail||''):'',day=t?(t.day||''):todayStr(),endDay=t?(t.endDay||''):'',priority=t?t.priority:'中',type=t?t.type:'工作',blocking=t?(t.blocking||''):'',completedAt=t&&t.completedAt?t.completedAt:'';
+  var title=t?t.title:'',detail=t?(t.detail||''):'',day=t?(t.day||''):todayStr(),endDay=t?(t.endDay||''):'',priority=t?t.priority:'中',type=t?t.type:'工作',blocking=t?(t.blocking||''):'',completedAt=t&&t.completedAt?t.completedAt:'',completedNote=t&&t.completedNote?t.completedNote:'';
   var dayInput=dayToInput(day),endInput=dayToInput(endDay),compInput=dayToInput(completedAt);
   var createdInfo=t&&t.createdAt?'<div style="font-size:12px;color:var(--text3);margin-bottom:12px;">创建时间：'+t.createdAt+'</div>':'';
   var priHtml=['高','中','低'].map(function(p){ var chk=priority===p?' checked':''; return '<input type="radio" name="prio" value="'+p+'" id="pri_'+p+'"'+chk+'><label for="pri_'+p+'" class="'+(p==='高'?'high':p==='中'?'mid':'low')+'">'+p+'</label>'; }).join('');
   var typeHtml='<select id="f_type"><option value="工作"'+(type==='工作'?' selected':'')+'>工作</option><option value="个人"'+(type==='个人'?' selected':'')+'>个人</option></select>';
-  var compField=t&&t.completed?'<div><label>完成时间（可修改）</label><input type="date" id="f_completedAt" value="'+compInput+'" style="padding:7px 10px;"></div>':'';
+  var compField=t&&t.completed?'<div><label>完成时间（可修改）</label><input type="date" id="f_completedAt" value="'+compInput+'" style="padding:7px 10px;"></div><div><label>完成备注</label><input id="f_completedNote" value="'+escapeHtml(completedNote)+'" placeholder="小结内容…" style="padding:7px 10px;"></div>':'';
   return '<div class="modal-overlay" onclick="W.closeModal(event)"><div class="modal" onclick="event.stopPropagation()"><h3>'+(editingId!==null?'编辑任务':'新增任务')+'</h3>'+
     '<div class="modal-body">'+createdInfo+
     '<label>标题</label><input id="f_title" value="'+escapeHtml(title)+'" placeholder="输入任务名称" autofocus>'+
@@ -645,29 +645,26 @@ function renderReport() {
   var today=todayStr(),cutoff,label;
   if(reportMode==='week'){ cutoff=addDays(today,-7); label='本周'; }
   else{ cutoff=addDays(today,-30); label='本月'; }
-  var list=applySort(tasks.filter(function(t){ return t.completed&&t.completedAt&&dayValue(t.completedAt)>dayValue(cutoff); }));
-  var rows='';
-  list.forEach(function(t){
-    rows+='<tr><td style="padding:4px 6px;font-size:12px;">'+
-      '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+(t.priority==='高'?'#e11d48':t.priority==='中'?'#3b82f6':'#9ca3af')+';margin-right:4px;"></span>'+
-      escapeHtml(t.title)+'</td>'+
-      '<td style="padding:4px 6px;font-size:12px;color:var(--text2);">'+t.priority+'</td>'+
-      '<td style="padding:4px 6px;font-size:12px;color:var(--text2);">'+(t.type||'')+'</td>'+
-      '<td style="padding:4px 6px;font-size:12px;">'+(t.completedAt||'')+'</td>'+
-      '<td style="padding:4px 6px;font-size:12px;color:var(--text2);">'+(t.startedAt||'-')+'</td>'+
-      '<td style="padding:4px 6px;font-size:12px;color:var(--text2);">'+(t.completedNote?escapeHtml(t.completedNote):'-')+'</td></tr>';
+  var list=tasks.filter(function(t){ return t.completed&&t.completedAt&&dayValue(t.completedAt)>dayValue(cutoff); });
+  // group by completedAt
+  var dayGroups={}; list.forEach(function(t){ var k=t.completedAt; if(!dayGroups[k])dayGroups[k]=[]; dayGroups[k].push(t); });
+  var days=Object.keys(dayGroups).sort(function(a,b){ return dayValue(b)-dayValue(a); });
+  var blocks='',n=0;
+  days.forEach(function(day){
+    var ts=dayGroups[day];
+    blocks+='<div style="margin-bottom:12px;"><strong style="font-size:14px;color:var(--text);">📅 '+day+'</strong>';
+    var workTasks=ts.filter(function(t){return t.type==='工作';});
+    var lifeTasks=ts.filter(function(t){return t.type==='个人';});
+    function groupHTML(label,arr){ if(!arr.length)return''; n++; var h='<div style="margin:4px 0 4px 12px;font-size:12px;color:var(--text3);">🏢 '+label+'</div>'; arr.forEach(function(t,i){ h+='<div style="margin-left:20px;font-size:12px;">'+escapeHtml(t.title)+(t.completedNote?'<span style="color:var(--text3);font-style:italic;"> — '+escapeHtml(t.completedNote)+'</span>':'')+'</div>'; }); return h; }
+    blocks+=groupHTML('工作',workTasks)+groupHTML('个人',lifeTasks)+'</div>';
   });
   return '<div class="modal-overlay" onclick="W.closeReport()"><div class="modal" onclick="event.stopPropagation()" style="max-width:680px;">'+
     '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">'+
-    '<h3 style="margin:0;">'+label+T('小结','愿望清单')+' <span style="font-size:13px;color:var(--text2);font-weight:400;">'+T('共 ','')+list.length+T(' 项',' 个愿望成真')+'</span></h3>'+
+    '<h3 style="margin:0;">'+label+T('小结','愿望清单')+' <span style="font-size:13px;color:var(--text2);font-weight:400;">共 '+list.length+' 项</span></h3>'+
     '<div style="display:flex;gap:4px;"><button class="btn sm" onclick="W.switchReport(\'week\')" style="'+(reportMode==='week'?'background:var(--primary);color:#fff;border-color:var(--primary);':'')+'">本周</button>'+
     '<button class="btn sm" onclick="W.switchReport(\'month\')" style="'+(reportMode==='month'?'background:var(--primary);color:#fff;border-color:var(--primary);':'')+'">本月</button>'+
     '<button class="btn sm" onclick="W.exportReport()">导出CSV</button></div></div>'+
-    '<div style="overflow-x:auto;max-height:50vh;overflow-y:auto;">'+
-    '<table style="width:100%;border-collapse:collapse;font-size:12px;">'+
-    '<thead><tr style="text-align:left;border-bottom:2px solid var(--border);"><th style="padding:4px 6px;">任务</th><th style="padding:4px 6px;">优先级</th><th style="padding:4px 6px;">类型</th><th style="padding:4px 6px;">完成时间</th><th style="padding:4px 6px;">开始时间</th><th style="padding:4px 6px;">小结</th></tr></thead>'+
-    '<tbody>'+(list.length===0?'<tr><td colspan="6" style="padding:40px 20px;text-align:center;color:var(--text3);"><div style="font-size:28px;margin-bottom:6px;">📭</div>这段时间还没有完成记录</td></tr>':rows)+'</tbody>'+
-    '</table></div>'+
+    '<div style="max-height:55vh;overflow-y:auto;">'+(list.length===0?'<div style="padding:40px 20px;text-align:center;color:var(--text3);"><div style="font-size:28px;margin-bottom:6px;">📭</div>这段时间还没有完成记录</div>':blocks)+'</div>'+
     '<div class="btn-row"><button class="btn" onclick="W.closeReport()">关闭</button></div></div></div>';
 }
 
@@ -830,7 +827,7 @@ window.W={
     var type=document.getElementById('f_type').value;
     var blocking=(document.getElementById('f_blocking').value||'').trim()||null;
     var prio=document.querySelector('input[name="prio"]:checked'),priority=prio?prio.value:'中';
-    if(editingId!==null){ var t=tasks.find(function(x){return x.id===editingId;}); if(t){ t.title=title; t.detail=detail; t.day=day||null; t.endDay=endDay&&dayValue(endDay)>dayValue(day)?endDay:null; t.type=type; t.blocking=blocking; t.priority=priority; if(t.completed){ var ce=document.getElementById('f_completedAt'); if(ce&&ce.value)t.completedAt=inputToDay(ce.value); } } }
+    if(editingId!==null){ var t=tasks.find(function(x){return x.id===editingId;}); if(t){ t.title=title; t.detail=detail; t.day=day||null; t.endDay=endDay&&dayValue(endDay)>dayValue(day)?endDay:null; t.type=type; t.blocking=blocking; t.priority=priority; if(t.completed){ var ce=document.getElementById('f_completedAt'); if(ce&&ce.value)t.completedAt=inputToDay(ce.value); var cn=document.getElementById('f_completedNote'); if(cn)t.completedNote=(cn.value||'').trim()||null; } } }
     else{ tasks.push({id:nextId(),title:title,detail:detail,day:day||null,endDay:endDay&&dayValue(endDay)>dayValue(day)?endDay:null,priority:priority,type:type,blocking:blocking,completed:false,completedAt:null,createdAt:todayStr(),startedAt:null}); }
     saveTasks(); showAddModal=false; editingId=null; render();
   },

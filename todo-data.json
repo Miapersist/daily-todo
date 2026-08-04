@@ -125,15 +125,16 @@
   },
   {
     "id": 11,
-    "title": "权限详设 / 报表蓝图",
+    "title": "权限详设 / 报表详设",
     "detail": "先问业务流程",
-    "day": "8/1",
-    "priority": "高",
+    "day": "8/7",
+    "priority": "低",
     "type": "工作",
     "blocking": null,
     "completed": false,
     "startedAt": "7/31",
-    "_selected": false
+    "_selected": false,
+    "endDay": null
   },
   {
     "id": 12,
@@ -450,11 +451,12 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "7/31",
-    "startedAt": null,
+    "startedAt": "8/4",
     "endDay": null,
-    "completedAt": null
+    "completedAt": "8/4",
+    "completedNote": null
   },
   {
     "id": 321,
@@ -464,11 +466,12 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "7/31",
-    "startedAt": null,
+    "startedAt": "8/4",
     "endDay": null,
-    "completedAt": null
+    "completedAt": "8/4",
+    "completedNote": null
   },
   {
     "id": 322,
@@ -519,7 +522,7 @@
     "day": "8/4",
     "endDay": null,
     "priority": "中",
-    "type": "工作",
+    "type": "个人",
     "blocking": null,
     "completed": false,
     "completedAt": null,
@@ -529,6 +532,35 @@
   {
     "id": 327,
     "title": "补日考勤 14 15 16 20 21 28 29 31",
+    "detail": "",
+    "day": "8/4",
+    "endDay": null,
+    "priority": "中",
+    "type": "个人",
+    "blocking": null,
+    "completed": true,
+    "completedAt": "8/4",
+    "createdAt": "8/4",
+    "startedAt": "8/4",
+    "completedNote": null
+  },
+  {
+    "id": 328,
+    "title": "市况联动用户测试（下午）【让研发不要发版】",
+    "detail": "",
+    "day": "8/4",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/4",
+    "startedAt": null
+  },
+  {
+    "id": 329,
+    "title": "【bug】ce权限跟之前的配置权限未通过并集",
     "detail": "",
     "day": "8/4",
     "endDay": null,

@@ -489,7 +489,6 @@ function renderMultiBar() {
 
 function renderDaily() {
   var today=todayStr();
-  var sortByPrio=function(list){ var pv={高:3,中:2,低:1}; return list.slice().sort(function(a,b){ return pv[b.priority]-pv[a.priority]; }); };
   var h='<div class="toolbar">'+renderViewToggle('daily')+'<div class="spacer"></div>'+
     '<button class="btn sm" onclick="W.toggleMulti()">多选</button>'+
     '<button class="btn sm" onclick="W.importPrompt()">数据</button></div>';
@@ -511,16 +510,16 @@ function renderDaily() {
   var rolledFiltered=rolledPending.filter(function(t){ if(!matchesSearch(t))return false; if(prioFilter!=='all'&&t.priority!==prioFilter)return false; return true; });
   var todayAll=(dayMap[today]||[]).filter(filterMatch);
   var todayDone=todayAll.filter(function(t){return t.completed;});
-  var todayPending=sortByPrio(todayAll.filter(function(t){return !t.completed;}));
+  var todayPending=applySort(todayAll.filter(function(t){return !t.completed;}));
 
   h+='<div class="day-section"><div class="day-header" style="border-bottom:2px solid transparent;border-image:linear-gradient(135deg,#6366f1,#3b82f6) 1;">'+dayLabel(today)+'<span class="badge">今天</span></div>';
-  if(rolledFiltered.length>0){ h+='<div class="day-header roll-label">从之前未完成 ('+rolledFiltered.length+')</div>'; sortByPrio(rolledFiltered).forEach(function(t){ h+=renderTask(t,true); }); }
+  if(rolledFiltered.length>0){ h+='<div class="day-header roll-label">从之前未完成 ('+rolledFiltered.length+')</div>'; applySort(rolledFiltered).forEach(function(t){ h+=renderTask(t,true); }); }
   todayPending.forEach(function(t){ h+=renderTask(t,false); });
   if(todayDone.length>0&&filter!=='pending'){ h+='<div class="day-fold" onclick="W.toggleCompleted()">'+(W.showCompleted?'收起':'展开')+'已完成 ('+todayDone.length+')</div>'; if(W.showCompleted)todayDone.forEach(function(t){ h+=renderTask(t,false); }); }
   if(!rolledFiltered.length&&!todayAll.length) h+='<div class="empty"><span class="icon">'+T('☀','🌴')+'</span>'+T('今天没有待办','今天的许愿池空空如也')+'<br>'+T('享受轻松的一天吧','躺平也值得庆祝 ✌')+'</div>';
   h+='</div>';
 
-  allDays.forEach(function(day){ if(dayValue(day)<=dayValue(today))return; var ts=dayMap[day].filter(filterMatch); if(ts.length===0)return; var done=ts.filter(function(t){return t.completed;}),pend=sortByPrio(ts.filter(function(t){return !t.completed;})); h+='<div class="day-section"><div class="day-header">'+dayLabel(day)+'</div>'; pend.forEach(function(t){ h+=renderTask(t,false); }); if(done.length>0&&filter!=='pending'){ h+='<div class="day-fold" onclick="W.toggleCompleted()">'+(W.showCompleted?'收起':'展开')+'已完成 ('+done.length+')</div>'; if(W.showCompleted)done.forEach(function(t){ h+=renderTask(t,false); }); } h+='</div>'; });
+  allDays.forEach(function(day){ if(dayValue(day)<=dayValue(today))return; var ts=dayMap[day].filter(filterMatch); if(ts.length===0)return; var done=ts.filter(function(t){return t.completed;}),pend=applySort(ts.filter(function(t){return !t.completed;})); h+='<div class="day-section"><div class="day-header">'+dayLabel(day)+'</div>'; pend.forEach(function(t){ h+=renderTask(t,false); }); if(done.length>0&&filter!=='pending'){ h+='<div class="day-fold" onclick="W.toggleCompleted()">'+(W.showCompleted?'收起':'展开')+'已完成 ('+done.length+')</div>'; if(W.showCompleted)done.forEach(function(t){ h+=renderTask(t,false); }); } h+='</div>'; });
 
   allDays.forEach(function(day){ if(dayValue(day)>=dayValue(today))return; if(filter==='pending')return; var ts=dayMap[day].filter(filterMatch); if(filter==='all')ts=ts.filter(function(t){return t.completed;}); if(ts.length===0)return; h+='<div class="day-section"><div class="day-header" style="opacity:.7">'+dayLabel(day)+'</div>'; ts.forEach(function(t){ h+=renderTask(t,false); }); h+='</div>'; });
 

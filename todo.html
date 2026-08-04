@@ -601,13 +601,14 @@ function renderAddModal() {
   var priHtml=['高','中','低'].map(function(p){ var chk=priority===p?' checked':''; return '<input type="radio" name="prio" value="'+p+'" id="pri_'+p+'"'+chk+'><label for="pri_'+p+'" class="'+(p==='高'?'high':p==='中'?'mid':'low')+'">'+p+'</label>'; }).join('');
   var typeHtml='<select id="f_type"><option value="工作"'+(type==='工作'?' selected':'')+'>工作</option><option value="个人"'+(type==='个人'?' selected':'')+'>个人</option></select>';
   var compField=t&&t.completed?'<div><label>完成时间（可修改）</label><input type="date" id="f_completedAt" value="'+compInput+'" style="padding:7px 10px;"></div>':'';
-  return '<div class="modal-overlay" onclick="W.closeModal(event)"><div class="modal" onclick="event.stopPropagation()"><h3>'+(editingId!==null?'编辑任务':'新增任务')+'</h3>'+createdInfo+
+  return '<div class="modal-overlay" onclick="W.closeModal(event)"><div class="modal" onclick="event.stopPropagation()"><h3>'+(editingId!==null?'编辑任务':'新增任务')+'</h3>'+
+    '<div class="modal-body">'+createdInfo+
     '<label>标题</label><input id="f_title" value="'+escapeHtml(title)+'" placeholder="输入任务名称" autofocus>'+
     '<label>备注</label><textarea id="f_detail" placeholder="补充说明（可选）">'+escapeHtml(detail)+'</textarea>'+
     '<div class="row"><div><label>日期</label><input type="date" id="f_day" value="'+dayInput+'" style="padding:7px 10px;"></div><div><label>类型</label>'+typeHtml+'</div></div>'+
     '<label>结束日期（跨天任务选填）</label><input type="date" id="f_endDay" value="'+endInput+'" style="padding:7px 10px;">'+
     '<label>优先级</label><div class="prio-group">'+priHtml+'</div>'+
-    '<label>阻塞/等谁</label><input id="f_blocking" value="'+escapeHtml(blocking)+'" placeholder="如：邱科签字（可选）">'+compField+
+    '<label>阻塞/等谁</label><input id="f_blocking" value="'+escapeHtml(blocking)+'" placeholder="如：邱科签字（可选）">'+compField+'</div>'+
     '<div class="modal-footer btn-row"><button class="btn" onclick="W.closeModal()">取消</button><button class="btn primary" onclick="W.saveTask()">保存</button></div></div></div>';
 }
 

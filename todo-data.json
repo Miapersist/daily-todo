@@ -510,10 +510,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/4",
     "createdAt": "8/4",
-    "startedAt": "8/4"
+    "startedAt": "8/4",
+    "completedNote": "完成，需定清或开发确认取数正常与否的需求确认也写上去"
   },
   {
     "id": 326,
@@ -1012,6 +1013,20 @@
     "endDay": null,
     "priority": "中",
     "type": "个人",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/4",
+    "startedAt": null
+  },
+  {
+    "id": 738,
+    "title": "录制供应商视频",
+    "detail": "",
+    "day": "8/4",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
     "blocking": null,
     "completed": false,
     "completedAt": null,

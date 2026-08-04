@@ -321,7 +321,7 @@ function loadPrefs() { try { var r=localStorage.getItem(PREFS_KEY); if(r){ var p
 function savePrefs() { localStorage.setItem(PREFS_KEY, JSON.stringify({view:view,filter:filter,sortBy:sortBy,theme:theme,completePopup:completePopup,wishMode:wishMode})); }
 function applyTheme() { if(theme==='dark'||(theme==='system'&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark'); }
 
-function loadTasks() { try { var r=localStorage.getItem(STORAGE_KEY); if(r) tasks=JSON.parse(r); else{ var bk=localStorage.getItem(BACKUP_KEY); if(bk) tasks=JSON.parse(bk); else tasks=getDefaults(); } } catch(e){ var bk=localStorage.getItem(BACKUP_KEY); if(bk) tasks=JSON.parse(bk); else tasks=getDefaults(); } }
+function loadTasks(callback) { var r=localStorage.getItem(STORAGE_KEY); if(r){ tasks=JSON.parse(r); callback(); return; } var bk=localStorage.getItem(BACKUP_KEY); if(bk){ tasks=JSON.parse(bk); callback(); return; } fetch('todo-data.json').then(function(res){ if(!res.ok)throw 0; return res.json(); }).then(function(data){ tasks=data; saveTasks(); callback(); }).catch(function(){ tasks=getDefaults(); callback(); }); }
 function saveTasks() { var json=JSON.stringify(tasks); localStorage.setItem(STORAGE_KEY, json); localStorage.setItem(BACKUP_KEY, json); }
 
 function getDefaults() {
@@ -840,7 +840,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){ if(showReport){ W.closeReport(); return; } if(completeTaskId!==null){ completeTaskId=null; render(); return; } if(showAddModal){ showAddModal=false; editingId=null; render(); } if(showImport){ W.closeImport(); } }
 });
 
-loadPrefs(); loadTasks(); applyTheme();
+loadPrefs(); loadTasks(function(){ applyTheme(); render(); });
 try{ render(); }catch(err){ APP.innerHTML='<div style="padding:20px;color:#c00;font-family:monospace;white-space:pre-wrap;">Render error:\n'+(err.stack||err.message)+'</div>'; console.error(err); }
 })();
 </script>

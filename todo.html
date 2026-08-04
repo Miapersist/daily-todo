@@ -515,11 +515,16 @@ function renderDaily() {
   var rolledFiltered=rolledPending.filter(function(t){ if(!matchesSearch(t))return false; if(prioFilter!=='all'&&t.priority!==prioFilter)return false; return true; });
   var todayAll=(dayMap[today]||[]).filter(filterMatch);
   var todayDone=todayAll.filter(function(t){return t.completed;});
-  var todayPending=applySort(todayAll.filter(function(t){return !t.completed;}));
+  var combined=rolledFiltered.map(function(t){return {t:t,isRolled:true};}).concat(todayAll.filter(function(t){return !t.completed;}).map(function(t){return {t:t,isRolled:false};}));
+  var sortedTasks=applySort(combined.map(function(x){return x.t;}));
+  var ordered=sortedTasks.map(function(t){ var r=combined.find(function(x){return x.t===t;}); return r; });
 
   h+='<div class="day-section"><div class="day-header" style="border-bottom:2px solid transparent;border-image:linear-gradient(135deg,#6366f1,#3b82f6) 1;">'+dayLabel(today)+'<span class="badge">今天</span></div>';
-  if(rolledFiltered.length>0){ h+='<div class="day-header roll-label">从之前未完成 ('+rolledFiltered.length+')</div>'; applySort(rolledFiltered).forEach(function(t){ h+=renderTask(t,true); }); }
-  todayPending.forEach(function(t){ h+=renderTask(t,false); });
+  var rolledRendered=false;
+  ordered.forEach(function(it){
+    if(it.isRolled&&!rolledRendered){ h+='<div class="day-header roll-label">从之前未完成 ('+rolledFiltered.length+')</div>'; rolledRendered=true; }
+    h+=renderTask(it.t,it.isRolled);
+  });
   if(todayDone.length>0&&filter!=='pending'){ h+='<div class="day-fold" onclick="W.toggleCompleted()">'+(W.showCompleted?'收起':'展开')+'已完成 ('+todayDone.length+')</div>'; if(W.showCompleted)todayDone.forEach(function(t){ h+=renderTask(t,false); }); }
   if(!rolledFiltered.length&&!todayAll.length) h+='<div class="empty"><span class="icon">'+T('☀','🌴')+'</span>'+T('今天没有待办','今天的许愿池空空如也')+'<br>'+T('享受轻松的一天吧','躺平也值得庆祝 ✌')+'</div>';
   h+='</div>';

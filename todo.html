@@ -361,10 +361,15 @@ function tag(c,tx) { return '<span class="tag '+c+'">'+tx+'</span>'; }
 
 function applySort(list) {
   var cp=list.slice();
-  if(sortBy==='completedAt-desc') cp.sort(function(a,b){ var va=a.completedAt?dayValue(a.completedAt):0,vb=b.completedAt?dayValue(b.completedAt):0; return vb-va; });
-  else if(sortBy==='completedAt-asc') cp.sort(function(a,b){ var va=a.completedAt?dayValue(a.completedAt):0,vb=b.completedAt?dayValue(b.completedAt):0; return va-vb; });
-  else if(sortBy==='priority-desc'){ var pv={高:3,中:2,低:1}; cp.sort(function(a,b){ return (pv[b.priority]||2)-(pv[a.priority]||2); }); }
-  else if(sortBy==='createdAt-desc') cp.sort(function(a,b){ var va=a.createdAt?dayValue(a.createdAt):0,vb=b.createdAt?dayValue(b.createdAt):0; return vb-va; });
+  var pv={高:3,中:2,低:1};
+  var prioSort=function(a,b){ return (pv[b.priority]||2)-(pv[a.priority]||2); };
+  if(sortBy==='priority-desc') cp.sort(prioSort);
+  else if(sortBy==='priority-asc') cp.sort(function(a,b){ return (pv[a.priority]||2)-(pv[b.priority]||2); });
+  else if(sortBy==='createdAt-desc') cp.sort(function(a,b){ var va=a.createdAt?dayValue(a.createdAt):0,vb=b.createdAt?dayValue(b.createdAt):0; return vb-va||prioSort(a,b); });
+  else if(sortBy==='createdAt-asc') cp.sort(function(a,b){ var va=a.createdAt?dayValue(a.createdAt):0,vb=b.createdAt?dayValue(b.createdAt):0; return va-vb||prioSort(a,b); });
+  else if(sortBy==='completedAt-desc') cp.sort(function(a,b){ var va=a.completedAt?dayValue(a.completedAt):0,vb=b.completedAt?dayValue(b.completedAt):0; return vb-va||prioSort(a,b); });
+  else if(sortBy==='completedAt-asc') cp.sort(function(a,b){ var va=a.completedAt?dayValue(a.completedAt):0,vb=b.completedAt?dayValue(b.completedAt):0; return va-vb||prioSort(a,b); });
+  else cp.sort(prioSort);
   return cp;
 }
 

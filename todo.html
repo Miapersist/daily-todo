@@ -288,7 +288,7 @@ var APP = document.getElementById('app');
 var tasks = [];
 var view = 'daily';
 var filter = 'all';
-var sortBy = 'completedAt-desc';
+var sortBy = 'priority-desc';
 var editingId = null;
 var showAddModal = false;
 var undoAction = null;
@@ -441,8 +441,12 @@ function renderTask(t, showDay) {
 
 function renderSearchBar() {
   var q=escapeHtml(searchQuery);
-  return '<div class="search-bar"><input id="search_input" placeholder="搜索标题/备注..." value="'+q+'" oninput="W.setSearch(this.value)">'+
-    (searchQuery?'<span class="search-clear" onclick="W.setSearch(\'\')">清除</span>':'')+'</div>';
+  var sorts=[{v:'priority-desc',l:'优先级↓'},{v:'priority-asc',l:'优先级↑'},{v:'createdAt-desc',l:'创建↓'},{v:'createdAt-asc',l:'创建↑'},{v:'completedAt-desc',l:'完成↓'}];
+  var ss='<select onchange="W.setSort(this.value)" style="font-size:12px;padding:4px 6px;border:1px solid var(--border);border-radius:4px;background:var(--card);color:var(--text);">';
+  sorts.forEach(function(o){ ss+='<option value="'+o.v+'"'+(sortBy===o.v?' selected':'')+'>'+o.l+'</option>'; });
+  ss+='</select>';
+  return '<div class="search-bar" style="gap:6px;"><input id="search_input" placeholder="搜索标题/备注..." value="'+q+'" oninput="W.setSearch(this.value)">'+
+    ss+(searchQuery?'<span class="search-clear" onclick="W.setSearch(\'\')">清除</span>':'')+'</div>';
 }
 
 function renderStats() {

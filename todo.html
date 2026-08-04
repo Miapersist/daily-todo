@@ -281,6 +281,9 @@ body {
 var STORAGE_KEY = 'todo_tasks';
 var PREFS_KEY = 'todo_prefs';
 var BACKUP_KEY = 'todo_backup_v2';
+var GH_TOKEN = localStorage.getItem('gh_token')||'';
+var GH_API = 'https://api.github.com/repos/Miapersist/daily-todo/contents/todo-data.json';
+var GH_RAW = 'https://raw.githubusercontent.com/Miapersist/daily-todo/main/todo-data.json';
 var APP = document.getElementById('app');
 var tasks = [];
 var view = 'daily';
@@ -321,8 +324,14 @@ function loadPrefs() { try { var r=localStorage.getItem(PREFS_KEY); if(r){ var p
 function savePrefs() { localStorage.setItem(PREFS_KEY, JSON.stringify({view:view,filter:filter,sortBy:sortBy,theme:theme,completePopup:completePopup,wishMode:wishMode})); }
 function applyTheme() { if(theme==='dark'||(theme==='system'&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark'); }
 
-function loadTasks(callback) { var r=localStorage.getItem(STORAGE_KEY); if(r){ tasks=JSON.parse(r); callback(); return; } var bk=localStorage.getItem(BACKUP_KEY); if(bk){ tasks=JSON.parse(bk); callback(); return; } fetch('todo-data.json').then(function(res){ if(!res.ok)throw 0; return res.json(); }).then(function(data){ tasks=data; saveTasks(); callback(); }).catch(function(){ tasks=getDefaults(); callback(); }); }
-function saveTasks() { var json=JSON.stringify(tasks); localStorage.setItem(STORAGE_KEY, json); localStorage.setItem(BACKUP_KEY, json); }
+function loadTasks(callback) { var r=localStorage.getItem(STORAGE_KEY); if(r){ tasks=JSON.parse(r); callback(); return; } var bk=localStorage.getItem(BACKUP_KEY); if(bk){ tasks=JSON.parse(bk); callback(); return; } tasks=getDefaults(); callback(); }
+
+function loadTasksSync() { fetch(GH_RAW).then(function(r){return r.json();}).then(function(d){ tasks=d; saveTasksCache(); render(); }).catch(function(){ /* network error, use cached */ }); }
+
+function saveTasks() { saveTasksCache(); saveTasksGitHub(); }
+function saveTasksCache() { var j=JSON.stringify(tasks); localStorage.setItem(STORAGE_KEY,j); localStorage.setItem(BACKUP_KEY,j); }
+
+function saveTasksGitHub() { if(!GH_TOKEN)return; fetch(GH_API,{method:'GET',headers:{Authorization:'token '+GH_TOKEN}}).then(function(r){return r.json();}).then(function(d){ return fetch(GH_API,{method:'PUT',headers:{Authorization:'token '+GH_TOKEN,'Content-Type':'application/json'},body:JSON.stringify({message:'update tasks',content:btoa(unescape(encodeURIComponent(JSON.stringify(tasks,null,2)))),sha:d.sha,branch:'main'})}); }).catch(function(){}); }
 
 function getDefaults() {
   var t=todayStr(),t2=addDays(t,1),sat=addDays(t,6-new Date().getDay()),sun=addDays(t,7-new Date().getDay());
@@ -840,7 +849,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){ if(showReport){ W.closeReport(); return; } if(completeTaskId!==null){ completeTaskId=null; render(); return; } if(showAddModal){ showAddModal=false; editingId=null; render(); } if(showImport){ W.closeImport(); } }
 });
 
-loadPrefs(); loadTasks(function(){ applyTheme(); render(); });
+loadPrefs(); loadTasks(function(){ applyTheme(); render(); loadTasksSync(); });
 try{ render(); }catch(err){ APP.innerHTML='<div style="padding:20px;color:#c00;font-family:monospace;white-space:pre-wrap;">Render error:\n'+(err.stack||err.message)+'</div>'; console.error(err); }
 })();
 </script>

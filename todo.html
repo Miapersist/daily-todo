@@ -512,7 +512,7 @@ function renderDaily() {
 
   var rolledPending=[];
   allDays.forEach(function(day){ if(dayValue(day)<dayValue(today)){ var ts=dayMap[day]; ts.forEach(function(t){ if(!t.completed&&(filter==='pending'||filter==='all')&&matchesSearch(t)) rolledPending.push(t); }); } });
-  var rolledFiltered=rolledPending.filter(function(t){ if(!matchesSearch(t))return false; if(prioFilter!=='all'&&t.priority!==prioFilter)return false; return true; });
+  var rolledFiltered=rolledPending.filter(function(t){ if(!matchesSearch(t))return false; if(prioFilter!=='all'&&t.priority!==prioFilter)return false; if(typeFilter!=='all'&&t.type!==typeFilter)return false; return true; });
   var todayAll=(dayMap[today]||[]).filter(filterMatch);
   var todayDone=todayAll.filter(function(t){return t.completed;});
   var combined=rolledFiltered.map(function(t){return {t:t,isRolled:true};}).concat(todayAll.filter(function(t){return !t.completed;}).map(function(t){return {t:t,isRolled:false};}));

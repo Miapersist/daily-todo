@@ -518,9 +518,9 @@
   },
   {
     "id": 326,
-    "title": "codex下载",
+    "title": "codex下载（等有新mac电脑再说）",
     "detail": "",
-    "day": "8/4",
+    "day": "11/1",
     "endDay": null,
     "priority": "中",
     "type": "个人",
@@ -1031,6 +1031,20 @@
     "completed": false,
     "completedAt": null,
     "createdAt": "8/4",
+    "startedAt": null
+  },
+  {
+    "id": 739,
+    "title": "安装idea 拉代码",
+    "detail": "",
+    "day": "8/5",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/5",
     "startedAt": null
   }
 ]

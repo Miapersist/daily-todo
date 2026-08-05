@@ -599,7 +599,7 @@ function renderCompleteDialog() {
   if(!t)return'';
   return '<div class="modal-overlay" onclick="W.cancelComplete()"><div class="modal" onclick="event.stopPropagation()" style="max-width:380px;">'+
     '<h3>'+T('完成任务','🎉 愿望成真！')+'</h3><p style="font-size:13px;color:var(--text2);margin-bottom:12px;">'+escapeHtml(t.title)+'</p>'+
-    '<div class="row"><div><label>'+T('开始时间','许愿时间')+'</label><input type="date" id="co_startedAt" value="'+(t.startedAt?dayToInput(t.startedAt):dayToInput(todayStr()))+'" style="padding:6px 8px;"></div>'+
+    '<div class="row"><div><label>'+T('开始时间','许愿时间')+'</label><input type="date" id="co_startedAt" value="'+dayToInput(t.startedAt||t.day||todayStr())+'" style="padding:6px 8px;"></div>'+
     '<div><label>'+T('完成时间','成真时间')+'</label><input type="date" id="co_completedAt" value="'+dayToInput(todayStr())+'" style="padding:6px 8px;"></div></div>'+
     '<label>'+T('完成小结（可选）','许愿感言')+'</label><input id="co_note" placeholder="'+T('简单记录一下...','此刻的心情…')+'" style="padding:6px 8px;">'+
     '<div class="modal-footer btn-row"><button class="btn" onclick="W.cancelComplete()">'+T('取消','再想想')+'</button><button class="btn primary" onclick="W.doComplete()">'+T('完成','✨ 愿望成真')+'</button></div></div></div>';
@@ -807,7 +807,7 @@ window.W={
     if(wishMode) setTimeout(function(){ var card=document.querySelector('.task[data-id="'+doneId+'"]'); if(card)sparkCelebration(card); },80);
     undoTimer=setTimeout(function(){ undoAction=null; render(); },4000);
   },
-  startTask:function(id){ var t=tasks.find(function(x){return x.id===id;}); if(t&&!t.startedAt){ t.startedAt=todayStr(); saveTasks(); render(); } },
+  startTask:function(id){ var t=tasks.find(function(x){return x.id===id;}); if(t&&!t.startedAt){ t.startedAt=t.day||todayStr(); saveTasks(); render(); } },
   openAdd:function(){ editingId=null; showAddModal=true; render(); },
   edit:function(id){ editingId=id; showAddModal=true; render(); },
   closeModal:function(e){ if(e&&e.target!==e.currentTarget)return; showAddModal=false; editingId=null; render(); },

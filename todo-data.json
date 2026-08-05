@@ -1050,5 +1050,19 @@
     "completedAt": null,
     "createdAt": "8/5",
     "startedAt": null
+  },
+  {
+    "id": 740,
+    "title": "skill试用：Minimal Zine Poster Skill、gc-minimal-zine-poster-skill",
+    "detail": "",
+    "day": "8/5",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/5",
+    "startedAt": null
   }
 ]

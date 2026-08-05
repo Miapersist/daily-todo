@@ -1030,10 +1030,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/4",
     "createdAt": "8/4",
-    "startedAt": null
+    "startedAt": "8/4",
+    "completedNote": "下班前15分钟录制完毕和同步了"
   },
   {
     "id": 739,

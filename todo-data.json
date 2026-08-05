@@ -422,11 +422,12 @@
     "priority": "低",
     "type": "工作",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "7/31",
-    "startedAt": null,
+    "startedAt": "8/5",
     "endDay": null,
-    "completedAt": null
+    "completedAt": "8/5",
+    "completedNote": "汇总ppt已经发送给敏周"
   },
   {
     "id": 319,

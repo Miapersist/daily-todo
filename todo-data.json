@@ -1015,10 +1015,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/5",
     "createdAt": "8/4",
-    "startedAt": null
+    "startedAt": "8/4",
+    "completedNote": "羽毛球的技能退步，每周2次羽毛球最佳，不然难以维持球感，赛后要有自己的复盘"
   },
   {
     "id": 738,

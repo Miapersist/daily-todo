@@ -1181,5 +1181,19 @@
     "completedAt": null,
     "createdAt": "8/6",
     "startedAt": null
+  },
+  {
+    "id": 749,
+    "title": "找梁工沟通一下CE需求，感觉一开始跟业务和顾问没聊透没聊多一点，导致现在有返工的事情，看看能不能沟通权限部分挪到后续改造一起做掉吧",
+    "detail": "",
+    "day": "8/6",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/6",
+    "startedAt": null
   }
 ]

@@ -583,9 +583,11 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "8/3",
-    "startedAt": "8/4"
+    "startedAt": "8/4",
+    "completedAt": "8/6",
+    "completedNote": "早上早起终于完成了任务"
   },
   {
     "id": 702,

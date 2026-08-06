@@ -1150,10 +1150,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/6",
     "createdAt": "8/6",
-    "startedAt": null
+    "startedAt": "8/6",
+    "completedNote": "不需要变更了，还好廖老师刚好过来聊了一下 是业务理解系统出错了 本来上次价格就是取市况联动定价单的值"
   },
   {
     "id": 747,

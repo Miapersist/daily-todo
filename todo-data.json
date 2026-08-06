@@ -1223,5 +1223,19 @@
     "completedAt": null,
     "createdAt": "8/6",
     "startedAt": null
+  },
+  {
+    "id": 752,
+    "title": "彭大哥：还是得把系统吃透才能出去说自己own整个系统，不能太摆烂才行了",
+    "detail": "",
+    "day": "8/6",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/6",
+    "startedAt": null
   }
 ]

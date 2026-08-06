@@ -1167,5 +1167,19 @@
     "completedAt": null,
     "createdAt": "8/6",
     "startedAt": null
+  },
+  {
+    "id": 748,
+    "title": "车型变革项目课题和进度更新",
+    "detail": "",
+    "day": "8/6",
+    "endDay": null,
+    "priority": "高",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/6",
+    "startedAt": null
   }
 ]

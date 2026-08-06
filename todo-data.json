@@ -1209,5 +1209,19 @@
     "completedAt": null,
     "createdAt": "8/6",
     "startedAt": null
+  },
+  {
+    "id": 751,
+    "title": "跟进研发确认市况联动（零件明细）变更内容是否不需要改造",
+    "detail": "",
+    "day": "8/6",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/6",
+    "startedAt": null
   }
 ]

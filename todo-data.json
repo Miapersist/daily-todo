@@ -1121,10 +1121,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/6",
     "createdAt": "8/6",
-    "startedAt": null
+    "startedAt": "8/6",
+    "completedNote": "体检结束，1-2个指标有超出，但是整体还好；周五下午2点进行手术（院长手术），之后危险期住三天，周一去接她回家"
   },
   {
     "id": 745,

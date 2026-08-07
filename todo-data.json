@@ -1299,9 +1299,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/7",
     "createdAt": "8/7",
-    "startedAt": "8/7"
+    "startedAt": "8/7",
+    "completedNote": "时间重复时生成有问题，肖勇跟进中"
   }
 ]

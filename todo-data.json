@@ -1107,10 +1107,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/7",
     "createdAt": "8/6",
-    "startedAt": null
+    "startedAt": "8/6",
+    "completedNote": "嘻嘻嘻 明天跟咪市内玩 姐姐安排 我跟着出游"
   },
   {
     "id": 744,

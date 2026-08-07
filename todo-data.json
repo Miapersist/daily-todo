@@ -1047,7 +1047,7 @@
     "detail": "",
     "day": "8/5",
     "endDay": null,
-    "priority": "低",
+    "priority": "中",
     "type": "工作",
     "blocking": null,
     "completed": false,
@@ -1195,11 +1195,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": true,
-    "completedAt": "8/6",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "8/6",
-    "startedAt": "8/6",
-    "completedNote": "沟通：1是审批人展示（因为系统历史逻辑没有流程引擎，所以设计的不好，导致用户对数据归集搜索分配这些的没有办法很好的审批，所以只能临时方案改造，并且零件明细页面的bpm的审批上线一直推进不下去好像），2是权限统筹管理，时间来不及是一点，第二确实如敏周所说，他们可能会发生频繁的件号和对应人换岗变更，所以放在用户权限里面的话会有修改时效慢和影响的问题，担当梁工也没有用户角色的权限，所以这块确实在后续得考虑。还有一个是业务实际管理零件号会有点混乱的问题，因为零件号虽然一开始定义好了，但是在车型生产过程中总有一些零件编号不按规则来，对于此类零件又需要传给下游系统，梦群给的建议是把零件认领后，如果没有在ce配置页缺少则自动生成，这样不影响传输同步到下游系统"
+    "startedAt": null
   },
   {
     "id": 750,
@@ -1237,7 +1236,7 @@
     "detail": "",
     "day": "8/6",
     "endDay": null,
-    "priority": "低",
+    "priority": "中",
     "type": "工作",
     "blocking": null,
     "completed": false,
@@ -1271,27 +1270,13 @@
     "completed": false,
     "completedAt": null,
     "createdAt": "8/7",
-    "startedAt": "8/7"
+    "startedAt": null
   },
   {
     "id": 755,
     "title": "8.19号七夕节！！！！",
     "detail": "",
     "day": "8/12",
-    "endDay": null,
-    "priority": "中",
-    "type": "工作",
-    "blocking": null,
-    "completed": false,
-    "completedAt": null,
-    "createdAt": "8/7",
-    "startedAt": null
-  },
-  {
-    "id": 756,
-    "title": "验证需求问题：改造的几个字段问题",
-    "detail": "",
-    "day": "8/7",
     "endDay": null,
     "priority": "中",
     "type": "工作",

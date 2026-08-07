@@ -1209,10 +1209,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/6",
     "createdAt": "8/6",
-    "startedAt": null
+    "startedAt": "8/6",
+    "completedNote": "完成 可以用"
   },
   {
     "id": 751,

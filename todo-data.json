@@ -1166,10 +1166,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/7",
     "createdAt": "8/6",
-    "startedAt": null
+    "startedAt": "8/6",
+    "completedNote": "还没约杨科 今天改好bug之后私聊问问的"
   },
   {
     "id": 748,

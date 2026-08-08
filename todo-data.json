@@ -1304,5 +1304,19 @@
     "createdAt": "8/7",
     "startedAt": "8/7",
     "completedNote": "时间重复时生成有问题，肖勇跟进中"
+  },
+  {
+    "id": 757,
+    "title": "整合skill 把所有的对话都整理出skill，然后从文件夹复制出来存档",
+    "detail": "",
+    "day": "8/8",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/8",
+    "startedAt": null
   }
 ]

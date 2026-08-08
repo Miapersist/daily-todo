@@ -599,9 +599,11 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "8/3",
-    "startedAt": "8/4"
+    "startedAt": "8/4",
+    "completedAt": "8/8",
+    "completedNote": null
   },
   {
     "id": 703,

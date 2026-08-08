@@ -1314,9 +1314,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/8",
     "createdAt": "8/8",
-    "startedAt": "8/8"
+    "startedAt": "8/8",
+    "completedNote": "提取前prompt：感觉还可以更细致一下，然后你看看能不能以专业产品总监和项目的角度给我提意见，让我看看我输出方案的时候哪些东西是从一开始就没设想好导致后续连续返工的；提取的prompt："
   }
 ]

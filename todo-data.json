@@ -1388,10 +1388,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/11",
     "createdAt": "8/10",
-    "startedAt": null
+    "startedAt": "8/10",
+    "completedNote": "保持自然 每次都好好准备好好发挥的状态！！！！！！！！"
   },
   {
     "id": 763,

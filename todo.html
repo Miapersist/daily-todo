@@ -334,7 +334,7 @@ function applyTheme() { if(theme==='dark'||(theme==='system'&&window.matchMedia(
 
 function loadTasks(callback) { var r=localStorage.getItem(STORAGE_KEY); if(r){ tasks=JSON.parse(r); callback(); return; } var bk=localStorage.getItem(BACKUP_KEY); if(bk){ tasks=JSON.parse(bk); callback(); return; } tasks=getDefaults(); callback(); }
 
-function loadTasksSync() { fetch(GH_RAW).then(function(r){return r.json();}).then(function(d){ if(d.length>tasks.length||!tasks.length){ tasks=d; saveTasksCache(); render(); }else if(tasks.length>d.length){ saveTasksGitHub(); } }).catch(function(){}); }
+function loadTasksSync() { fetch(GH_RAW).then(function(r){return r.json();}).then(function(d){ if(!tasks.length||d.length>tasks.length){ tasks=d; saveTasksCache(); render(); }else if(tasks.length>d.length){ saveTasksGitHub(); }else if(JSON.stringify(d)!==JSON.stringify(tasks)){ tasks=d; saveTasksCache(); render(); } }).catch(function(){}); }
 
 function saveTasks() { saveTasksCache(); saveTasksGitHub(); }
 function saveTasksCache() { var j=JSON.stringify(tasks); localStorage.setItem(STORAGE_KEY,j); localStorage.setItem(BACKUP_KEY,j); }

@@ -1407,5 +1407,19 @@
     "completedAt": null,
     "createdAt": "8/10",
     "startedAt": null
+  },
+  {
+    "id": 764,
+    "title": "2.车型物料成本管理变革项目，需求-详设分解计划要做调整，按8月31日定详设修改所有分解计划时间。这个今天日例会前要改好。",
+    "detail": "",
+    "day": "8/12",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/12",
+    "startedAt": null
   }
 ]

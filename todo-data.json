@@ -1362,10 +1362,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/12",
     "createdAt": "8/10",
-    "startedAt": null
+    "startedAt": "8/10",
+    "completedNote": "高级才有 问了搭子"
   },
   {
     "id": 762,

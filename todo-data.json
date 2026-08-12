@@ -1407,10 +1407,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/12",
     "createdAt": "8/12",
-    "startedAt": null
+    "startedAt": "8/12",
+    "completedNote": null
   },
   {
     "id": 765,

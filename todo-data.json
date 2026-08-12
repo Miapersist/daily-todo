@@ -1360,10 +1360,11 @@
     "priority": "高",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/12",
     "createdAt": "8/10",
-    "startedAt": "8/11"
+    "startedAt": "8/11",
+    "completedNote": "已分到用户权限部分"
   },
   {
     "id": 761,

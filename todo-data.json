@@ -1280,20 +1280,6 @@
     "completedNote": "询价报价单没问题"
   },
   {
-    "id": 755,
-    "title": "8.19号七夕节！！！！",
-    "detail": "",
-    "day": "8/12",
-    "endDay": null,
-    "priority": "中",
-    "type": "工作",
-    "blocking": null,
-    "completed": false,
-    "completedAt": null,
-    "createdAt": "8/7",
-    "startedAt": null
-  },
-  {
     "id": 756,
     "title": "验证需求问题：改造的几个字段问题",
     "detail": "",

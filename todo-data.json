@@ -1422,5 +1422,19 @@
     "completedAt": null,
     "createdAt": "8/12",
     "startedAt": null
+  },
+  {
+    "id": 765,
+    "title": "车型成本项目-用户权限部分，用大哥的skill试一下跑",
+    "detail": "",
+    "day": "8/12",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/12",
+    "startedAt": null
   }
 ]

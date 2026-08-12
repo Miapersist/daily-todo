@@ -1052,10 +1052,11 @@
     "priority": "低",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/12",
     "createdAt": "8/5",
-    "startedAt": "8/5"
+    "startedAt": "8/5",
+    "completedNote": "https://www.quanxiaoha.com/idea-pojie/idea-pojie-202621.html 在百度搜一下还是蛮容易出来的"
   },
   {
     "id": 740,

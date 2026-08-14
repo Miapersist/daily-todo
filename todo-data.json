@@ -1436,10 +1436,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/13",
     "createdAt": "8/12",
-    "startedAt": "8/13"
+    "startedAt": "8/13",
+    "completedNote": null
   },
   {
     "id": 767,

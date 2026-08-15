@@ -1456,5 +1456,19 @@
     "createdAt": "8/14",
     "startedAt": "8/14",
     "completedNote": null
+  },
+  {
+    "id": 768,
+    "title": "用户权限-调研准备",
+    "detail": "",
+    "day": "8/15",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/15",
+    "startedAt": null
   }
 ]

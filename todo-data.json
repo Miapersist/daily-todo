@@ -1490,5 +1490,19 @@
     "createdAt": "8/15",
     "startedAt": "8/15",
     "completedNote": "初步结束调研-要根据慧芬的报表模板提供一下所需要的公式或定义给她"
+  },
+  {
+    "id": 770,
+    "title": "下午3点初步定了跟慧芬核对用户权限方案，然后顺便要一下她的报表最新输出",
+    "detail": "",
+    "day": "8/20",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/18",
+    "startedAt": null
   }
 ]

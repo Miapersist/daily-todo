@@ -1470,10 +1470,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/18",
     "createdAt": "8/15",
-    "startedAt": null
+    "startedAt": "8/15",
+    "completedNote": "初步结束，根据提供的调研内容看看能不能适用，周四下午进行方案初步核对"
   },
   {
     "id": 769,

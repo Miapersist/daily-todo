@@ -1484,52 +1484,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
-    "createdAt": "8/15",
-    "startedAt": null
-  },
-  {
-    "id": 770,
-    "title": "https://bm.ruankao.org.cn/report/registration报名考试",
-    "detail": "",
-    "day": "8/17",
-    "endDay": null,
-    "priority": "中",
-    "type": "工作",
-    "blocking": null,
     "completed": true,
-    "completedAt": "8/17",
-    "createdAt": "8/17",
-    "startedAt": "8/17",
-    "completedNote": null
-  },
-  {
-    "id": 771,
-    "title": "处理补卡-钉钉3个",
-    "detail": "",
-    "day": "8/18",
-    "endDay": null,
-    "priority": "中",
-    "type": "工作",
-    "blocking": null,
-    "completed": false,
-    "completedAt": null,
-    "createdAt": "8/18",
-    "startedAt": null
-  },
-  {
-    "id": 772,
-    "title": "修水管-818-8点",
-    "detail": "",
-    "day": "8/18",
-    "endDay": null,
-    "priority": "高",
-    "type": "个人",
-    "blocking": null,
-    "completed": false,
-    "completedAt": null,
-    "createdAt": "8/18",
-    "startedAt": null
+    "completedAt": "8/18",
+    "createdAt": "8/15",
+    "startedAt": "8/15",
+    "completedNote": "初步结束调研-要根据慧芬的报表模板提供一下所需要的公式或定义给她"
   }
 ]

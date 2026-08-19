@@ -131,10 +131,12 @@
     "priority": "低",
     "type": "工作",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "startedAt": "7/31",
     "_selected": false,
-    "endDay": null
+    "endDay": null,
+    "completedAt": "8/19",
+    "completedNote": null
   },
   {
     "id": 12,

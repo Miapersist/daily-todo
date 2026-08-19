@@ -1324,10 +1324,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/19",
     "createdAt": "8/8",
-    "startedAt": "8/8"
+    "startedAt": "8/8",
+    "completedNote": "用一个skill装我的工作习惯即可。其他的流程我感觉不需要通过角色定义这么多还，因为我个人可以引导输出；但是确实有个专业角色会可以让它提意见"
   },
   {
     "id": 759,

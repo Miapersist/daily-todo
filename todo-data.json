@@ -1485,10 +1485,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/19",
     "createdAt": "8/15",
-    "startedAt": null
+    "startedAt": "8/15",
+    "completedNote": "初步结束调研-要根据慧芬的报表模板提供一下所需要的公式或定义给她"
   },
   {
     "id": 770,

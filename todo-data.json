@@ -1527,10 +1527,11 @@
     "priority": "高",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/18",
     "createdAt": "8/18",
-    "startedAt": null
+    "startedAt": "8/18",
+    "completedNote": "缺个扳手"
   },
   {
     "id": 773,

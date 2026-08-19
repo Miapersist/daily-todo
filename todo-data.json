@@ -1513,10 +1513,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/19",
     "createdAt": "8/18",
-    "startedAt": null
+    "startedAt": "8/18",
+    "completedNote": "6 10 11"
   },
   {
     "id": 772,

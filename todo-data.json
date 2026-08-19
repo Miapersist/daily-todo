@@ -1427,10 +1427,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/19",
     "createdAt": "8/12",
-    "startedAt": "8/12"
+    "startedAt": "8/12",
+    "completedNote": "没用 用自己的思路来了，不过可以看看"
   },
   {
     "id": 766,

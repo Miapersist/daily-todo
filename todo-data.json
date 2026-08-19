@@ -483,10 +483,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/19",
     "createdAt": "8/3",
-    "startedAt": null
+    "startedAt": "8/3",
+    "completedNote": "先不看了 现在github可以正常使用"
   },
   {
     "id": 324,

@@ -584,9 +584,6 @@ function renderCalendar() {
     '<button onclick="W.shiftWeek(1)">&gt;</button>'+
     (calWeekOffset!==0?'<button class="btn sm" onclick="W.shiftWeek(0)">今天</button>':'')+'</div>';
 
-  var rolled=tasks.filter(function(t){ return t.day&&!t.completed&&dayValue(t.day)<dayValue(today)&&(filter==='pending'||filter==='all')&&matchesSearch(t)&&(prioFilter==='all'||t.priority===prioFilter)&&(typeFilter==='all'||t.type===typeFilter); });
-  if(rolled.length>0){ h+='<div class="day-section"><div class="day-header roll-label">从之前未完成 ('+rolled.length+')</div>'; rolled.forEach(function(t){ h+=renderTask(t,true); }); h+='</div>'; }
-
   h+='<div class="cal-grid">';
   weekDays.forEach(function(wd){
     var isToday=wd.key===today,cls=isToday?' cal-col today':' cal-col';
@@ -599,6 +596,9 @@ function renderCalendar() {
       h+='<div class="'+c+'" title="'+escapeHtml(t.title)+'">'+l+'</div>';
     }); h+='</div></div>';
   }); h+='</div>';
+
+  var rolled=tasks.filter(function(t){ return t.day&&!t.completed&&dayValue(t.day)<dayValue(today)&&(filter==='pending'||filter==='all')&&matchesSearch(t)&&(prioFilter==='all'||t.priority===prioFilter)&&(typeFilter==='all'||t.type===typeFilter); });
+  if(rolled.length>0){ h+='<div class="day-section"><div class="day-header roll-label">从之前未完成 ('+rolled.length+')</div>'; rolled.forEach(function(t){ h+=renderTask(t,true); }); h+='</div>'; }
 
   var us=tasks.filter(function(t){ return!t.day&&filterMatch(t)&&matchesSearch(t); });
   if(us.length>0){ h+='<div class="day-section"><div class="day-header">待排期</div>'; us.forEach(function(t){ h+=renderTask(t,false); }); h+='</div>'; }

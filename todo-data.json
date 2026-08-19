@@ -1623,5 +1623,19 @@
     "completedAt": null,
     "createdAt": "8/19",
     "startedAt": "8/19"
+  },
+  {
+    "id": 779,
+    "title": "给杰哥提供市况联动初始化录入的清单",
+    "detail": "",
+    "day": "8/19",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/19",
+    "startedAt": null
   }
 ]

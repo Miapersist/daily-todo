@@ -661,13 +661,14 @@ function renderReport() {
   // group by completedAt
   var dayGroups={}; list.forEach(function(t){ var k=t.completedAt; if(!dayGroups[k])dayGroups[k]=[]; dayGroups[k].push(t); });
   var days=Object.keys(dayGroups).sort(function(a,b){ return dayValue(b)-dayValue(a); });
-  var blocks='',itemN=0;
+  var blocks='';
   days.forEach(function(day){
+    var itemN=0;
     var ts=dayGroups[day];
     blocks+='<div style="margin-bottom:12px;"><strong style="font-size:14px;color:var(--text);">📅 '+day+'</strong>';
     var workTasks=ts.filter(function(t){return t.type==='工作';});
     var lifeTasks=ts.filter(function(t){return t.type==='个人';});
-    function groupHTML(label,arr){ if(!arr.length)return''; var h='<div style="margin:4px 0 4px 12px;font-size:12px;color:var(--text3);">🏢 '+label+'</div>'; arr.forEach(function(t,i){ itemN++; h+='<div style="margin-left:20px;font-size:12px;">'+itemN+'、'+escapeHtml(t.title)+(t.completedNote?'<span style="color:var(--text3);font-style:italic;"> — '+escapeHtml(t.completedNote)+'</span>':'')+'</div>'; }); return h; }
+    function groupHTML(label,arr){ if(!arr.length)return''; var h='<div style="margin:4px 0 4px 12px;font-size:12px;color:var(--text3);">🏢 '+label+'</div>'; arr.forEach(function(t,i){ itemN++; h+='<div style="margin-left:20px;font-size:12px;">'+itemN+'、'+escapeHtml(t.title)+'</div>'; }); return h; }
     blocks+=groupHTML('工作',workTasks)+groupHTML('个人',lifeTasks)+'</div>';
   });
   return '<div class="modal-overlay" onclick="W.closeReport()"><div class="modal" onclick="event.stopPropagation()" style="max-width:680px;">'+

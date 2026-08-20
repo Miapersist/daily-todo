@@ -1750,7 +1750,7 @@
   {
     "id": 787,
     "title": "处理市况联动相关bug跟进",
-    "detail": "",
+    "detail": "记得记录到buglist，并且跟不好沟通爱甩锅的开发尽量走线上留痕",
     "day": "8/20",
     "endDay": null,
     "priority": "中",

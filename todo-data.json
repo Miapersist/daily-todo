@@ -1746,5 +1746,19 @@
     "createdAt": "8/19",
     "startedAt": null,
     "_selected": false
+  },
+  {
+    "id": 787,
+    "title": "处理市况联动相关bug跟进",
+    "detail": "",
+    "day": "8/20",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/20",
+    "startedAt": null
   }
 ]

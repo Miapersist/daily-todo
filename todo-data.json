@@ -644,9 +644,11 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "8/3",
-    "startedAt": null
+    "startedAt": "8/13",
+    "completedAt": "8/19",
+    "completedNote": "晚上听好困。。。而且声音好小 要买音响"
   },
   {
     "id": 706,

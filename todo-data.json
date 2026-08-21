@@ -1344,10 +1344,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/21",
     "createdAt": "8/10",
-    "startedAt": "8/10"
+    "startedAt": "8/10",
+    "completedNote": null
   },
   {
     "id": 760,

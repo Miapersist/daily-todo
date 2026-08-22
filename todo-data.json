@@ -1570,10 +1570,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/20",
     "createdAt": "8/19",
-    "startedAt": null
+    "startedAt": "8/20",
+    "completedNote": null
   },
   {
     "id": 775,
@@ -1584,10 +1585,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/22",
     "createdAt": "8/19",
-    "startedAt": null
+    "startedAt": "8/22",
+    "completedNote": null
   },
   {
     "id": 776,
@@ -1759,9 +1761,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/21",
     "createdAt": "8/20",
-    "startedAt": null
+    "startedAt": "8/20",
+    "completedNote": null
   }
 ]

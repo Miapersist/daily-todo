@@ -658,9 +658,11 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "8/3",
-    "startedAt": null
+    "startedAt": "8/20",
+    "completedAt": "8/22",
+    "completedNote": null
   },
   {
     "id": 707,

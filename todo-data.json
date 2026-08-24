@@ -658,11 +658,9 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": true,
+    "completed": false,
     "createdAt": "8/3",
-    "startedAt": "8/20",
-    "completedAt": "8/22",
-    "completedNote": null
+    "startedAt": "8/20"
   },
   {
     "id": 707,
@@ -672,11 +670,9 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": true,
+    "completed": false,
     "createdAt": "8/3",
-    "startedAt": "8/21",
-    "completedAt": "8/23",
-    "completedNote": null
+    "startedAt": null
   },
   {
     "id": 708,
@@ -1341,7 +1337,7 @@
   },
   {
     "id": 759,
-    "title": "【周一十点】找杨科汇报市况联动定价单",
+    "title": "【周五十点】找杨科汇报市况联动定价单",
     "detail": "周一没空 问问后面吧",
     "day": "8/17",
     "endDay": null,
@@ -1352,7 +1348,7 @@
     "completedAt": "8/21",
     "createdAt": "8/10",
     "startedAt": "8/10",
-    "completedNote": "杨科对ai的使用还蛮有兴趣"
+    "completedNote": null
   },
   {
     "id": 760,
@@ -1572,11 +1568,10 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": true,
-    "completedAt": "8/20",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "8/19",
-    "startedAt": "8/20",
-    "completedNote": null
+    "startedAt": null
   },
   {
     "id": 775,
@@ -1587,11 +1582,10 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": true,
-    "completedAt": "8/22",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "8/19",
-    "startedAt": "8/22",
-    "completedNote": null
+    "startedAt": null
   },
   {
     "id": 776,
@@ -1757,16 +1751,57 @@
   {
     "id": 787,
     "title": "处理市况联动相关bug跟进",
-    "detail": "",
+    "detail": "记得记录到buglist，并且跟不好沟通爱甩锅的开发尽量走线上留痕",
     "day": "8/20",
     "endDay": null,
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": true,
-    "completedAt": "8/21",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "8/20",
-    "startedAt": "8/20",
-    "completedNote": null
+    "startedAt": "8/20"
+  },
+  {
+    "id": 788,
+    "title": "公积金还商业房贷事项",
+    "detail": "",
+    "day": "8/20",
+    "endDay": null,
+    "priority": "中",
+    "type": "个人",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/20",
+    "startedAt": null
+  },
+  {
+    "id": 789,
+    "title": "打羽毛球",
+    "detail": "",
+    "day": "8/21",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/20",
+    "startedAt": null
+  },
+  {
+    "id": 790,
+    "title": "姜思达",
+    "detail": "",
+    "day": "8/22",
+    "endDay": null,
+    "priority": "中",
+    "type": "个人",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/21",
+    "startedAt": null
   }
 ]

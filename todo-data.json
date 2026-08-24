@@ -1670,10 +1670,11 @@
     "priority": "高",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/24",
     "createdAt": "8/19",
-    "startedAt": "8/19"
+    "startedAt": "8/19",
+    "completedNote": null
   },
   {
     "id": 782,

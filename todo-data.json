@@ -1629,10 +1629,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/24",
     "createdAt": "8/19",
-    "startedAt": "8/19"
+    "startedAt": "8/19",
+    "completedNote": "基本确定是可以大体兼容，还有一些细节待确认"
   },
   {
     "id": 779,

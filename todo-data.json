@@ -1570,10 +1570,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/20",
     "createdAt": "8/19",
-    "startedAt": null
+    "startedAt": "8/20",
+    "completedNote": null
   },
   {
     "id": 775,

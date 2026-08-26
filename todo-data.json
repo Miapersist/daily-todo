@@ -1850,10 +1850,11 @@
     "priority": "高",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/25",
     "createdAt": "8/24",
-    "startedAt": "8/24"
+    "startedAt": "8/24",
+    "completedNote": null
   },
   {
     "id": 795,

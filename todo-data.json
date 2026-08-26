@@ -1592,20 +1592,6 @@
     "completedNote": null
   },
   {
-    "id": 776,
-    "title": "周五初步定了跟慧芬过用户权限方案，然后顺便要一下她的报表最新输出",
-    "detail": "",
-    "day": "8/21",
-    "endDay": null,
-    "priority": "中",
-    "type": "工作",
-    "blocking": null,
-    "completed": false,
-    "completedAt": null,
-    "createdAt": "8/19",
-    "startedAt": "8/21"
-  },
-  {
     "id": 777,
     "title": "报表-要根据慧芬的报表模板提供一下所需要的公式或定义给她",
     "detail": "",

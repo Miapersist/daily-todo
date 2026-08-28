@@ -1924,10 +1924,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/28",
     "createdAt": "8/27",
-    "startedAt": null
+    "startedAt": "8/27",
+    "completedNote": "找慧芬约时间沟通报表最新模板需求"
   },
   {
     "id": 800,

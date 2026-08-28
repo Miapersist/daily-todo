@@ -1943,5 +1943,19 @@
     "createdAt": "8/28",
     "startedAt": "8/27",
     "completedNote": "已补充，之后测试bug问题都要写到list，并且记录原因是不是历史问题之类的，一切留痕"
+  },
+  {
+    "id": 801,
+    "title": "用户权限-1启境的人说是财务本部出的需求；那个看不懂的问题找4楼梦麟去问问吧2出v3版本的需求方案3出蓝图ppt",
+    "detail": "",
+    "day": "8/28",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/28",
+    "startedAt": null
   }
 ]

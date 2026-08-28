@@ -1894,10 +1894,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/28",
     "createdAt": "8/26",
-    "startedAt": null
+    "startedAt": "8/26",
+    "completedNote": null
   },
   {
     "id": 798,

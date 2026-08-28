@@ -1937,9 +1937,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/28",
     "createdAt": "8/28",
-    "startedAt": "8/27"
+    "startedAt": "8/27",
+    "completedNote": "已补充，之后测试bug问题都要写到list，并且记录原因是不是历史问题之类的，一切留痕"
   }
 ]

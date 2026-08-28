@@ -1926,5 +1926,19 @@
     "completedAt": null,
     "createdAt": "8/27",
     "startedAt": null
+  },
+  {
+    "id": 800,
+    "title": "补充市况联动定价单延迟原因",
+    "detail": "",
+    "day": "8/27",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "8/28",
+    "startedAt": null
   }
 ]

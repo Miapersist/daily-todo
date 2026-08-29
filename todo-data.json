@@ -1794,10 +1794,11 @@
     "priority": "低",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/29",
     "createdAt": "8/21",
-    "startedAt": null
+    "startedAt": "8/22",
+    "completedNote": null
   },
   {
     "id": 791,

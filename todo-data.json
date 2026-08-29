@@ -1823,10 +1823,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/29",
     "createdAt": "8/24",
-    "startedAt": null
+    "startedAt": "8/24",
+    "completedNote": "用毛毡板替代"
   },
   {
     "id": 793,

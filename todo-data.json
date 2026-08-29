@@ -672,9 +672,11 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "8/3",
-    "startedAt": "8/21"
+    "startedAt": "8/21",
+    "completedAt": "8/29",
+    "completedNote": null
   },
   {
     "id": 708,
@@ -684,9 +686,11 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "8/3",
-    "startedAt": null
+    "startedAt": "8/22",
+    "completedAt": "8/29",
+    "completedNote": null
   },
   {
     "id": 709,

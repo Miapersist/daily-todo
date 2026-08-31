@@ -1694,11 +1694,12 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/31",
     "createdAt": "8/19",
-    "startedAt": null,
-    "_selected": false
+    "startedAt": "9/4",
+    "_selected": false,
+    "completedNote": null
   },
   {
     "id": 784,

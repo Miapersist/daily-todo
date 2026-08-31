@@ -1961,10 +1961,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "8/31",
     "createdAt": "8/28",
-    "startedAt": null
+    "startedAt": "8/28",
+    "completedNote": null
   },
   {
     "id": 802,

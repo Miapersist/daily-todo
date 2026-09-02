@@ -700,9 +700,11 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": false,
+    "completed": true,
     "createdAt": "8/3",
-    "startedAt": null
+    "startedAt": "8/23",
+    "completedAt": "9/1",
+    "completedNote": null
   },
   {
     "id": 710,

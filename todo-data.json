@@ -2053,10 +2053,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/2",
     "createdAt": "8/31",
-    "startedAt": null
+    "startedAt": "9/2",
+    "completedNote": null
   },
   {
     "id": 808,
@@ -2483,7 +2484,7 @@
     "day": "9/2",
     "endDay": null,
     "priority": "中",
-    "type": "个人",
+    "type": "工作",
     "blocking": null,
     "completed": false,
     "completedAt": null,

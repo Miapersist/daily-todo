@@ -714,11 +714,9 @@
     "priority": "高",
     "type": "学习",
     "blocking": null,
-    "completed": true,
+    "completed": false,
     "createdAt": "8/3",
-    "startedAt": "9/2",
-    "completedAt": "9/3",
-    "completedNote": null
+    "startedAt": "9/2"
   },
   {
     "id": 711,
@@ -2534,6 +2532,20 @@
     "completed": false,
     "completedAt": null,
     "createdAt": "9/3",
+    "startedAt": null
+  },
+  {
+    "id": 840,
+    "title": "输出车型PPT新版本",
+    "detail": "",
+    "day": "9/3",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/4",
     "startedAt": null
   }
 ]

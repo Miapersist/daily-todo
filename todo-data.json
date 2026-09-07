@@ -2487,10 +2487,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/6",
     "createdAt": "9/2",
-    "startedAt": null
+    "startedAt": "9/2",
+    "completedNote": null
   },
   {
     "id": 837,

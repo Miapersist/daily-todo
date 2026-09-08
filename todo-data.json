@@ -2577,5 +2577,19 @@
     "completedAt": null,
     "createdAt": "9/7",
     "startedAt": null
+  },
+  {
+    "id": 843,
+    "title": "补充需求：市况联动定价单聚合工厂",
+    "detail": "",
+    "day": "9/7",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/8",
+    "startedAt": null
   }
 ]

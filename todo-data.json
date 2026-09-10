@@ -2587,11 +2587,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": true,
-    "completedAt": "9/9",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "9/8",
-    "startedAt": "9/7",
-    "completedNote": null
+    "startedAt": null
   },
   {
     "id": 844,
@@ -2619,6 +2618,20 @@
     "completed": false,
     "completedAt": null,
     "createdAt": "9/8",
+    "startedAt": null
+  },
+  {
+    "id": 846,
+    "title": "去天才吧看电脑是否没问题",
+    "detail": "",
+    "day": "9/12",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/10",
     "startedAt": null
   }
 ]

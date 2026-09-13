@@ -2574,10 +2574,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/7",
     "createdAt": "9/7",
-    "startedAt": null
+    "startedAt": "9/7",
+    "completedNote": null
   },
   {
     "id": 843,

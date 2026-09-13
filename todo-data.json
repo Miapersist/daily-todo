@@ -2602,10 +2602,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/13",
     "createdAt": "9/8",
-    "startedAt": null
+    "startedAt": "9/8",
+    "completedNote": "下周找他们蓝图签字"
   },
   {
     "id": 845,

@@ -2502,10 +2502,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/12",
     "createdAt": "9/3",
-    "startedAt": null
+    "startedAt": "9/5",
+    "completedNote": "用上了钉子+锤子，终于搞好了，可以上墙贴东西了"
   },
   {
     "id": 838,

@@ -2632,10 +2632,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/12",
     "createdAt": "9/10",
-    "startedAt": null
+    "startedAt": "9/12",
+    "completedNote": "没问题，apple小哥还给我科普了一堆hhh"
   },
   {
     "id": 847,

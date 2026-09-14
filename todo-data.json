@@ -2560,10 +2560,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/14",
     "createdAt": "9/7",
-    "startedAt": null
+    "startedAt": "9/7",
+    "completedNote": "已购入"
   },
   {
     "id": 842,

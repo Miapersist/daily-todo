@@ -1727,11 +1727,12 @@
     "priority": "高",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/13",
     "createdAt": "8/19",
     "startedAt": "9/8",
-    "_selected": false
+    "_selected": false,
+    "completedNote": null
   },
   {
     "id": 786,

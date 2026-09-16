@@ -2715,5 +2715,19 @@
     "createdAt": "9/16",
     "startedAt": "9/16",
     "completedNote": null
+  },
+  {
+    "id": 854,
+    "title": "学习知识库的使用和部署",
+    "detail": "",
+    "day": "9/16",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/16",
+    "startedAt": null
   }
 ]

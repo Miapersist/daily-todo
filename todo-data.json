@@ -2757,5 +2757,19 @@
     "completedAt": null,
     "createdAt": "9/16",
     "startedAt": null
+  },
+  {
+    "id": 857,
+    "title": "用户权限需要推动原有页面整理需要新增字段权限和新增页面的权限配置（多跟IT和业务沟通）",
+    "detail": "",
+    "day": "9/16",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/16",
+    "startedAt": null
   }
 ]

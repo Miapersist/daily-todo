@@ -2787,19 +2787,5 @@
     "completedAt": null,
     "createdAt": "9/18",
     "startedAt": null
-  },
-  {
-    "id": 859,
-    "title": "爬山",
-    "detail": "",
-    "day": "9/19",
-    "endDay": null,
-    "priority": "中",
-    "type": "个人",
-    "blocking": null,
-    "completed": false,
-    "completedAt": null,
-    "createdAt": "9/18",
-    "startedAt": null
   }
 ]

@@ -2784,10 +2784,9 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": true,
-    "completedAt": "9/18",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "9/18",
-    "startedAt": "9/18",
-    "completedNote": null
+    "startedAt": null
   }
 ]

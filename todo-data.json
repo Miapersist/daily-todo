@@ -2891,5 +2891,19 @@
     "completedAt": null,
     "createdAt": "9/21",
     "startedAt": null
+  },
+  {
+    "id": 866,
+    "title": "权限详设+蓝图签字",
+    "detail": "",
+    "day": "9/24",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/21",
+    "startedAt": null
   }
 ]

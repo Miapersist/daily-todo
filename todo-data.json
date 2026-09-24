@@ -2996,5 +2996,19 @@
     "completedAt": null,
     "createdAt": "9/24",
     "startedAt": null
+  },
+  {
+    "id": 873,
+    "title": "给业务配置市况联动的操作权限",
+    "detail": "",
+    "day": "9/24",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/24",
+    "startedAt": null
   }
 ]

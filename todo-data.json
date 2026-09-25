@@ -2922,10 +2922,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/22",
     "createdAt": "9/22",
-    "startedAt": null
+    "startedAt": "9/22",
+    "completedNote": null
   },
   {
     "id": 868,

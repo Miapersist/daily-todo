@@ -2832,10 +2832,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/24",
     "createdAt": "9/21",
-    "startedAt": null
+    "startedAt": "9/21",
+    "completedNote": null
   },
   {
     "id": 862,

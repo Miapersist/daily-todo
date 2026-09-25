@@ -1846,10 +1846,11 @@
     "priority": "中",
     "type": "个人",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/23",
     "createdAt": "8/24",
-    "startedAt": null
+    "startedAt": "8/24",
+    "completedNote": null
   },
   {
     "id": 794,

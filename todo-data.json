@@ -2982,10 +2982,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/27",
     "createdAt": "9/24",
-    "startedAt": "9/24"
+    "startedAt": "9/24",
+    "completedNote": null
   },
   {
     "id": 872,

@@ -3112,10 +3112,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/27",
     "createdAt": "9/26",
-    "startedAt": "9/26"
+    "startedAt": "9/26",
+    "completedNote": null
   },
   {
     "id": 881,

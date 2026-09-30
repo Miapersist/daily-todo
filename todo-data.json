@@ -2997,11 +2997,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": true,
-    "completedAt": "9/30",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "9/24",
-    "startedAt": "9/24",
-    "completedNote": "遗留问题在对方可能不想配置权限+叶那边的沟通还没完成"
+    "startedAt": null
   },
   {
     "id": 873,
@@ -3012,11 +3011,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": true,
-    "completedAt": "9/24",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "9/24",
-    "startedAt": "9/24",
-    "completedNote": null
+    "startedAt": null
   },
   {
     "id": 874,
@@ -3086,11 +3084,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": true,
-    "completedAt": "9/27",
+    "completed": false,
+    "completedAt": null,
     "createdAt": "9/25",
-    "startedAt": "9/27",
-    "completedNote": null
+    "startedAt": "9/27"
   },
   {
     "id": 879,
@@ -3136,5 +3133,19 @@
     "createdAt": "9/26",
     "startedAt": "9/26",
     "completedNote": null
+  },
+  {
+    "id": 882,
+    "title": "修改ai",
+    "detail": "",
+    "day": "9/28",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/30",
+    "startedAt": null
   }
 ]

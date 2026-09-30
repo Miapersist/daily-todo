@@ -1712,11 +1712,12 @@
     "priority": "高",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/30",
     "createdAt": "8/19",
-    "startedAt": null,
-    "_selected": false
+    "startedAt": "8/28",
+    "_selected": false,
+    "completedNote": null
   },
   {
     "id": 785,

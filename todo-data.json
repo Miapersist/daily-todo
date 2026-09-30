@@ -3163,5 +3163,19 @@
     "completedAt": null,
     "createdAt": "9/30",
     "startedAt": null
+  },
+  {
+    "id": 884,
+    "title": "观自在改造点-情绪识别罗盘太少，需调整",
+    "detail": "",
+    "day": "9/30",
+    "endDay": null,
+    "priority": "中",
+    "type": "工作",
+    "blocking": null,
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "9/30",
+    "startedAt": null
   }
 ]

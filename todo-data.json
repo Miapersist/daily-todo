@@ -2997,10 +2997,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "9/30",
     "createdAt": "9/24",
-    "startedAt": null
+    "startedAt": "9/24",
+    "completedNote": "遗留问题在对方可能不想配置权限+叶那边的沟通还没完成"
   },
   {
     "id": 873,

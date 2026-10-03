@@ -199,6 +199,11 @@ body {
 .gmenu .gm-item.on { background: var(--primary-bg); color: var(--primary); }
 .gmenu .gm-new { color: var(--primary); font-weight: 500; }
 .gmenu .gm-empty { padding: 6px 8px; font-size: 12px; color: var(--text3); }
+.qa-chip { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 10px; background: var(--primary-bg); color: var(--primary); font-size: 12px; font-weight: 500; cursor: pointer; white-space: nowrap; flex-shrink: 0; }
+.qa-chip:hover { filter: brightness(.96); }
+.qa-chip.hide { display: none; }
+.wish .qa-chip { background: rgba(244,114,182,.12); color: #ec4899; }
+.dark .qa-chip { background: #1a2038; color: #a5b4fc; }
 .status-line { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
 .sl-item { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text2); cursor: pointer; }
 .sl-item:hover { color: var(--text); }
@@ -747,6 +752,7 @@ function renderQuickAdd() {
   return '<div class="quick-add"><span style="font-size:18px;color:var(--text3);line-height:1;">+</span>'+
     '<div class="qa-wrap"><input id="qa_input" placeholder="'+T('输入任务回车添加；打 # 可搜索分组打标签','抛下愿望…（# 可打分组标签）')+'" oninput="W.qaInput(this.value)" onkeydown="W.qaKey(event)">'+
     '<div id="qa_group_menu" class="gmenu hide"></div></div>'+
+    '<span id="qa_group_chip" class="qa-chip'+(qaGroupPick?'':' hide')+'" onclick="W.qaClearGroup()" title="点击取消分组标签">'+(qaGroupPick?escapeHtml(qaGroupPick.name)+' ✕':'')+'</span>'+
     '<input type="date" id="qa_day" value="'+dayToInput(todayStr())+'" style="padding:6px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--card);color:var(--text);">'+
     '<select id="qa_prio" style="padding:6px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--card);color:var(--text);"><option value="中">中</option><option value="高">高</option><option value="低">低</option></select>'+
     '<select id="qa_type" style="padding:6px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--card);color:var(--text);"><option value="工作">工作</option><option value="个人">个人</option></select>'+
@@ -1175,8 +1181,15 @@ window.W={
     if(pick.__new){ var g={id:nextGroupId(),name:pick.__new,pri:'中',note:'',collapsed:false}; groups.push(g); saveGroups(); pick={id:g.id,name:g.name}; }
     qaGroupIdx=i; qaGroupPick=pick;
     var inp=document.getElementById('qa_input'); if(inp) inp.value=inp.value.replace(/#([^#]*)$/,'').trim();
+    var chip=document.getElementById('qa_group_chip');
+    if(chip){ chip.innerHTML=escapeHtml(pick.name)+' ✕'; chip.classList.remove('hide'); }
     qaGroupOpen=false; qaGroupItems=[]; qaMenuHTML();
     return true;
+  },
+  qaClearGroup:function(){
+    qaGroupPick=null;
+    var chip=document.getElementById('qa_group_chip');
+    if(chip){ chip.innerHTML=''; chip.classList.add('hide'); }
   },
   qaClose:function(){ qaGroupOpen=false; qaGroupItems=[]; qaGroupIdx=0; qaMenuHTML(); },
   qaKey:function(e){
@@ -1191,7 +1204,7 @@ window.W={
     var day=inputToDay(document.getElementById('qa_day').value)||todayStr();
     var nt={id:nextId(),title:title,detail:'',day:day,endDay:null,priority:document.getElementById('qa_prio').value,type:document.getElementById('qa_type').value,blocking:null,completed:false,completedAt:null,createdAt:todayStr(),startedAt:null};
     if(qaGroupPick&&qaGroupPick.id) nt.groupId=qaGroupPick.id;
-    qaGroupPick=null; qaGroupOpen=false; qaGroupItems=[];
+    qaGroupPick=null; qaGroupOpen=false; qaGroupItems=[]; W.qaClearGroup();
     tasks.push(nt);
     saveTasks(); inp.value=''; justQuickAdded=true;
     if(wishMode) coinDrop(inp); render();

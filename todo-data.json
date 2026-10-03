@@ -1069,14 +1069,16 @@
       "priority": "高",
       "type": "学习",
       "blocking": null,
-      "completed": false,
+      "completed": true,
       "createdAt": "8/3",
       "startedAt": "9/3",
-      "status": "doing",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "completedAt": "10/4",
+      "completedNote": null
     },
     {
       "id": 712,

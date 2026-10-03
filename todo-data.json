@@ -3148,10 +3148,11 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "10/3",
     "createdAt": "9/30",
-    "startedAt": null
+    "startedAt": "9/28",
+    "completedNote": null
   },
   {
     "id": 883,
@@ -3232,9 +3233,10 @@
     "priority": "中",
     "type": "工作",
     "blocking": null,
-    "completed": false,
-    "completedAt": null,
+    "completed": true,
+    "completedAt": "10/3",
     "createdAt": "10/3",
-    "startedAt": null
+    "startedAt": "10/3",
+    "completedNote": null
   }
 ]

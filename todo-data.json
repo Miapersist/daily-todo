@@ -14,7 +14,7 @@
       "name": "备考·做题",
       "pri": "高",
       "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "g03",
@@ -4148,15 +4148,16 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "9/24",
       "createdAt": "9/24",
-      "startedAt": null,
-      "status": "todo",
+      "startedAt": "9/24",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "completedNote": null
     },
     {
       "id": 874,

@@ -83,12 +83,26 @@ body {
   color: var(--text); line-height: 1.6; min-height: 100vh;
 }
 .app {
-  max-width: 760px; margin: 32px auto; padding: 32px 36px 48px;
+  max-width: none; margin: 0; padding: 24px 32px 48px;
   background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
-  border-radius: 24px;
-  box-shadow: 0 4px 24px rgba(99,102,241,.06), 0 1px 3px rgba(0,0,0,.04);
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 100vh;
 }
 @media (max-width: 760px) { .app { margin: 0; border-radius: 0; padding: 20px 16px 32px; box-shadow: none; } }
+
+/* ===== 列表两列：行优先（左→右再换行），标题/折叠行通栏 ===== */
+.day-section, .priority-section, .gcbody {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 14px; row-gap: 6px; align-items: start;
+}
+.day-section > .day-header, .day-section > .day-fold, .day-section > .empty,
+.priority-section > .pri-header, .priority-section > .empty,
+.gcbody > .day-fold, .gcbody > .empty { grid-column: 1 / -1; }
+.day-section > .task, .priority-section > .task, .gcbody > .task { margin-bottom: 0; }
+@media (min-width: 1600px) { .day-section, .priority-section, .gcbody { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 1100px) { .day-section, .priority-section, .gcbody { grid-template-columns: minmax(0, 1fr); } }
 .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
 .header h1 { font-size: 22px; font-weight: 700; background: linear-gradient(135deg, #6366f1, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .header-actions { display: flex; gap: 6px; align-items: center; }
@@ -270,7 +284,11 @@ body {
 .week-nav button:hover { border-color: var(--blue); }
 .week-nav .wn-label { font-size: 13px; font-weight: 500; }
 .quick-add { display: flex; gap: 6px; margin-bottom: 16px; align-items: center; background: linear-gradient(135deg, #fff, #f8f9ff); border: 1.5px dashed var(--border); border-radius: 12px; padding: 8px 10px; }
-.quick-add input { flex: 1; padding: 8px 12px; border: none; border-radius: var(--radius-sm); font-size: 14px; font-family: inherit; background: transparent; color: var(--text); }
+.quick-add { gap: 8px; }
+.quick-add input { flex: 1; min-width: 0; padding: 8px 12px; border: none; border-radius: var(--radius-sm); font-size: 14px; font-family: inherit; background: transparent; color: var(--text); }
+.quick-add input[type="date"] { flex: none; width: 152px; }
+.quick-add select { flex: none; }
+.quick-add .qa-plus { flex: none; }
 .quick-add input::placeholder { color: var(--text3); }
 .quick-add input:focus { outline: none; border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99,102,241,.12); }
 .quick-add select { padding: 7px 8px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; font-family: inherit; background: var(--card); color: var(--text); }
@@ -635,7 +653,10 @@ function renderStats() {
   var done=tasks.filter(function(t){return t.completed;}).length;
   var total=tasks.length;
   function card(key,num,label){ var active=filter===key?' active':''; return '<div class="stat'+active+'" onclick="W.setFilter(\''+key+'\')"><div class="num">'+num+'</div><div class="lbl">'+label+'</div></div>'; }
-  var h='<div class="stats">'+card('pending',pending,T('未完成','许愿中'))+card('completed',done,T('已完成','已成真'))+card('all',total,T('全部','全部心愿'))+'</div>';
+  var ppN=tasks.filter(function(t){ return (t.postponedCount||0)>=3&&!t.completed; }).length;
+  var h='<div class="stats">'+card('pending',pending,T('未完成','许愿中'))+card('completed',done,T('已完成','已成真'))+
+    '<div class="stat'+(postponeFilter?' active':'')+'" onclick="W.togglePostponeFilter()"><div class="num">'+ppN+'</div><div class="lbl">'+T('延后≥3','拖延中')+'</div></div>'+
+    card('all',total,T('全部','全部心愿'))+'</div>';
   var sc=statusCounts();
   h+='<div class="status-line"><span class="sb-label">'+T('状态','进展')+'</span>'+
     STATUS_META.filter(function(s){return s.k!=='done';}).map(function(s){

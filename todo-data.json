@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-04",
   "groups": [
     {
       "id": "g01",
@@ -1090,8 +1090,8 @@
       "blocking": null,
       "completed": false,
       "createdAt": "8/3",
-      "startedAt": null,
-      "status": "todo",
+      "startedAt": "10/3",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],

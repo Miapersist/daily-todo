@@ -206,7 +206,8 @@ body {
 .tt-group { color: var(--primary); font-weight: 600; margin-right: 2px; }
 .wish .tt-group { color: #ec4899; }
 .dark .tt-group { color: #a5b4fc; }
-.qa-wrap { flex: 1; position: relative; min-width: 0; }
+.qa-wrap { flex: 1 1 auto; position: relative; min-width: 0; display: flex; }
+.qa-wrap > input { flex: 1 1 auto; width: 100%; min-width: 0; }
 .gmenu { position: absolute; left: 0; right: 0; top: 100%; margin-top: 4px; z-index: 60; background: var(--card); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 6px 20px rgba(99,102,241,.12); max-height: 220px; overflow-y: auto; padding: 4px; }
 .gmenu.hide { display: none; }
 .gmenu .gm-item { display: flex; align-items: center; gap: 6px; padding: 6px 8px; border-radius: 6px; font-size: 13px; cursor: pointer; color: var(--text); }

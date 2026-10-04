@@ -367,6 +367,22 @@ body {
 /* 硬币动画 */
 @keyframes ripplePop { 0%{transform:scale(0);opacity:1;}100%{transform:scale(5);opacity:0;} }
 @keyframes sparkBurst { 0%{transform:translate(0,0) scale(0);opacity:0;} 30%{opacity:1;} 100%{transform:translate(var(--bx),var(--by)) scale(1.2);opacity:0;} }
+
+/* ===== 快速新增：工作 / 个人 双输入同行 ===== */
+.quick-add { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 16px; align-items: stretch; background: none; border: none; padding: 0; }
+.dark .quick-add, .wish .quick-add { background: none; border: none; padding: 0; }
+.qa-block { display: flex; align-items: center; gap: 6px; min-width: 0; padding: 6px 10px; background: linear-gradient(135deg, #fff, #f8f9ff); border: 1.5px dashed var(--border); border-radius: 12px; }
+.dark .qa-block { background: linear-gradient(135deg, #1a1a2c, #1e1e30); border: 1px solid #2a2a44; }
+.wish .qa-block { background: linear-gradient(135deg, rgba(255,255,255,.7), rgba(253,240,255,.6)); border: 2px dashed rgba(220,200,240,.5); border-radius: 14px; }
+.qa-mark { font-size: 12px; font-weight: 600; color: var(--text2); white-space: nowrap; flex-shrink: 0; }
+.qa-block input[type="date"] { width: 138px; }
+.qa-block select { max-width: 74px; }
+@media (max-width: 1100px) { .quick-add { grid-template-columns: minmax(0, 1fr); } }
+
+/* ===== 筛选区单行：优先级 / 类型 / 进展 ===== */
+.filter-row { display: flex; gap: 6px; margin-bottom: 14px; align-items: center; flex-wrap: wrap; }
+.fr-label { font-size: 12px; color: var(--text3); margin: 0 2px 0 10px; }
+.filter-row .fr-label:first-child { margin-left: 0; }
 </style>
 </style>
 </head>
@@ -410,11 +426,13 @@ var prioFilter = 'all';
 var typeFilter = 'all';
 var statusFilter = 'all';
 var postponeFilter = false;
+var overdueFilter = false;
 var postponeTaskId = null;
+var qaCtx = 'w';
 var qaGroupOpen = false;
 var qaGroupIdx = 0;
 var qaGroupItems = [];
-var qaGroupPick = null;
+var qaGroupPick = {w:null, p:null};
 var completeTaskId = null;
 var completePopup = true;
 var showReport = false;
@@ -552,6 +570,8 @@ function statusCounts() {
   tasks.forEach(function(t){ c[statusOf(t)]++; });
   return c;
 }
+function isOverdue(t) { return !t.completed && !!t.day && dayValue(t.day) < dayValue(todayStr()); }
+function overdueCount() { var n=0; tasks.forEach(function(t){ if(isOverdue(t))n++; }); return n; }
 
 function filterMatch(t) {
   if(!matchesSearch(t)) return false;
@@ -559,34 +579,36 @@ function filterMatch(t) {
   if(typeFilter!=='all'&&t.type!==typeFilter) return false;
   if(statusFilter!=='all'&&statusOf(t)!==statusFilter) return false;
   if(postponeFilter&&((t.postponedCount||0)<3||t.completed)) return false;
+  if(overdueFilter&&!isOverdue(t)) return false;
   if(filter==='pending') return !t.completed;
   if(filter==='completed') return t.completed;
   return true;
 }
 
 function renderFilterBar() {
-  var ph='<div style="display:flex;gap:6px;margin-bottom:14px;align-items:center;flex-wrap:wrap;">'+
-    '<span style="font-size:12px;color:var(--text3);margin-right:2px;">'+T('优先级','心愿')+'</span>';
+  var ph='<div class="filter-row">'+
+    '<span class="fr-label">优先级</span>';
   [{v:'all',l:T('全部','全部')},{v:'高',l:stars('高')},{v:'中',l:stars('中')},{v:'低',l:stars('低')}].forEach(function(o){
     var a=prioFilter===o.v?' btn primary sm':' btn sm';
     ph+='<button class="'+a+'" onclick="W.setPrioFilter(\''+o.v+'\')">'+o.l+'</button>';
   });
-  ph+='<span style="font-size:12px;color:var(--text3);margin:0 2px 0 8px;">'+T('类型','圈子')+'</span>';
+  ph+='<span class="fr-label">类型</span>';
   [{v:'all',l:T('全部','全部')},{v:'工作',l:T('工作','搬砖')},{v:'个人',l:T('个人','生活')}].forEach(function(o){
     var a=typeFilter===o.v?' btn primary sm':' btn sm';
     ph+='<button class="'+a+'" onclick="W.setTypeFilter(\''+o.v+'\')">'+o.l+'</button>';
   });
-  ph+='</div>';
   var c=statusCounts();
-  var sopts=[{v:'all',l:T('全部','全部'),n:tasks.length}];
+  var sopts=[{v:'all',l:'全部',n:tasks.length}];
   STATUS_META.forEach(function(s){ sopts.push({v:s.k,l:s.n,n:c[s.k]}); });
-  ph+='<div class="status-bar"><span class="sb-label">'+T('状态','进展')+'</span>'+
+  ph+='<span class="fr-label">进展</span>'+
     sopts.map(function(o){
       var a=statusFilter===o.v?' btn primary sm':' btn sm';
       return '<button class="'+a+'" onclick="W.setStatusFilter(\''+o.v+'\')">'+o.l+'<i class="sb-num">'+o.n+'</i></button>';
     }).join('');
   var ppN=tasks.filter(function(t){ return (t.postponedCount||0)>=3&&!t.completed; }).length;
   ph+='<button class="'+(postponeFilter?' btn primary sm':' btn sm')+'" onclick="W.togglePostponeFilter()" title="只看反复拖延的任务">延后≥3 <i class="sb-num">'+ppN+'</i></button>';
+  var odN=overdueCount();
+  ph+='<button class="'+(overdueFilter?' btn primary sm':' btn sm')+'" onclick="W.toggleOverdueFilter()" title="只看已过计划日期且未完成的任务">逾期 <i class="sb-num">'+odN+'</i></button>';
   ph+='</div>';
   return ph;
 }
@@ -653,16 +675,7 @@ function renderStats() {
   var done=tasks.filter(function(t){return t.completed;}).length;
   var total=tasks.length;
   function card(key,num,label){ var active=filter===key?' active':''; return '<div class="stat'+active+'" onclick="W.setFilter(\''+key+'\')"><div class="num">'+num+'</div><div class="lbl">'+label+'</div></div>'; }
-  var ppN=tasks.filter(function(t){ return (t.postponedCount||0)>=3&&!t.completed; }).length;
-  var h='<div class="stats">'+card('pending',pending,T('未完成','许愿中'))+card('completed',done,T('已完成','已成真'))+
-    '<div class="stat'+(postponeFilter?' active':'')+'" onclick="W.togglePostponeFilter()"><div class="num">'+ppN+'</div><div class="lbl">'+T('延后≥3','拖延中')+'</div></div>'+
-    card('all',total,T('全部','全部心愿'))+'</div>';
-  var sc=statusCounts();
-  h+='<div class="status-line"><span class="sb-label">'+T('状态','进展')+'</span>'+
-    STATUS_META.filter(function(s){return s.k!=='done';}).map(function(s){
-      var on=statusFilter===s.k?' s-on':'';
-      return '<span class="sl-item'+on+'" onclick="W.setStatusFilter(\''+s.k+'\')" title="只看'+s.n+'"><i class="s-dot '+s.cls+'"></i>'+s.n+' <b>'+sc[s.k]+'</b></span>';
-    }).join('')+'</div>';
+  var h='<div class="stats">'+card('pending',pending,T('未完成','许愿中'))+card('completed',done,T('已完成','已成真'))+card('all',total,T('全部','全部心愿'))+'</div>';
   if(filter==='completed'){
     var opts=[{v:'completedAt-desc',l:'完成时间 近→远'},{v:'completedAt-asc',l:'完成时间 远→近'},{v:'priority-desc',l:'优先级 高→低'},{v:'createdAt-desc',l:'创建时间 近→远'}];
     h+='<div style="display:flex;align-items:center;gap:6px;margin-bottom:16px;"><span style="font-size:12px;color:var(--text3);">排序:</span><select onchange="W.setSort(this.value)" style="font-size:12px;padding:4px 8px;border:0.5px solid var(--border);border-radius:4px;background:var(--card);color:var(--text);">';
@@ -758,7 +771,7 @@ function fuzzyHit(text,q){
   return i>=s.length;
 }
 function qaMenuHTML(){
-  var el=document.getElementById('qa_group_menu'); if(!el)return;
+  var el=document.getElementById('qa_group_menu_'+qaCtx); if(!el)return;
   if(!qaGroupOpen||!qaGroupItems.length){ el.classList.add('hide'); el.innerHTML=''; return; }
   el.classList.remove('hide');
   el.innerHTML=qaGroupItems.map(function(o,i){
@@ -769,15 +782,24 @@ function qaMenuHTML(){
   }).join('');
 }
 
+function qaBlock(ctx, mark, ph){
+  var chip=qaGroupPick[ctx];
+  var sel='padding:6px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--card);color:var(--text);';
+  return '<div class="qa-block">'+
+    '<span class="qa-mark">'+mark+'</span>'+
+    '<div class="qa-wrap"><input id="qa_input_'+ctx+'" placeholder="'+ph+'" oninput="W.qaInput(this.value,\''+ctx+'\')" onkeydown="W.qaKey(event,\''+ctx+'\')">'+
+    '<div id="qa_group_menu_'+ctx+'" class="gmenu hide"></div></div>'+
+    '<span id="qa_group_chip_'+ctx+'" class="qa-chip'+(chip?'':' hide')+'" onclick="W.qaClearGroup(\''+ctx+'\')" title="点击取消分组标签">'+(chip?escapeHtml(chip.name)+' ✕':'')+'</span>'+
+    '<input type="date" id="qa_day_'+ctx+'" value="'+dayToInput(todayStr())+'" style="'+sel+'">'+
+    '<select id="qa_prio_'+ctx+'" style="'+sel+'"><option value="中">中</option><option value="高">高</option><option value="低">低</option></select>'+
+    '<button class="qa-plus" onclick="W.openAdd()" title="完整新增">+</button>'+
+    '</div>';
+}
 function renderQuickAdd() {
-  return '<div class="quick-add"><span style="font-size:18px;color:var(--text3);line-height:1;">+</span>'+
-    '<div class="qa-wrap"><input id="qa_input" placeholder="'+T('输入任务回车添加；打 # 可搜索分组打标签','抛下愿望…（# 可打分组标签）')+'" oninput="W.qaInput(this.value)" onkeydown="W.qaKey(event)">'+
-    '<div id="qa_group_menu" class="gmenu hide"></div></div>'+
-    '<span id="qa_group_chip" class="qa-chip'+(qaGroupPick?'':' hide')+'" onclick="W.qaClearGroup()" title="点击取消分组标签">'+(qaGroupPick?escapeHtml(qaGroupPick.name)+' ✕':'')+'</span>'+
-    '<input type="date" id="qa_day" value="'+dayToInput(todayStr())+'" style="padding:6px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--card);color:var(--text);">'+
-    '<select id="qa_prio" style="padding:6px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--card);color:var(--text);"><option value="中">中</option><option value="高">高</option><option value="低">低</option></select>'+
-    '<select id="qa_type" style="padding:6px 8px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--card);color:var(--text);"><option value="工作">工作</option><option value="个人">个人</option></select>'+
-    '<button class="qa-plus" onclick="W.openAdd()" title="完整新增">+</button></div>';
+  return '<div class="quick-add">'+
+    qaBlock('w', T('🏢 工作','🏢 搬砖'), T('输入工作事项，回车添加（# 打分组标签）','工作愿望…（# 打分组标签）'))+
+    qaBlock('p', T('🌱 个人','🌱 生活'), T('输入个人事项，回车添加（# 打分组标签）','生活愿望…（# 打分组标签）'))+
+    '</div>';
 }
 
 function renderMultiBar() {
@@ -809,7 +831,7 @@ function renderDaily() {
 
   var rolledPending=[];
   allDays.forEach(function(day){ if(dayValue(day)<dayValue(today)){ var ts=dayMap[day]; ts.forEach(function(t){ if(!t.completed&&(filter==='pending'||filter==='all')&&matchesSearch(t)) rolledPending.push(t); }); } });
-  var rolledFiltered=rolledPending.filter(function(t){ if(!matchesSearch(t))return false; if(prioFilter!=='all'&&t.priority!==prioFilter)return false; if(typeFilter!=='all'&&t.type!==typeFilter)return false; if(statusFilter!=='all'&&statusOf(t)!==statusFilter)return false; if(postponeFilter&&((t.postponedCount||0)<3||t.completed))return false; return true; });
+  var rolledFiltered=rolledPending.filter(function(t){ if(!matchesSearch(t))return false; if(prioFilter!=='all'&&t.priority!==prioFilter)return false; if(typeFilter!=='all'&&t.type!==typeFilter)return false; if(statusFilter!=='all'&&statusOf(t)!==statusFilter)return false; if(postponeFilter&&((t.postponedCount||0)<3||t.completed))return false; if(overdueFilter&&!isOverdue(t))return false; return true; });
   var todayAll=(dayMap[today]||[]).filter(filterMatch);
   var todayDone=todayAll.filter(function(t){return t.completed;});
   var combined=rolledFiltered.map(function(t){return {t:t,isRolled:true};}).concat(todayAll.filter(function(t){return !t.completed;}).map(function(t){return {t:t,isRolled:false};}));
@@ -842,7 +864,7 @@ function renderMaster() {
   h+=renderMultiBar()+renderStats()+renderSearchBar()+renderFilterBar();
   var priorities=['高','中','低'],priColors={'高':'var(--red)','中':'var(--amber)','低':'var(--text2)'};
   priorities.forEach(function(pri){
-    var pt=tasks.filter(function(t){ if(t.priority!==pri)return false; if(statusFilter!=='all'&&statusOf(t)!==statusFilter)return false; if(postponeFilter&&((t.postponedCount||0)<3||t.completed))return false; if(filter==='pending')return!t.completed; if(filter==='completed')return t.completed; return true; }).filter(matchesSearch);
+    var pt=tasks.filter(function(t){ if(t.priority!==pri)return false; if(statusFilter!=='all'&&statusOf(t)!==statusFilter)return false; if(postponeFilter&&((t.postponedCount||0)<3||t.completed))return false; if(overdueFilter&&!isOverdue(t))return false; if(filter==='pending')return!t.completed; if(filter==='completed')return t.completed; return true; }).filter(matchesSearch);
     if(filter==='completed')pt=applySort(pt); if(pt.length===0)return;
     h+='<div class="priority-section"><div class="pri-header" style="border-bottom:2px solid '+priColors[pri]+';">'+pri+'优先级 <span style="font-size:12px;color:var(--text3);font-weight:400;">'+pt.length+'项</span></div>';
     pt.forEach(function(t){ h+=renderTask(t,true); }); h+='</div>';
@@ -885,7 +907,7 @@ function renderCalendar() {
     }); h+='</div></div>';
   }); h+='</div>';
 
-  var rolled=tasks.filter(function(t){ return t.day&&!t.completed&&dayValue(t.day)<dayValue(today)&&(filter==='pending'||filter==='all')&&matchesSearch(t)&&(prioFilter==='all'||t.priority===prioFilter)&&(typeFilter==='all'||t.type===typeFilter)&&(statusFilter==='all'||statusOf(t)===statusFilter)&&(!postponeFilter||((t.postponedCount||0)>=3&&!t.completed)); });
+  var rolled=tasks.filter(function(t){ return t.day&&!t.completed&&dayValue(t.day)<dayValue(today)&&(filter==='pending'||filter==='all')&&matchesSearch(t)&&(prioFilter==='all'||t.priority===prioFilter)&&(typeFilter==='all'||t.type===typeFilter)&&(statusFilter==='all'||statusOf(t)===statusFilter)&&(!postponeFilter||((t.postponedCount||0)>=3&&!t.completed))&&(!overdueFilter||isOverdue(t)); });
   if(rolled.length>0){ h+='<div class="day-section"><div class="day-header roll-label">从之前未完成 ('+rolled.length+')</div>'; rolled.forEach(function(t){ h+=renderTask(t,true); }); h+='</div>'; }
 
   var us=tasks.filter(function(t){ return!t.day&&filterMatch(t)&&matchesSearch(t); });
@@ -1148,6 +1170,7 @@ window.W={
     undoTimer=setTimeout(function(){ undoAction=null; render(); },4000);
   },
   togglePostponeFilter:function(){ postponeFilter=!postponeFilter; filter='all'; render(); },
+  toggleOverdueFilter:function(){ overdueFilter=!overdueFilter; filter='all'; render(); },
   delGroup:function(gid){
     var g=groupById(gid); if(!g)return;
     var n=tasks.filter(function(t){return t.groupId===gid;}).length;
@@ -1185,7 +1208,8 @@ window.W={
   openAdd:function(){ editingId=null; showAddModal=true; render(); },
   edit:function(id){ editingId=id; showAddModal=true; render(); },
   closeModal:function(e){ if(e&&e.target!==e.currentTarget)return; showAddModal=false; editingId=null; render(); },
-  qaInput:function(v){
+  qaInput:function(v,ctx){
+    qaCtx=ctx||'w';
     var m=String(v||'').match(/#([^#]*)$/);
     if(!m){ qaGroupOpen=false; qaGroupItems=[]; qaGroupIdx=0; qaMenuHTML(); return; }
     var q=m[1].trim();
@@ -1200,32 +1224,37 @@ window.W={
     if(!qaGroupOpen||!qaGroupItems.length)return false;
     var pick=qaGroupItems[i]; if(!pick||pick.__empty)return false;
     if(pick.__new){ var g={id:nextGroupId(),name:pick.__new,pri:'中',note:'',collapsed:false}; groups.push(g); saveGroups(); pick={id:g.id,name:g.name}; }
-    qaGroupIdx=i; qaGroupPick=pick;
-    var inp=document.getElementById('qa_input'); if(inp) inp.value=inp.value.replace(/#([^#]*)$/,'').trim();
-    var chip=document.getElementById('qa_group_chip');
+    qaGroupIdx=i; qaGroupPick[qaCtx]=pick;
+    var inp=document.getElementById('qa_input_'+qaCtx); if(inp) inp.value=inp.value.replace(/#([^#]*)$/,'').trim();
+    var chip=document.getElementById('qa_group_chip_'+qaCtx);
     if(chip){ chip.innerHTML=escapeHtml(pick.name)+' ✕'; chip.classList.remove('hide'); }
     qaGroupOpen=false; qaGroupItems=[]; qaMenuHTML();
     return true;
   },
-  qaClearGroup:function(){
-    qaGroupPick=null;
-    var chip=document.getElementById('qa_group_chip');
+  qaClearGroup:function(ctx){
+    var k=ctx||qaCtx; qaGroupPick[k]=null;
+    var chip=document.getElementById('qa_group_chip_'+k);
     if(chip){ chip.innerHTML=''; chip.classList.add('hide'); }
   },
   qaClose:function(){ qaGroupOpen=false; qaGroupItems=[]; qaGroupIdx=0; qaMenuHTML(); },
-  qaKey:function(e){
+  qaKey:function(e,ctx){
+    qaCtx=ctx||'w';
     if(e.key==='ArrowDown'){ e.preventDefault(); W.qaMove(1); return; }
     if(e.key==='ArrowUp'){ e.preventDefault(); W.qaMove(-1); return; }
     if(e.key==='Escape'){ e.preventDefault(); W.qaClose(); return; }
-    if(e.key==='Enter'){ W.qaPick(qaGroupIdx); W.quickAdd(); }
+    if(e.key==='Enter'){ W.qaPick(qaGroupIdx); W.quickAdd(qaCtx); }
   },
-  quickAdd:function(){
-    var inp=document.getElementById('qa_input'); if(!inp)return;
+  quickAdd:function(ctx){
+    var k=ctx||qaCtx; qaCtx=k;
+    var inp=document.getElementById('qa_input_'+k); if(!inp)return;
     var title=(inp.value||'').trim().replace(/#([^#]*)$/,'').trim(); if(!title)return;
-    var day=inputToDay(document.getElementById('qa_day').value)||todayStr();
-    var nt={id:nextId(),title:title,detail:'',day:day,endDay:null,priority:document.getElementById('qa_prio').value,type:document.getElementById('qa_type').value,blocking:null,completed:false,completedAt:null,createdAt:todayStr(),startedAt:null};
-    if(qaGroupPick&&qaGroupPick.id) nt.groupId=qaGroupPick.id;
-    qaGroupPick=null; qaGroupOpen=false; qaGroupItems=[]; W.qaClearGroup();
+    var dayEl=document.getElementById('qa_day_'+k);
+    var day=(dayEl&&inputToDay(dayEl.value))||todayStr();
+    var prioEl=document.getElementById('qa_prio_'+k);
+    var nt={id:nextId(),title:title,detail:'',day:day,endDay:null,priority:(prioEl&&prioEl.value)||'中',type:(k==='p'?'个人':'工作'),blocking:null,completed:false,completedAt:null,createdAt:todayStr(),startedAt:null};
+    var pick=qaGroupPick[k];
+    if(pick&&pick.id) nt.groupId=pick.id;
+    qaGroupOpen=false; qaGroupItems=[]; W.qaClearGroup(k);
     tasks.push(nt);
     saveTasks(); inp.value=''; justQuickAdded=true;
     if(wishMode) coinDrop(inp); render();

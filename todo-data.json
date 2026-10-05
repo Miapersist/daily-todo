@@ -7,14 +7,14 @@
       "name": "备考·看课",
       "pri": "高",
       "note": "第9~18章、第2~8章基础课；含计算题/案例分析/导学专题",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "g02",
       "name": "备考·做题",
       "pri": "高",
       "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "g03",

@@ -2478,15 +2478,16 @@
       "priority": "低",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/9",
       "createdAt": "8/20",
-      "startedAt": null,
-      "status": "todo",
+      "startedAt": "8/20",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "completedNote": null
     },
     {
       "id": 789,

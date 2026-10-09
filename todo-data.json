@@ -4331,15 +4331,16 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/8",
       "createdAt": "9/30",
-      "startedAt": null,
-      "status": "todo",
+      "startedAt": "9/30",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "completedNote": null
     },
     {
       "id": 884,

@@ -4453,6 +4453,25 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g05"
+    },
+    {
+      "id": 889,
+      "title": "试用业务逻辑业务skill",
+      "detail": "",
+      "day": "10/10",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/10",
+      "startedAt": null,
+      "groupId": "g03",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ]
 }

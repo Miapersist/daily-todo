@@ -4815,7 +4815,7 @@
     {
       "id": 896,
       "title": "继续调研报表",
-      "detail": "1",
+      "detail": "还剩4个，目前需要第二个输出报表详设",
       "day": "10/9",
       "endDay": null,
       "priority": "中",
@@ -4830,7 +4830,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "progress": 0
+      "progress": 30
     }
   ],
   "dailyNotes": {}

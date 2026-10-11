@@ -4508,15 +4508,16 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/11",
       "createdAt": "10/9",
-      "startedAt": null,
+      "startedAt": "10/9",
       "groupId": "g06",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "completedNote": null
     },
     {
       "id": 893,
@@ -4578,7 +4579,7 @@
     {
       "id": 896,
       "title": "继续调研报表",
-      "detail": "",
+      "detail": "1",
       "day": "10/9",
       "endDay": null,
       "priority": "中",

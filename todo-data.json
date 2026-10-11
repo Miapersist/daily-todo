@@ -4814,12 +4814,12 @@
     },
     {
       "id": 896,
-      "title": "标题测试YYY",
-      "detail": "备注测试ZZZ",
+      "title": "继续调研报表",
+      "detail": "1",
       "day": "10/9",
       "endDay": null,
-      "priority": "中",
-      "type": "个人",
+      "priority": "低",
+      "type": "工作",
       "blocking": null,
       "completed": false,
       "completedAt": null,
@@ -4830,7 +4830,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "progress": 66
+      "progress": 0
     }
   ],
   "dailyNotes": {}

@@ -14,21 +14,21 @@
       "name": "备考·做题",
       "pri": "高",
       "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "g03",
       "name": "车型成本项目",
       "pri": "高",
       "note": "用户权限、报表、蓝图、BOM/通用化率",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "g04",
       "name": "市况联动定价",
       "pri": "中",
       "note": "市况联动、定价单/报价单、IBOM、CE",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "g05",

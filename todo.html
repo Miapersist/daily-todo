@@ -527,14 +527,24 @@ function loadTasks(callback) {
   try{ var r=localStorage.getItem(DATA_KEY); if(r){ var d=unwrap(JSON.parse(r)); if(d){ tasks=d.tasks.map(normTask); groups=d.groups||DEFAULT_GROUPS.slice(); dailyNotes=d.notes||{}; hasLocalData=true; callback(); return; } } }catch(e){}
   try{ var old=localStorage.getItem(STORAGE_KEY); if(old){ var od=unwrap(JSON.parse(old)); if(od){ groups=DEFAULT_GROUPS.slice(); tasks=od.tasks.map(normTask); dailyNotes=od.notes||{}; hasLocalData=true; callback(); return; } } }catch(e){}
   try{ var bk=localStorage.getItem(BACKUP_KEY); if(bk){ var bd=unwrap(JSON.parse(bk)); if(bd){ groups=bd.groups||DEFAULT_GROUPS.slice(); tasks=bd.tasks.map(normTask); dailyNotes=bd.notes||{}; hasLocalData=true; callback(); return; } } }catch(e){}
-  groups=DEFAULT_GROUPS.slice(); tasks=getDefaults(); callback();
+  groups=DEFAULT_GROUPS.slice(); tasks=[]; callback();
 }
 
 /* 本机已有数据时不再自动用云端覆盖本地，避免刚改完刷新被回退；
    只有第一次打开（本机没有数据）才自动取云端；想手动同步用「数据 → 从云端拉取最新」。 */
 function loadTasksSync() {
-  if(hasLocalData||!tasks.length) return;
-  cloudFetchData(function(d){ var u=d?unwrap(d):null; if(!u)return; adopt(u.tasks,u.groups,u.notes); });
+  if(hasLocalData) return;   /* 本机已有数据：一律以本机为准，不再自动拉云端 */
+  setSyncState('pulling');
+  cloudFetchData(function(d){
+    var u=d?unwrap(d):null;
+    if(!u||!u.tasks.length){
+      setSyncState('needpull');
+      setTimeout(function(){ alert('这台设备上还没有数据，也没能连上云端。\n数据在云端没有丢，网络恢复后点「数据 → 从云端拉取最新」即可取回。'); }, 300);
+      return;
+    }
+    adopt(u.tasks,u.groups,u.notes);
+    setSyncState('ok');
+  });
 }
 function adopt(rt,rg,rn){ tasks=rt.map(normTask); if(rg&&rg.length)groups=rg; if(rn)dailyNotes=rn; hasLocalData=true; reportText=''; saveTasksCache(); render(); }
 
@@ -583,9 +593,11 @@ function cloudFetchData(cb){
     .catch(function(){ cb(null); });
 }
 function syncBadgeHtml(){
-  if(syncState==='saving') return '<span class="sync-badge sync-wait">同步中…</span>';
-  if(syncState==='error')  return '<span class="sync-badge sync-err">未同步 · 自动重试中</span>';
-  if(syncState==='ok')     return '<span class="sync-badge sync-ok">已同步</span>';
+  if(syncState==='pulling') return '<span class="sync-badge sync-wait">正在取云端数据…</span>';
+  if(syncState==='saving')  return '<span class="sync-badge sync-wait">同步中…</span>';
+  if(syncState==='error')   return '<span class="sync-badge sync-err">未同步 · 自动重试中</span>';
+  if(syncState==='needpull')return '<span class="sync-badge sync-err">未取到云端数据</span>';
+  if(syncState==='ok')      return '<span class="sync-badge sync-ok">已同步</span>';
   return '';
 }
 function setSyncState(s){

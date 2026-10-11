@@ -77,7 +77,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 2,
@@ -96,7 +97,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 3,
@@ -113,7 +115,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 4,
@@ -130,7 +133,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 5,
@@ -147,7 +151,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 6,
@@ -164,7 +169,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 7,
@@ -181,7 +187,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 8,
@@ -198,7 +205,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 9,
@@ -215,7 +223,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 10,
@@ -232,7 +241,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 11,
@@ -252,7 +262,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 12,
@@ -271,7 +282,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 13,
@@ -290,7 +302,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 14,
@@ -309,7 +322,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 15,
@@ -328,7 +342,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 16,
@@ -347,7 +362,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 17,
@@ -355,7 +371,7 @@
       "detail": "",
       "day": "9/30",
       "priority": "高",
-      "type": "个人",
+      "type": "工作",
       "blocking": null,
       "completed": false,
       "startedAt": "7/31",
@@ -365,7 +381,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 18,
@@ -385,7 +402,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 301,
@@ -401,7 +419,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 302,
@@ -418,7 +437,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 303,
@@ -433,7 +453,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 304,
@@ -448,7 +469,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 305,
@@ -463,7 +485,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 306,
@@ -478,7 +501,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 307,
@@ -493,7 +517,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 308,
@@ -509,7 +534,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 309,
@@ -525,7 +551,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 310,
@@ -540,7 +567,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 311,
@@ -555,7 +583,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 312,
@@ -570,7 +599,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 313,
@@ -585,7 +615,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 314,
@@ -600,7 +631,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 315,
@@ -615,7 +647,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 316,
@@ -630,7 +663,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 317,
@@ -650,7 +684,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 318,
@@ -670,7 +705,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 319,
@@ -690,7 +726,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 320,
@@ -710,7 +747,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 321,
@@ -730,7 +768,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 322,
@@ -750,7 +789,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 324,
@@ -770,7 +810,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 325,
@@ -790,7 +831,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 326,
@@ -809,7 +851,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 0
     },
     {
       "id": 327,
@@ -829,7 +872,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 328,
@@ -849,7 +893,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 329,
@@ -869,7 +914,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 701,
@@ -888,7 +934,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 702,
@@ -907,7 +954,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 703,
@@ -926,7 +974,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 704,
@@ -945,7 +994,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 705,
@@ -964,7 +1014,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 706,
@@ -983,7 +1034,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 707,
@@ -1002,7 +1054,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 708,
@@ -1021,7 +1074,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 709,
@@ -1040,7 +1094,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 710,
@@ -1059,7 +1114,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 100
     },
     {
       "id": 711,
@@ -1078,7 +1134,8 @@
       "postponeLog": [],
       "groupId": "g01",
       "completedAt": "10/4",
-      "completedNote": null
+      "completedNote": null,
+      "progress": 100
     },
     {
       "id": 712,
@@ -1095,7 +1152,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 713,
@@ -1112,7 +1170,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 714,
@@ -1129,7 +1188,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 715,
@@ -1146,7 +1206,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 716,
@@ -1163,7 +1224,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 717,
@@ -1180,7 +1242,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 718,
@@ -1197,7 +1260,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 719,
@@ -1214,7 +1278,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 720,
@@ -1231,7 +1296,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 721,
@@ -1248,7 +1314,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 722,
@@ -1265,7 +1332,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 723,
@@ -1282,7 +1350,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 724,
@@ -1299,7 +1368,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 725,
@@ -1316,7 +1386,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 726,
@@ -1333,7 +1404,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 727,
@@ -1350,7 +1422,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 728,
@@ -1367,7 +1440,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 729,
@@ -1384,7 +1458,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 730,
@@ -1401,7 +1476,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 731,
@@ -1418,7 +1494,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 732,
@@ -1435,7 +1512,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 733,
@@ -1452,7 +1530,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 734,
@@ -1469,7 +1548,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 735,
@@ -1486,7 +1566,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g01"
+      "groupId": "g01",
+      "progress": 0
     },
     {
       "id": 737,
@@ -1506,7 +1587,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 738,
@@ -1526,7 +1608,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 739,
@@ -1546,7 +1629,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 740,
@@ -1566,7 +1650,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 741,
@@ -1585,7 +1670,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 0
     },
     {
       "id": 742,
@@ -1605,7 +1691,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 743,
@@ -1625,7 +1712,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 744,
@@ -1645,7 +1733,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 745,
@@ -1665,7 +1754,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 746,
@@ -1685,7 +1775,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 747,
@@ -1705,7 +1796,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 748,
@@ -1724,7 +1816,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 0
     },
     {
       "id": 749,
@@ -1744,7 +1837,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 750,
@@ -1764,7 +1858,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 751,
@@ -1784,7 +1879,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 752,
@@ -1804,7 +1900,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 753,
@@ -1824,7 +1921,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 754,
@@ -1844,7 +1942,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 756,
@@ -1864,7 +1963,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 757,
@@ -1884,7 +1984,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 758,
@@ -1904,7 +2005,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 759,
@@ -1924,7 +2026,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 760,
@@ -1944,7 +2047,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 761,
@@ -1964,7 +2068,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 100
     },
     {
       "id": 762,
@@ -1984,7 +2089,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 763,
@@ -2003,7 +2109,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 0
     },
     {
       "id": 764,
@@ -2023,7 +2130,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 765,
@@ -2043,7 +2151,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 766,
@@ -2063,7 +2172,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 767,
@@ -2083,7 +2193,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 768,
@@ -2103,7 +2214,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 769,
@@ -2123,7 +2235,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 770,
@@ -2143,7 +2256,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 100
     },
     {
       "id": 771,
@@ -2163,7 +2277,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 772,
@@ -2183,7 +2298,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 773,
@@ -2203,7 +2319,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 774,
@@ -2223,7 +2340,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 775,
@@ -2243,7 +2361,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 777,
@@ -2263,7 +2382,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 778,
@@ -2283,7 +2403,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 779,
@@ -2303,7 +2424,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 780,
@@ -2323,7 +2445,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g03",
-      "completedNote": null
+      "completedNote": null,
+      "progress": 100
     },
     {
       "id": 781,
@@ -2343,7 +2466,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 782,
@@ -2364,7 +2488,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 783,
@@ -2385,7 +2510,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 784,
@@ -2406,7 +2532,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 785,
@@ -2427,7 +2554,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 786,
@@ -2447,7 +2575,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 0
     },
     {
       "id": 787,
@@ -2467,7 +2596,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 788,
@@ -2487,7 +2617,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g06",
-      "completedNote": null
+      "completedNote": null,
+      "progress": 100
     },
     {
       "id": 789,
@@ -2507,7 +2638,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 790,
@@ -2527,7 +2659,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 791,
@@ -2547,7 +2680,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 792,
@@ -2567,7 +2701,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 793,
@@ -2587,7 +2722,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 794,
@@ -2607,7 +2743,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 795,
@@ -2627,7 +2764,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 796,
@@ -2647,7 +2785,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 797,
@@ -2667,7 +2806,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 798,
@@ -2687,7 +2827,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 799,
@@ -2707,7 +2848,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 800,
@@ -2727,7 +2869,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 801,
@@ -2747,7 +2890,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 802,
@@ -2767,7 +2911,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 803,
@@ -2787,7 +2932,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 804,
@@ -2807,7 +2953,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 805,
@@ -2827,7 +2974,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 807,
@@ -2847,7 +2995,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 808,
@@ -2867,7 +3016,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 809,
@@ -2887,7 +3037,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 810,
@@ -2907,7 +3058,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 811,
@@ -2927,7 +3079,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 812,
@@ -2947,7 +3100,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 813,
@@ -2967,7 +3121,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 814,
@@ -2987,7 +3142,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 815,
@@ -3007,7 +3163,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 816,
@@ -3027,7 +3184,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 817,
@@ -3047,7 +3205,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 818,
@@ -3067,7 +3226,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 819,
@@ -3087,7 +3247,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 820,
@@ -3107,7 +3268,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 821,
@@ -3127,7 +3289,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 822,
@@ -3147,7 +3310,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 823,
@@ -3167,7 +3331,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 824,
@@ -3187,7 +3352,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 825,
@@ -3207,7 +3373,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 826,
@@ -3227,7 +3394,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 827,
@@ -3247,7 +3415,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 828,
@@ -3267,7 +3436,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 829,
@@ -3287,7 +3457,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 830,
@@ -3307,7 +3478,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 831,
@@ -3327,7 +3499,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 832,
@@ -3347,7 +3520,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 833,
@@ -3367,7 +3541,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 834,
@@ -3387,7 +3562,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 835,
@@ -3407,7 +3583,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g02"
+      "groupId": "g02",
+      "progress": 0
     },
     {
       "id": 836,
@@ -3427,7 +3604,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 837,
@@ -3447,7 +3625,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 838,
@@ -3466,7 +3645,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 0
     },
     {
       "id": 839,
@@ -3486,7 +3666,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 840,
@@ -3506,7 +3687,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 841,
@@ -3526,7 +3708,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 842,
@@ -3546,7 +3729,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 843,
@@ -3566,7 +3750,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g04"
+      "groupId": "g04",
+      "progress": 100
     },
     {
       "id": 844,
@@ -3586,7 +3771,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 846,
@@ -3606,7 +3792,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 847,
@@ -3626,7 +3813,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 848,
@@ -3645,7 +3833,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 0
     },
     {
       "id": 849,
@@ -3665,7 +3854,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 850,
@@ -3685,7 +3875,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 851,
@@ -3705,7 +3896,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 852,
@@ -3725,7 +3917,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 853,
@@ -3745,7 +3938,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 854,
@@ -3764,7 +3958,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 0
     },
     {
       "id": 855,
@@ -3784,7 +3979,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 856,
@@ -3804,7 +4000,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 857,
@@ -3824,7 +4021,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 858,
@@ -3844,7 +4042,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 859,
@@ -3864,7 +4063,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 860,
@@ -3884,7 +4084,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 861,
@@ -3904,7 +4105,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 862,
@@ -3924,7 +4126,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 863,
@@ -3944,7 +4147,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 864,
@@ -3964,7 +4168,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 865,
@@ -3984,7 +4189,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 866,
@@ -4003,7 +4209,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 0
     },
     {
       "id": 867,
@@ -4023,7 +4230,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 868,
@@ -4043,7 +4251,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 869,
@@ -4063,7 +4272,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 870,
@@ -4083,7 +4293,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 871,
@@ -4103,7 +4314,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 100
     },
     {
       "id": 872,
@@ -4122,7 +4334,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "progress": 0
     },
     {
       "id": 873,
@@ -4142,7 +4355,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g03",
-      "completedNote": null
+      "completedNote": null,
+      "progress": 100
     },
     {
       "id": 874,
@@ -4162,7 +4376,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 875,
@@ -4182,7 +4397,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 876,
@@ -4201,7 +4417,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 0
     },
     {
       "id": 877,
@@ -4221,7 +4438,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 878,
@@ -4241,7 +4459,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g06"
+      "groupId": "g06",
+      "progress": 100
     },
     {
       "id": 879,
@@ -4261,7 +4480,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g07"
+      "groupId": "g07",
+      "progress": 100
     },
     {
       "id": 880,
@@ -4281,7 +4501,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 881,
@@ -4301,7 +4522,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g08"
+      "groupId": "g08",
+      "progress": 100
     },
     {
       "id": 882,
@@ -4321,7 +4543,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 883,
@@ -4341,7 +4564,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g06",
-      "completedNote": null
+      "completedNote": null,
+      "progress": 100
     },
     {
       "id": 884,
@@ -4360,7 +4584,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 0
     },
     {
       "id": 885,
@@ -4379,7 +4604,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 0
     },
     {
       "id": 886,
@@ -4398,7 +4624,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 0
     },
     {
       "id": 887,
@@ -4417,7 +4644,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 0
     },
     {
       "id": 888,
@@ -4437,7 +4665,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g05"
+      "groupId": "g05",
+      "progress": 100
     },
     {
       "id": 889,
@@ -4457,7 +4686,8 @@
       "groupId": "g02",
       "postponedFrom": null,
       "postponedCount": 0,
-      "postponeLog": []
+      "postponeLog": [],
+      "progress": 0
     },
     {
       "id": 890,
@@ -4477,7 +4707,8 @@
       "groupId": "g02",
       "postponedFrom": null,
       "postponedCount": 0,
-      "postponeLog": []
+      "postponeLog": [],
+      "progress": 0
     },
     {
       "id": 891,
@@ -4497,7 +4728,8 @@
       "groupId": "g02",
       "postponedFrom": null,
       "postponedCount": 0,
-      "postponeLog": []
+      "postponeLog": [],
+      "progress": 0
     },
     {
       "id": 892,
@@ -4517,7 +4749,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "completedNote": null
+      "completedNote": null,
+      "progress": 100
     },
     {
       "id": 893,
@@ -4536,7 +4769,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "progress": 0
     },
     {
       "id": 894,
@@ -4556,7 +4790,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "completedNote": null
+      "completedNote": null,
+      "progress": 100
     },
     {
       "id": 895,
@@ -4574,7 +4809,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "progress": 0
     },
     {
       "id": 896,
@@ -4593,7 +4829,9 @@
       "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "progress": 0
     }
-  ]
+  ],
+  "dailyNotes": {}
 }

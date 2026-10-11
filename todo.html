@@ -208,6 +208,10 @@ body {
 .rpt-topic input { flex: 1; min-width: 0; padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; font-family: inherit; background: var(--card); color: var(--text); }
 .rpt-topic input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(99,102,241,.12); }
 .vt-badge { display: inline-block; font-size: 10px; font-weight: 600; margin-left: 4px; padding: 0 5px; border-radius: 8px; background: var(--primary-bg); color: var(--primary); vertical-align: 1px; }
+.sync-badge { font-size: 11px; padding: 3px 9px; border-radius: 10px; white-space: nowrap; }
+.sync-wait { background: var(--amber-bg); color: var(--blue); }
+.sync-ok { background: var(--green-bg); color: var(--green); }
+.sync-err { background: var(--red-bg); color: var(--red); }
 .view-toggle button.active .vt-badge { background: rgba(255,255,255,.25); color: #fff; }
 .gmenu.floating { position: fixed; z-index: 1200; max-height: 280px; }
 .gmenu .gm-day { float: right; font-size: 11px; color: var(--text3); margin-left: 8px; }
@@ -477,6 +481,7 @@ var qaGroupPick = {w:null, p:null};
 var completeTaskId = null;
 var completePopup = true;
 var dailyNotes = {};
+var hasLocalData = false;
 var reportDate = null;
 var reportText = '';
 var reportTouched = false;
@@ -518,35 +523,84 @@ function unwrap(d) {
 function container() { return {version:2, updatedAt:new Date().toISOString().slice(0,10), groups:groups, tasks:tasks, dailyNotes:dailyNotes}; }
 
 function loadTasks(callback) {
-  dailyNotes={};
-  try{ var r=localStorage.getItem(DATA_KEY); if(r){ var d=unwrap(JSON.parse(r)); if(d){ tasks=d.tasks.map(normTask); groups=d.groups||DEFAULT_GROUPS.slice(); dailyNotes=d.notes||{}; callback(); return; } } }catch(e){}
-  try{ var old=localStorage.getItem(STORAGE_KEY); if(old){ var od=unwrap(JSON.parse(old)); if(od){ groups=DEFAULT_GROUPS.slice(); tasks=od.tasks.map(normTask); dailyNotes=od.notes||{}; callback(); return; } } }catch(e){}
-  try{ var bk=localStorage.getItem(BACKUP_KEY); if(bk){ var bd=unwrap(JSON.parse(bk)); if(bd){ groups=bd.groups||DEFAULT_GROUPS.slice(); tasks=bd.tasks.map(normTask); dailyNotes=bd.notes||{}; callback(); return; } } }catch(e){}
+  dailyNotes={}; hasLocalData=false;
+  try{ var r=localStorage.getItem(DATA_KEY); if(r){ var d=unwrap(JSON.parse(r)); if(d){ tasks=d.tasks.map(normTask); groups=d.groups||DEFAULT_GROUPS.slice(); dailyNotes=d.notes||{}; hasLocalData=true; callback(); return; } } }catch(e){}
+  try{ var old=localStorage.getItem(STORAGE_KEY); if(old){ var od=unwrap(JSON.parse(old)); if(od){ groups=DEFAULT_GROUPS.slice(); tasks=od.tasks.map(normTask); dailyNotes=od.notes||{}; hasLocalData=true; callback(); return; } } }catch(e){}
+  try{ var bk=localStorage.getItem(BACKUP_KEY); if(bk){ var bd=unwrap(JSON.parse(bk)); if(bd){ groups=bd.groups||DEFAULT_GROUPS.slice(); tasks=bd.tasks.map(normTask); dailyNotes=bd.notes||{}; hasLocalData=true; callback(); return; } } }catch(e){}
   groups=DEFAULT_GROUPS.slice(); tasks=getDefaults(); callback();
 }
 
+/* 本机已有数据时不再自动用云端覆盖本地，避免刚改完刷新被回退；
+   只有第一次打开（本机没有数据）才自动取云端；想手动同步用「数据 → 从云端拉取最新」。 */
 function loadTasksSync() {
-  fetch(GH_RAW).then(function(r){return r.json();}).then(function(d){
-    var u=unwrap(d); if(!u)return;
-    var rt=u.tasks;
-    if(!tasks.length||rt.length>tasks.length) adopt(rt,u.groups,u.notes);
-    else if(tasks.length>rt.length) saveTasksGitHub();
-    else if(JSON.stringify(rt)!==JSON.stringify(tasks)) adopt(rt,u.groups,u.notes);
-    else if(u.groups&&JSON.stringify(u.groups)!==JSON.stringify(groups)){ groups=u.groups; if(u.notes)dailyNotes=u.notes; saveTasksCache(); render(); }
-  }).catch(function(){});
+  if(hasLocalData||!tasks.length) return;
+  cloudFetchData(function(d){ var u=d?unwrap(d):null; if(!u)return; adopt(u.tasks,u.groups,u.notes); });
 }
-function adopt(rt,rg,rn){ tasks=rt.map(normTask); if(rg&&rg.length)groups=rg; if(rn)dailyNotes=rn; saveTasksCache(); render(); }
+function adopt(rt,rg,rn){ tasks=rt.map(normTask); if(rg&&rg.length)groups=rg; if(rn)dailyNotes=rn; hasLocalData=true; reportText=''; saveTasksCache(); render(); }
 
-function saveTasks() { saveTasksCache(); saveTasksGitHub(); }
+function saveTasks() { saveTasksCache(); queueCloudSave(); }
 function saveTasksCache() {
   tasks.forEach(normTask);
   var c=container(), j=JSON.stringify(c);
   try{ localStorage.setItem(DATA_KEY,j); localStorage.setItem(BACKUP_KEY,j); localStorage.setItem(STORAGE_KEY,JSON.stringify(tasks)); }catch(e){}
 }
-function saveTasksGitHub() { if(!GH_TOKEN)return; fetch(GH_API,{method:'GET',headers:{Authorization:'token '+GH_TOKEN}}).then(function(r){return r.json();}).then(function(d){ return fetch(GH_API,{method:'PUT',headers:{Authorization:'token '+GH_TOKEN,'Content-Type':'application/json'},body:JSON.stringify({message:'update data v2',content:btoa(unescape(encodeURIComponent(JSON.stringify(container(),null,2)))),sha:d.sha,branch:'main'})}); }).catch(function(){}); }
+
+/* ===== 云端保存：一次只发一个请求、丢了自动补发，改完立刻生效 ===== */
+var syncState='idle', syncBusy=false, syncDirty=false, syncFails=0, syncOkTimer=null;
+function queueCloudSave(){ if(!GH_TOKEN)return; syncDirty=true; if(!syncBusy) syncStep(); }
+function syncStep(){
+  if(!syncDirty){ syncBusy=false; return; }
+  syncBusy=true; syncDirty=false;
+  setSyncState('saving');
+  cloudPut(function(ok){
+    if(ok){
+      syncFails=0; setSyncState('ok'); setTimeout(syncStep, 50);
+    }else{
+      syncDirty=true; syncFails++; setSyncState('error');
+      setTimeout(syncStep, Math.min(10000, 800*syncFails));
+    }
+  });
+}
+function b64utf8(s){ return btoa(unescape(encodeURIComponent(s))); }
+function unb64utf8(s){ return decodeURIComponent(escape(atob(s.replace(/\s+/g,'')))); }
+function cloudPut(cb){
+  fetch(GH_API,{method:'GET',headers:{Authorization:'token '+GH_TOKEN}})
+    .then(function(r){ return r.ok?r.json():null; })
+    .then(function(d){
+      if(!d||!d.sha){ cb(false); return null; }
+      return fetch(GH_API,{method:'PUT',headers:{Authorization:'token '+GH_TOKEN,'Content-Type':'application/json'},body:JSON.stringify({message:'update data v2',content:b64utf8(JSON.stringify(container(),null,2)),sha:d.sha,branch:'main'})})
+        .then(function(r){ cb(r.ok); });
+    })
+    .catch(function(){ cb(false); });
+}
+function cloudFetchData(cb){
+  fetch(GH_API,{headers:{Authorization:'token '+GH_TOKEN}})
+    .then(function(r){ return r.ok?r.json():null; })
+    .then(function(j){
+      if(!j||!j.content){ cb(null); return; }
+      try{ cb(JSON.parse(unb64utf8(j.content))); }catch(e){ cb(null); }
+    })
+    .catch(function(){ cb(null); });
+}
+function syncBadgeHtml(){
+  if(syncState==='saving') return '<span class="sync-badge sync-wait">同步中…</span>';
+  if(syncState==='error')  return '<span class="sync-badge sync-err">未同步 · 自动重试中</span>';
+  if(syncState==='ok')     return '<span class="sync-badge sync-ok">已同步</span>';
+  return '';
+}
+function setSyncState(s){
+  syncState=s;
+  clearTimeout(syncOkTimer);
+  var el=document.getElementById('sync_badge_slot');
+  if(el) el.innerHTML=syncBadgeHtml();
+  if(s==='ok') syncOkTimer=setTimeout(function(){ syncState='idle'; var e2=document.getElementById('sync_badge_slot'); if(e2)e2.innerHTML=''; },2000);
+}
+window.addEventListener('beforeunload', function(e){
+  if(syncBusy||syncDirty){ e.preventDefault(); e.returnValue=''; return ''; }
+});
 
 /* 分组改存容器后不再单独落库，保留同名函数做兼容 */
-function saveGroups() { saveTasksCache(); saveTasksGitHub(); }
+function saveGroups() { saveTasksCache(); queueCloudSave(); }
 function groupById(gid){ for(var i=0;i<groups.length;i++){ if(groups[i].id===gid) return groups[i]; } return null; }
 function nextGroupId(){ var m=0; groups.forEach(function(g){ var n=parseInt(String(g.id).replace(/\D/g,''),10); if(!isNaN(n)&&n>m)m=n; }); return 'g'+pad(m+1); }
 function taskById(id){ var n=parseInt(id,10); for(var i=0;i<tasks.length;i++){ if(tasks[i].id===n) return tasks[i]; } return null; }
@@ -1047,6 +1101,7 @@ function renderImportPanel() {
   return '<div class="modal-overlay" onclick="W.closeImport()"><div class="modal" onclick="event.stopPropagation()"><h3>导入/导出数据</h3>'+
     '<label>导入 JSON（粘贴后点导入）</label><textarea id="import_text" placeholder="粘贴 JSON 数据..." style="min-height:60px;"></textarea>'+
     '<div class="btn-row" style="margin-bottom:12px;"><button class="btn" onclick="W.closeImport()">关闭</button><button class="btn" onclick="W.restoreBackup()" style="background:#fef0f0;border-color:#fda4af;color:#e11d48;">恢复备份</button><button class="btn primary" onclick="W.doImport()">导入</button></div>'+
+    '<div class="btn-row" style="margin-bottom:12px;justify-content:flex-start;"><button class="btn" onclick="W.pullCloud()">从云端拉取最新</button><button class="btn" onclick="W.pushCloud()">立即同步到云端</button></div>'+
     '<label>导出 JSON（v2 容器：含分组与任务）</label><textarea id="export_text" readonly style="min-height:80px;">'+escapeHtml(JSON.stringify(container(),null,2))+'</textarea>'+
     '<div class="btn-row"><button class="btn sm" onclick="W.copyExport()">复制到剪贴板</button><button class="btn sm" onclick="W.downloadBackup()" style="margin-left:4px;">下载备份文件</button></div></div></div>';
 }
@@ -1160,6 +1215,7 @@ function render() {
   if(wishMode)document.documentElement.classList.add('wish'); else document.documentElement.classList.remove('wish');
   var st=window.pageYOffset||document.documentElement.scrollTop;
   var h='<div class="header"><h1>'+T('待办','许愿池')+'</h1><div class="header-actions">'+
+    '<span id="sync_badge_slot">'+syncBadgeHtml()+'</span>'+
     '<button class="btn sm" onclick="W.setView(\'report\')" title="按日生成工作 / 生活简报">日报</button>'+
     '<button class="btn sm" onclick="W.archiveDone()" title="'+T('归档本周已完成','收入许愿瓶')+'">归档</button>'+
     '<button class="btn sm" onclick="W.toggleCompletePopup()" title="'+(completePopup?(wishMode?'许愿仪式开→关闭':'完成弹窗开→关闭'):(wishMode?'许愿仪式关→开启':'完成弹窗关→开启'))+'" style="'+(completePopup?'background:var(--primary);color:#fff;border-color:var(--primary);':'opacity:.5;')+'">弹窗</button>'+
@@ -1337,9 +1393,21 @@ window.W={
   restoreBackup:function(){
     var bk=localStorage.getItem(BACKUP_KEY); if(!bk){ alert('没有找到备份数据！'); return; }
     if(!confirm('将用上次自动备份恢复全部数据，当前内容将被覆盖。确定？'))return;
-    try{ var bd=unwrap(JSON.parse(bk)); if(!bd)throw new Error('格式错误'); tasks=bd.tasks.map(normTask); groups=bd.groups||DEFAULT_GROUPS.slice(); dailyNotes=bd.notes||{}; reportText=''; saveTasks(); showImport=false; render(); alert('已恢复备份，共 '+tasks.length+' 条、'+groups.length+' 个分组。'); }
+    try{ var bd=unwrap(JSON.parse(bk)); if(!bd)throw new Error('格式错误'); tasks=bd.tasks.map(normTask); groups=bd.groups||DEFAULT_GROUPS.slice(); dailyNotes=bd.notes||{}; hasLocalData=true; reportText=''; saveTasks(); showImport=false; render(); alert('已恢复备份，共 '+tasks.length+' 条、'+groups.length+' 个分组。'); }
     catch(e){ alert('备份数据损坏：'+e.message); }
   },
+  pullCloud:function(){
+    if(!confirm('用云端最新数据覆盖本机？\n本机还没同步上去的改动会丢失。'))return;
+    setSyncState('saving');
+    cloudFetchData(function(d){
+      var u=d?unwrap(d):null;
+      if(!u){ setSyncState('error'); alert('拉取失败：网络或权限问题，稍后再试。'); return; }
+      tasks=u.tasks.map(normTask); if(u.groups&&u.groups.length)groups=u.groups; dailyNotes=u.notes||{};
+      hasLocalData=true; reportText=''; saveTasksCache(); setSyncState('ok'); render();
+      alert('已拉取云端最新数据：'+tasks.length+' 条任务。');
+    });
+  },
+  pushCloud:function(){ saveTasksCache(); syncDirty=false; queueCloudSave(); },
   closeImport:function(){ showImport=false; render(); },
   toggleTheme:function(){ theme=theme==='light'?'dark':'light'; applyTheme(); savePrefs(); render(); },
   shiftWeek:function(n){ if(n===0)calWeekOffset=0; else calWeekOffset+=n; render(); },

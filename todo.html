@@ -212,6 +212,11 @@ body {
 .sync-wait { background: var(--amber-bg); color: var(--blue); }
 .sync-ok { background: var(--green-bg); color: var(--green); }
 .sync-err { background: var(--red-bg); color: var(--red); }
+.rpt-tog { font-size: 10px; padding: 1px 7px; border: 1px solid var(--primary); border-radius: 8px; background: var(--primary-bg); color: var(--primary); cursor: pointer; line-height: 1.7; margin-left: 4px; flex-shrink: 0; font-family: inherit; }
+.rpt-tog.off { border-color: var(--border); background: var(--gray-bg); color: var(--text3); }
+.rpt-tog:hover { filter: brightness(.95); }
+.dark .rpt-tog { background: #1a2038; border-color: #3a3a60; color: #a5b4fc; }
+.dark .rpt-tog.off { background: #242436; border-color: #2a2a44; color: #606078; }
 .view-toggle button.active .vt-badge { background: rgba(255,255,255,.25); color: #fff; }
 .gmenu.floating { position: fixed; z-index: 1200; max-height: 280px; }
 .gmenu .gm-day { float: right; font-size: 11px; color: var(--text3); margin-left: 8px; }
@@ -888,6 +893,7 @@ function groupCard(g, items, isNone) {
     '<span class="gcmeta">'+doneN+' / '+total+'</span>'+
     '<div class="gcbar"><i style="width:'+pct+'%"></i></div>'+
     '<span class="gcpct">'+pct+'%</span>'+
+    (isNone?'':'<button class="rpt-tog'+(g.noReport?' off':'')+'" onclick="W.toggleGroupReport(\''+g.id+'\')" title="'+(g.noReport?'当前不参与日报，点击加入日报':'当前参与日报，点击从日报中排除')+'">日报</button>')+
     (isNone?'':'<button class="icon-btn" data-act="g-del" data-g="'+g.id+'" title="删除分组（组内任务转为未分类）">✕</button>')+
     '</div>';
   var note=(isNone||!g.note)?'':'<div class="gcnote" contenteditable="true">'+escapeHtml(g.note)+'</div>';
@@ -908,12 +914,14 @@ function renderGroups() {
     '<button class="btn sm" onclick="W.importPrompt()">数据</button></div>';
   h+=renderMultiBar()+renderStats()+renderSearchBar()+renderFilterBar();
   var list=tasks.filter(function(t){ return matchesSearch(t)&&filterMatch(t); });
-  var body='';
-  groups.forEach(function(g){
-    body+=groupCard(g,list.filter(function(t){return t.groupId===g.id;}),false);
-  });
+  /* 还有未完成事项的分组排前面；空分组、全部已完成的分组沉到最底部，组内顺序不变 */
+  var cards=groups.map(function(g){ return {g:g, isNone:false, items:list.filter(function(t){return t.groupId===g.id;})}; });
   var orphan=list.filter(function(t){ return !t.groupId||!groupById(t.groupId); });
-  if(orphan.length||!groups.length) body+=groupCard({id:'__none',name:'未分类',pri:'none',note:'',collapsed:false},orphan,true);
+  if(orphan.length||!groups.length) cards.push({g:{id:'__none',name:'未分类',pri:'none',note:'',collapsed:false}, isNone:true, items:orphan});
+  var active=[], idle=[];
+  cards.forEach(function(c){ var pend=0; c.items.forEach(function(t){ if(!t.completed)pend++; }); (pend>0?active:idle).push(c); });
+  var ordered=active.concat(idle), body='';
+  ordered.forEach(function(c){ body+=groupCard(c.g,c.items,c.isNone); });
   h+= list.length? body : '<div class="empty"><span class="icon">◫</span>没有符合条件的任务<br>换个筛选或用顶部搜索试试</div>';
   return h;
 }
@@ -1127,6 +1135,7 @@ function renderToast() {
 /* ========= 日报：按目标日汇总「挂着的未完成 + 当天已完成」========= */
 function reportScope(day){
   return tasks.filter(function(t){
+    if(t.groupId){ var g=groupById(t.groupId); if(g&&g.noReport) return false; }  /* 该分组已从日报中排除 */
     if(t.completed) return !!(t.completedAt&&dayValue(t.completedAt)===dayValue(day));
     return !!t.day&&dayValue(t.day)<=dayValue(day);
   });
@@ -1289,6 +1298,7 @@ APP.addEventListener('click', function(e){
 
 window.W={
   showCompleted:true,
+  toggleCompleted:function(){ W.showCompleted=!W.showCompleted; render(); },
   setFilter:function(f){ filter=f; statusFilter='all'; savePrefs(); render(); },
   setSort:function(s){ sortBy=s; savePrefs(); render(); },
   setSearch:function(q){ searchQuery=q; render(); },
@@ -1454,6 +1464,7 @@ window.W={
   setTypeFilter:function(t){ typeFilter=t; render(); },
   setStatusFilter:function(s){ statusFilter=s; filter='all'; render(); },
   addGroup:function(){ groups.push({id:nextGroupId(),name:'新分组',pri:'中',note:'',collapsed:false}); saveGroups(); render(); },
+  toggleGroupReport:function(gid){ var g=groupById(gid); if(!g)return; if(g.noReport) delete g.noReport; else g.noReport=true; saveGroups(); render(); },
   toggleGroup:function(gid){ var g=groupById(gid); if(g){ g.collapsed=!g.collapsed; saveGroups(); render(); } },
   openPostpone:function(id){ postponeTaskId=id; render(); },
   closePostpone:function(){ postponeTaskId=null; render(); },

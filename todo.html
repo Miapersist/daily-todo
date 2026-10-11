@@ -215,8 +215,21 @@ body {
 .rpt-tog { font-size: 10px; padding: 1px 7px; border: 1px solid var(--primary); border-radius: 8px; background: var(--primary-bg); color: var(--primary); cursor: pointer; line-height: 1.7; margin-left: 4px; flex-shrink: 0; font-family: inherit; }
 .rpt-tog.off { border-color: var(--border); background: var(--gray-bg); color: var(--text3); }
 .rpt-tog:hover { filter: brightness(.95); }
+.rpt-tog.life { border-color: var(--green); background: var(--green-bg); color: var(--green); }
 .dark .rpt-tog { background: #1a2038; border-color: #3a3a60; color: #a5b4fc; }
 .dark .rpt-tog.off { background: #242436; border-color: #2a2a44; color: #606078; }
+.dark .rpt-tog.life { background: #1a281e; border-color: #2a4a34; color: #86efac; }
+/* 日报页顶部：参与日报的分组开关 */
+.rpt-groups { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 12px; }
+.rpt-groups .rg-label { font-size: 12px; font-weight: 600; color: var(--text2); margin-right: 2px; }
+.rpt-groups .rg-tip { font-size: 11px; color: var(--text3); }
+.g-chip { font-family: inherit; font-size: 11px; padding: 3px 10px; border-radius: 10px; border: 1px solid var(--primary); background: var(--primary-bg); color: var(--primary); cursor: pointer; line-height: 1.7; transition: filter .12s, transform .12s; }
+.g-chip:hover { filter: brightness(.95); transform: translateY(-1px); }
+.g-chip.life { border-color: var(--green); background: var(--green-bg); color: var(--green); }
+.g-chip.off { border-color: var(--border); background: var(--gray-bg); color: var(--text3); text-decoration: line-through; }
+.dark .g-chip { background: #1a2038; border-color: #3a3a60; color: #a5b4fc; }
+.dark .g-chip.life { background: #1a281e; border-color: #2a4a34; color: #86efac; }
+.dark .g-chip.off { background: #242436; border-color: #2a2a44; color: #606078; }
 .view-toggle button.active .vt-badge { background: rgba(255,255,255,.25); color: #fff; }
 .gmenu.floating { position: fixed; z-index: 1200; max-height: 280px; }
 .gmenu .gm-day { float: right; font-size: 11px; color: var(--text3); margin-left: 8px; }
@@ -552,6 +565,21 @@ function loadTasksSync() {
   });
 }
 function adopt(rt,rg,rn){ tasks=rt.map(normTask); if(rg&&rg.length)groups=rg; if(rn)dailyNotes=rn; hasLocalData=true; reportText=''; saveTasksCache(); render(); }
+
+/* 一次性迁移：本机旧分组数据没有「日报归属」字段，这里自动把「备考」类分组归入生活简报。
+   只跑一次；之后用户手动改成「自动」不会被改回去。 */
+var MIGR_KEY='todo_migr_v3';
+function migrateGroups(){
+  try{ if(localStorage.getItem(MIGR_KEY)) return; }catch(e){ return; }
+  var changed=false;
+  groups.forEach(function(g){
+    if(String(g.name||'').indexOf('备考')!==0) return;
+    if(g.noReport||g.asLife) return;   /* 已有显式设置，尊重用户 */
+    g.asLife=true; changed=true;
+  });
+  try{ localStorage.setItem(MIGR_KEY,'1'); }catch(e){}
+  if(changed) saveTasksCache();
+}
 
 function saveTasks() { saveTasksCache(); queueCloudSave(); }
 function saveTasksCache() {
@@ -893,7 +921,7 @@ function groupCard(g, items, isNone) {
     '<span class="gcmeta">'+doneN+' / '+total+'</span>'+
     '<div class="gcbar"><i style="width:'+pct+'%"></i></div>'+
     '<span class="gcpct">'+pct+'%</span>'+
-    (isNone?'':'<button class="rpt-tog'+(g.noReport?' off':'')+'" onclick="W.toggleGroupReport(\''+g.id+'\')" title="'+(g.noReport?'当前不参与日报，点击加入日报':'当前参与日报，点击从日报中排除')+'">日报</button>')+
+    (isNone?'':'<button class="rpt-tog'+(groupReportMode(g)==='none'?' off':(groupReportMode(g)==='life'?' life':''))+'" onclick="W.cycleGroupReport(\''+g.id+'\')" title="点击切换：自动 → 生活 → 不参与">日报·'+reportModeText(groupReportMode(g))+'</button>')+
     (isNone?'':'<button class="icon-btn" data-act="g-del" data-g="'+g.id+'" title="删除分组（组内任务转为未分类）">✕</button>')+
     '</div>';
   var note=(isNone||!g.note)?'':'<div class="gcnote" contenteditable="true">'+escapeHtml(g.note)+'</div>';
@@ -1133,6 +1161,25 @@ function renderToast() {
 }
 
 /* ========= 日报：按目标日汇总「挂着的未完成 + 当天已完成」========= */
+/* 分组的日报归属：'auto' 自动（按任务类型） / 'life' 归入生活简报 / 'none' 不参与 */
+function groupReportMode(g){
+  if(!g) return 'auto';
+  if(g.noReport) return 'none';
+  if(g.asLife) return 'life';
+  return 'auto';
+}
+function setGroupReportMode(g, mode){
+  if(!g) return;
+  delete g.noReport; delete g.asLife;
+  if(mode==='none') g.noReport=true;
+  else if(mode==='life') g.asLife=true;
+}
+function reportModeText(mode){ return mode==='none'?'不参与':(mode==='life'?'生活':'自动'); }
+/* 归属判定：整组标记优先于任务类型 */
+function isLifeTask(t){
+  if(t.groupId){ var g=groupById(t.groupId); if(g&&g.asLife) return true; }
+  return t.type==='个人';
+}
 function reportScope(day){
   return tasks.filter(function(t){
     if(t.groupId){ var g=groupById(t.groupId); if(g&&g.noReport) return false; }  /* 该分组已从日报中排除 */
@@ -1167,8 +1214,8 @@ function buildDailyReport(day){
   day=day||todayStr();
   var p=day.split('/'), md=parseInt(p[0],10)+'月'+parseInt(p[1],10)+'日';
   var all=reportScope(day);
-  var work=all.filter(function(t){ return t.type!=='个人'; });
-  var life=all.filter(function(t){ return t.type==='个人'; });
+  var work=all.filter(function(t){ return !isLifeTask(t); });
+  var life=all.filter(function(t){ return isLifeTask(t); });
   var out=[md+'工作简报：'].concat(reportSectionBody(work));
   if(!work.length) out.push('暂无');
   if(life.length){ out.push(''); out.push(md+'生活简报：'); out=out.concat(reportSectionBody(life)); }
@@ -1185,6 +1232,16 @@ function syncTopicLine(text, topic){
 }
 function reportHintText(day){ return '今日完成 + 进行中（'+reportScope(day).length+' 项）自动生成 · 可直接编辑'; }
 function reportHintHtml(day){ return '<span class="rpt-hint" id="rpt_hint">'+reportHintText(day)+'</span>'; }
+function groupChipsHtml(){
+  if(!groups.length) return '';
+  return '<div class="rpt-groups"><span class="rg-label">参与日报</span>'+
+    groups.map(function(g){
+      var m=groupReportMode(g);
+      return '<button class="g-chip'+(m==='none'?' off':(m==='life'?' life':''))+'" onclick="W.cycleGroupReport(\''+g.id+'\')" title="点击切换：自动 → 生活 → 不参与">'+
+        escapeHtml(g.name)+' · '+reportModeText(m)+'</button>';
+    }).join('')+
+    '<span class="rg-tip">点标签切换：自动（按类型）→ 生活简报 → 不参与</span></div>';
+}
 function renderDailyReport() {
   var day=reportDate||todayStr();
   if(!reportText) reportText=buildDailyReport(day);
@@ -1194,6 +1251,7 @@ function renderDailyReport() {
     '<button class="btn sm" onclick="W.regenReport()">重新生成</button>'+
     '<button class="btn primary sm" onclick="W.copyReport()">一键复制</button>'+
     '</div>'+
+    groupChipsHtml()+
     '<div class="rpt-text" id="rpt_text" contenteditable="true" spellcheck="false" oninput="W.onReportInput(this.innerText)">'+escapeHtml(reportText)+'</div>'+
     '<div class="rpt-topic"><span class="rt-label">课题/协调事项</span>'+
     '<input id="rpt_topic" placeholder="今天要上报的课题 / 协调事项，留空 = 暂无…" value="'+escapeHtml(dailyNotes[day]||'')+'" onchange="W.onTopicInput(this.value)"></div>';
@@ -1464,7 +1522,15 @@ window.W={
   setTypeFilter:function(t){ typeFilter=t; render(); },
   setStatusFilter:function(s){ statusFilter=s; filter='all'; render(); },
   addGroup:function(){ groups.push({id:nextGroupId(),name:'新分组',pri:'中',note:'',collapsed:false}); saveGroups(); render(); },
-  toggleGroupReport:function(gid){ var g=groupById(gid); if(!g)return; if(g.noReport) delete g.noReport; else g.noReport=true; saveGroups(); render(); },
+  toggleGroupReport:function(gid){ W.cycleGroupReport(gid); },
+  cycleGroupReport:function(gid){
+    var g=groupById(gid); if(!g)return;
+    var m=groupReportMode(g);
+    setGroupReportMode(g, m==='auto'?'life':(m==='life'?'none':'auto'));   /* 自动 → 生活 → 不参与 → 自动 */
+    saveGroups();
+    if(view==='report') reportText=buildDailyReport(reportDate||todayStr());
+    render();
+  },
   toggleGroup:function(gid){ var g=groupById(gid); if(g){ g.collapsed=!g.collapsed; saveGroups(); render(); } },
   openPostpone:function(id){ postponeTaskId=id; render(); },
   closePostpone:function(){ postponeTaskId=null; render(); },
@@ -1618,7 +1684,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){ if(pickerEl){ closePicker(); return; } if(postponeTaskId!==null){ postponeTaskId=null; render(); return; } if(completeTaskId!==null){ completeTaskId=null; render(); return; } if(showAddModal){ showAddModal=false; editingId=null; render(); } if(showImport){ W.closeImport(); } }
 });
 
-loadPrefs(); loadTasks(function(){ applyTheme(); render(); loadTasksSync(); });
+loadPrefs(); loadTasks(function(){ applyTheme(); migrateGroups(); render(); loadTasksSync(); });
 try{ render(); }catch(err){ APP.innerHTML='<div style="padding:20px;color:#c00;font-family:monospace;white-space:pre-wrap;">Render error:\n'+(err.stack||err.message)+'</div>'; console.error(err); }
 })();
 </script>

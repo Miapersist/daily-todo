@@ -4997,6 +4997,25 @@
       "postponeLog": [],
       "_selected": false,
       "status": "done"
+    },
+    {
+      "id": 905,
+      "title": "新车型市况",
+      "detail": "",
+      "day": "10/12",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/12",
+      "startedAt": null,
+      "progress": 0,
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

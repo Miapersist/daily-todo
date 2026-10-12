@@ -3819,26 +3819,6 @@
       "progress": 100
     },
     {
-      "id": 848,
-      "title": "本周内用户权限找业务三方蓝图签字",
-      "detail": "",
-      "day": "9/13",
-      "endDay": null,
-      "priority": "中",
-      "type": "工作",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "9/13",
-      "startedAt": "9/13",
-      "status": "doing",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "groupId": "g03",
-      "progress": 0
-    },
-    {
       "id": 849,
       "title": "需求评工时-具体工时拆解（功能点明细以及工时明细）",
       "detail": "",

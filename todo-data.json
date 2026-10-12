@@ -4371,16 +4371,18 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/12",
       "createdAt": "9/24",
-      "startedAt": null,
-      "status": "todo",
+      "startedAt": "9/24",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g03",
-      "progress": 100
+      "progress": 100,
+      "completedNote": null,
+      "progressBefore": 100
     },
     {
       "id": 873,

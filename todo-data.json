@@ -61,7 +61,8 @@
       "name": "生活家庭",
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g09",

@@ -589,7 +589,7 @@ function saveTasksCache() {
 }
 
 /* ===== 云端保存：一次只发一个请求、丢了自动补发，改完立刻生效 ===== */
-var syncState='idle', syncBusy=false, syncDirty=false, syncFails=0, syncOkTimer=null;
+var syncState='idle', syncBusy=false, syncDirty=false, syncFails=0, syncOkTimer=null, shrinkOk=false;
 function queueCloudSave(){ if(!GH_TOKEN)return; syncDirty=true; if(!syncBusy) syncStep(); }
 function syncStep(){
   if(!syncDirty){ syncBusy=false; return; }
@@ -611,6 +611,14 @@ function cloudPut(cb){
     .then(function(r){ return r.ok?r.json():null; })
     .then(function(d){
       if(!d||!d.sha){ cb(false); return null; }
+      /* 防误删：本机明显比云端少很多时先拦一下，避免一次误操作把云端数据覆盖没 */
+      var remoteN=0;
+      try{ var rj=JSON.parse(unb64utf8(d.content)); remoteN=(rj&&rj.tasks?rj.tasks.length:0); }catch(e){}
+      if(!shrinkOk&&remoteN-tasks.length>=20){
+        var go=confirm('云端现有 '+remoteN+' 条任务，本机只有 '+tasks.length+' 条。\n继续上传会让云端少 '+(remoteN-tasks.length)+' 条。\n\n【取消】= 不上传（推荐先点「数据 → 从云端拉取最新」）\n【确定】= 用本机数据覆盖云端');
+        if(!go){ shrinkOk=true; cb(true); return null; }
+        shrinkOk=true;
+      }
       return fetch(GH_API,{method:'PUT',headers:{Authorization:'token '+GH_TOKEN,'Content-Type':'application/json'},body:JSON.stringify({message:'update data v2',content:b64utf8(JSON.stringify(container(),null,2)),sha:d.sha,branch:'main'})})
         .then(function(r){ cb(r.ok); });
     })
@@ -649,6 +657,18 @@ function saveGroups() { saveTasksCache(); queueCloudSave(); }
 function groupById(gid){ for(var i=0;i<groups.length;i++){ if(groups[i].id===gid) return groups[i]; } return null; }
 function nextGroupId(){ var m=0; groups.forEach(function(g){ var n=parseInt(String(g.id).replace(/\D/g,''),10); if(!isNaN(n)&&n>m)m=n; }); return 'g'+pad(m+1); }
 function taskById(id){ var n=parseInt(id,10); for(var i=0;i<tasks.length;i++){ if(tasks[i].id===n) return tasks[i]; } return null; }
+
+/* 本机归档区：归档不删数据，先存这里，可随时取回 */
+var ARCHIVE_KEY='todo_archive_v1';
+function archiveLoad(){ try{ var r=localStorage.getItem(ARCHIVE_KEY); var a=r?JSON.parse(r):[]; return Array.isArray(a)?a:[]; }catch(e){ return []; } }
+function archiveCount(){ return archiveLoad().length; }
+function archiveStore(list){
+  var all=archiveLoad(), have={};
+  all.forEach(function(t){ have[t.id]=1; });
+  list.forEach(function(t){ if(!have[t.id]) all.push(t); });
+  try{ localStorage.setItem(ARCHIVE_KEY, JSON.stringify(all)); }catch(e){}
+}
+function archiveClear(){ try{ localStorage.removeItem(ARCHIVE_KEY); }catch(e){} }
 
 /* ===== 轻量浮层选择器（复用 .gmenu 视觉）：点击字段标签后弹出 ===== */
 var pickerEl = null;
@@ -1149,7 +1169,7 @@ function renderImportPanel() {
   return '<div class="modal-overlay" onclick="W.closeImport()"><div class="modal" onclick="event.stopPropagation()"><h3>导入/导出数据</h3>'+
     '<label>导入 JSON（粘贴后点导入）</label><textarea id="import_text" placeholder="粘贴 JSON 数据..." style="min-height:60px;"></textarea>'+
     '<div class="btn-row" style="margin-bottom:12px;"><button class="btn" onclick="W.closeImport()">关闭</button><button class="btn" onclick="W.restoreBackup()" style="background:#fef0f0;border-color:#fda4af;color:#e11d48;">恢复备份</button><button class="btn primary" onclick="W.doImport()">导入</button></div>'+
-    '<div class="btn-row" style="margin-bottom:12px;justify-content:flex-start;"><button class="btn" onclick="W.pullCloud()">从云端拉取最新</button><button class="btn" onclick="W.pushCloud()">立即同步到云端</button></div>'+
+    '<div class="btn-row" style="margin-bottom:12px;justify-content:flex-start;"><button class="btn" onclick="W.pullCloud()">从云端拉取最新</button><button class="btn" onclick="W.pushCloud()">立即同步到云端</button><button class="btn" onclick="W.restoreArchive()">恢复已归档 ('+archiveCount()+')</button></div>'+
     '<label>导出 JSON（v2 容器：含分组与任务）</label><textarea id="export_text" readonly style="min-height:80px;">'+escapeHtml(JSON.stringify(container(),null,2))+'</textarea>'+
     '<div class="btn-row"><button class="btn sm" onclick="W.copyExport()">复制到剪贴板</button><button class="btn sm" onclick="W.downloadBackup()" style="margin-left:4px;">下载备份文件</button></div></div></div>';
 }
@@ -1492,9 +1512,23 @@ window.W={
   toggleTheme:function(){ theme=theme==='light'?'dark':'light'; applyTheme(); savePrefs(); render(); },
   shiftWeek:function(n){ if(n===0)calWeekOffset=0; else calWeekOffset+=n; render(); },
   archiveDone:function(){
-    if(!confirm('归档本周及之前的所有已完成任务？'))return;
-    tasks=tasks.filter(function(t){ return!t.completed||!t.completedAt||dayValue(t.completedAt)>dayValue(todayStr()); });
+    var today=todayStr();
+    var del=tasks.filter(function(t){ return t.completed&&t.completedAt&&dayValue(t.completedAt)<=dayValue(today); });
+    if(!del.length){ alert('没有需要归档的已完成任务。'); return; }
+    if(!confirm('把 '+del.length+' 条已完成的「今天及之前」任务移到本机归档区？\n它们不会消失，之后可以在「数据 → 恢复已归档」里取回。'))return;
+    archiveStore(del);   /* 先存归档区，再移出列表，保证可找回 */
+    tasks=tasks.filter(function(t){ return !(t.completed&&t.completedAt&&dayValue(t.completedAt)<=dayValue(today)); });
     saveTasks(); render();
+  },
+  restoreArchive:function(){
+    var list=archiveLoad();
+    if(!list.length){ alert('本机归档区里没有内容。'); return; }
+    if(!confirm('把归档区里的 '+list.length+' 条任务取回列表？'))return;
+    var have={}; tasks.forEach(function(t){ have[t.id]=1; });
+    var n=0;
+    list.forEach(function(t){ if(!have[t.id]){ tasks.push(normTask(t)); n++; } });
+    archiveClear(); saveTasks(); render();
+    alert('已取回 '+n+' 条任务（'+(list.length-n)+' 条已存在，未重复添加）。');
   },
   toggleMulti:function(){ multiSelect=!multiSelect; tasks.forEach(function(t){t._selected=false;}); render(); },
   exitMulti:function(){ multiSelect=false; tasks.forEach(function(t){t._selected=false;}); render(); },

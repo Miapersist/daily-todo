@@ -551,7 +551,15 @@ function loadTasks(callback) {
 /* 本机已有数据时不再自动用云端覆盖本地，避免刚改完刷新被回退；
    只有第一次打开（本机没有数据）才自动取云端；想手动同步用「数据 → 从云端拉取最新」。 */
 function loadTasksSync() {
-  if(hasLocalData) return;   /* 本机已有数据：一律以本机为准，不再自动拉云端 */
+  if(hasLocalData){
+    /* 本机明明比云端少一大截（多半是误删/误归档），以云端为准自动修复 */
+    cloudFetchData(function(d){
+      var u=d?unwrap(d):null;
+      if(!u||!u.tasks.length) return;
+      if(u.tasks.length - tasks.length >= 20){ adopt(u.tasks,u.groups,u.notes); setSyncState('ok'); }
+    });
+    return;
+  }
   setSyncState('pulling');
   cloudFetchData(function(d){
     var u=d?unwrap(d):null;

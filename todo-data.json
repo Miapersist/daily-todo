@@ -2623,27 +2623,6 @@
       "progress": 100
     },
     {
-      "id": 786,
-      "title": "项目结束上线（12/30 里程碑）",
-      "detail": "最终项目结束上线目标",
-      "day": "12/30",
-      "endDay": null,
-      "priority": "高",
-      "type": "工作",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "8/19",
-      "startedAt": null,
-      "_selected": false,
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "groupId": "g03",
-      "progress": 0
-    },
-    {
       "id": 787,
       "title": "处理市况联动相关bug跟进",
       "detail": "记得记录到buglist，并且跟不好沟通爱甩锅的开发尽量走线上留痕",

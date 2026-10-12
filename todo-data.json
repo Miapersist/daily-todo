@@ -108,28 +108,32 @@
       "name": "新分组",
       "pri": "中",
       "note": "",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g15",
       "name": "新分组",
       "pri": "中",
       "note": "",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g16",
       "name": "新分组",
       "pri": "中",
       "note": "",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g17",
       "name": "新分组",
       "pri": "中",
       "note": "",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     }
   ],
   "tasks": [

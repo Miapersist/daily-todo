@@ -84,21 +84,24 @@
       "name": "新分组",
       "pri": "中",
       "note": "",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g12",
       "name": "新分组",
       "pri": "中",
       "note": "",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g13",
       "name": "新分组",
       "pri": "中",
       "note": "",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g14",

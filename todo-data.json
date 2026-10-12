@@ -73,10 +73,10 @@
     },
     {
       "id": "g10",
-      "name": "新分组",
+      "name": "项目日常工作提醒功能项",
       "pri": "中",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "asLife": true
     },
     {

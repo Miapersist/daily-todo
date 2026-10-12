@@ -4818,7 +4818,7 @@
     {
       "id": 896,
       "title": "继续调研报表",
-      "detail": "1111",
+      "detail": "",
       "day": "10/9",
       "endDay": null,
       "priority": "低",
@@ -4854,7 +4854,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "done"
     },
     {
       "id": 898,
@@ -4875,7 +4876,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "done"
     },
     {
       "id": 899,
@@ -4896,7 +4898,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "done"
     },
     {
       "id": 900,
@@ -4917,7 +4920,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "done"
     },
     {
       "id": 901,
@@ -4938,7 +4942,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "done"
     },
     {
       "id": 902,
@@ -4959,7 +4964,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "todo"
     },
     {
       "id": 903,
@@ -4980,7 +4986,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "done"
     },
     {
       "id": 904,
@@ -5001,7 +5008,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "status": "done"
     }
   ],
   "dailyNotes": {}

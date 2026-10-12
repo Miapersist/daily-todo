@@ -216,6 +216,13 @@ body {
 .rpt-tog.off { border-color: var(--border); background: var(--gray-bg); color: var(--text3); }
 .rpt-tog:hover { filter: brightness(.95); }
 .rpt-tog.life { border-color: var(--green); background: var(--green-bg); color: var(--green); }
+/* 分组拖动排序 */
+.gdrag { cursor: grab; font-size: 13px; color: var(--text3); padding: 0 2px; line-height: 1; flex-shrink: 0; user-select: none; }
+.gdrag:hover { color: var(--primary); }
+.gdrag:active { cursor: grabbing; }
+.gcard.dragging { opacity: .45; }
+.gcard.drop-before { box-shadow: inset 0 3px 0 var(--primary); }
+.gcard.drop-after { box-shadow: inset 0 -3px 0 var(--primary); }
 .dark .rpt-tog { background: #1a2038; border-color: #3a3a60; color: #a5b4fc; }
 .dark .rpt-tog.off { background: #242436; border-color: #2a2a44; color: #606078; }
 .dark .rpt-tog.life { background: #1a281e; border-color: #2a4a34; color: #86efac; }
@@ -663,6 +670,10 @@ window.addEventListener('beforeunload', function(e){
 /* 分组改存容器后不再单独落库，保留同名函数做兼容 */
 function saveGroups() { saveTasksCache(); queueCloudSave(); }
 function groupById(gid){ for(var i=0;i<groups.length;i++){ if(groups[i].id===gid) return groups[i]; } return null; }
+/* 分组拖动排序：0=还有未完成的区间，1=空或全部已完成的区间（同区间内才能互换位置） */
+function groupPendingCount(gid){ var n=0; tasks.forEach(function(t){ if(t.groupId===gid&&!t.completed)n++; }); return n; }
+function groupBucketOf(gid){ return groupPendingCount(gid)>0?0:1; }
+function clearDropMarks(){ var a=document.querySelectorAll('.gcard.drop-before,.gcard.drop-after'); for(var i=0;i<a.length;i++){ a[i].classList.remove('drop-before'); a[i].classList.remove('drop-after'); } }
 function nextGroupId(){ var m=0; groups.forEach(function(g){ var n=parseInt(String(g.id).replace(/\D/g,''),10); if(!isNaN(n)&&n>m)m=n; }); return 'g'+pad(m+1); }
 function taskById(id){ var n=parseInt(id,10); for(var i=0;i<tasks.length;i++){ if(tasks[i].id===n) return tasks[i]; } return null; }
 
@@ -680,6 +691,7 @@ function archiveClear(){ try{ localStorage.removeItem(ARCHIVE_KEY); }catch(e){} 
 
 /* ===== 轻量浮层选择器（复用 .gmenu 视觉）：点击字段标签后弹出 ===== */
 var pickerEl = null;
+var dragGid = null;
 function closePicker(){ if(pickerEl&&pickerEl.parentNode) pickerEl.parentNode.removeChild(pickerEl); pickerEl=null; }
 function placePicker(el,box){
   var r=el.getBoundingClientRect(), w=218;
@@ -943,6 +955,7 @@ function groupCard(g, items, isNone) {
   var pending=applySort(items.filter(function(t){return !t.completed;}));
   var doneItems=items.filter(function(t){return t.completed;});
   var head='<div class="gchead" data-act="g-toggle" data-g="'+g.id+'" title="点击展开 / 收起">'+
+    (isNone?'':'<span class="gdrag" draggable="true" data-g="'+g.id+'" title="按住拖动，调整分组顺序（只在「有未完成」或「空/全完成」各自区间内移动）">⠿</span>')+
     '<span class="caret'+(g.collapsed?' closed':'')+'">▼</span>'+
     '<span class="gcname" contenteditable="'+(isNone?'false':'true')+'">'+escapeHtml(g.name)+'</span>'+
     (isNone?'':'<select class="gcpri">'+['高','中','低','none'].map(function(p){return '<option value="'+p+'"'+(g.pri===p?' selected':'')+'>'+(p==='none'?'无':p)+'</option>';}).join('')+'</select>')+
@@ -1377,10 +1390,42 @@ APP.addEventListener('blur', function(e){
 APP.addEventListener('click', function(e){
   var src=e.target;
   if(src.isContentEditable||src.tagName==='BUTTON'||src.tagName==='SELECT'||src.tagName==='INPUT')return;
+  if(src.closest('.gdrag'))return;
   if(src.closest('[data-act="g-del"]'))return;
   var head=src.closest('.gchead'); if(!head)return;
   window.W.toggleGroup(head.dataset.g);
 });
+
+/* ---- 分组拖动排序（HTML5 DnD，只有标题栏的 ⠿ 把手可拖） ---- */
+APP.addEventListener('dragstart', function(e){
+  var h=e.target&&e.target.closest?e.target.closest('.gdrag'):null; if(!h)return;
+  dragGid=h.dataset.g;
+  var card=h.closest('.gcard'); if(card) card.classList.add('dragging');
+  try{ e.dataTransfer.effectAllowed='move'; e.dataTransfer.setData('text/plain',String(dragGid)); }catch(x){}
+}, true);
+APP.addEventListener('dragend', function(){ dragGid=null; clearDropMarks(); var d=document.querySelectorAll('.gcard.dragging'); for(var i=0;i<d.length;i++)d[i].classList.remove('dragging'); }, true);
+APP.addEventListener('dragover', function(e){
+  if(!dragGid)return;
+  var card=e.target&&e.target.closest?e.target.closest('.gcard'):null;
+  if(!card||!card.dataset.g||card.dataset.g===dragGid||card.dataset.g==='__none')return;
+  if(groupBucketOf(card.dataset.g)!==groupBucketOf(dragGid))return;   /* 两个区间之间不允许互换 */
+  e.preventDefault();
+  try{ e.dataTransfer.dropEffect='move'; }catch(x){}
+  var r=card.getBoundingClientRect(), before=(e.clientY-r.top)<r.height/2;
+  clearDropMarks(); card.classList.add(before?'drop-before':'drop-after');
+}, true);
+APP.addEventListener('drop', function(e){
+  if(!dragGid)return;
+  var card=e.target&&e.target.closest?e.target.closest('.gcard'):null;
+  if(!card||!card.dataset.g)return;
+  var to=card.dataset.g;
+  if(to===dragGid||to==='__none')return;
+  if(groupBucketOf(to)!==groupBucketOf(dragGid))return;
+  e.preventDefault();
+  var r=card.getBoundingClientRect(), before=(e.clientY-r.top)<r.height/2;
+  clearDropMarks();
+  window.W.moveGroup(dragGid,to,before);
+}, true);
 
 window.W={
   showCompleted:true,
@@ -1565,6 +1610,16 @@ window.W={
   setStatusFilter:function(s){ statusFilter=s; filter='all'; render(); },
   addGroup:function(){ groups.push({id:nextGroupId(),name:'新分组',pri:'中',note:'',collapsed:false}); saveGroups(); render(); },
   toggleGroupReport:function(gid){ W.cycleGroupReport(gid); },
+  moveGroup:function(from,to,before){
+    var order=[]; groups.forEach(function(g){ order.push(g.id); });
+    var fi=order.indexOf(from); if(fi<0)return;
+    order.splice(fi,1);
+    var ti=order.indexOf(to); if(ti<0)return;
+    order.splice(before?ti:ti+1,0,from);
+    var byId={}; groups.forEach(function(g){ byId[g.id]=g; });
+    groups=order.map(function(id){ return byId[id]; });
+    saveGroups(); render();
+  },
   cycleGroupReport:function(gid){
     var g=groupById(gid); if(!g)return;
     var m=groupReportMode(g);

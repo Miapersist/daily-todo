@@ -53,7 +53,8 @@
       "name": "运动健康",
       "pri": "中",
       "note": "羽毛球、健身、爬山、攀岩",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g08",

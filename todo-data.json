@@ -74,7 +74,7 @@
     {
       "id": "g10",
       "name": "项目日常提醒",
-      "pri": "中",
+      "pri": "高",
       "note": "",
       "collapsed": false,
       "asLife": true

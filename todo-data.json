@@ -59,6 +59,13 @@
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
       "collapsed": false
+    },
+    {
+      "id": "g09",
+      "name": "新分组",
+      "pri": "中",
+      "note": "",
+      "collapsed": false
     }
   ],
   "tasks": [

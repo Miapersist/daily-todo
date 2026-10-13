@@ -125,7 +125,7 @@
       "pri": "中",
       "note": "",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g17",
@@ -133,7 +133,7 @@
       "pri": "中",
       "note": "",
       "collapsed": true,
-      "asLife": true
+      "noReport": true
     }
   ],
   "tasks": [

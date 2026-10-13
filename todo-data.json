@@ -85,7 +85,7 @@
       "pri": "中",
       "note": "",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g12",
@@ -93,7 +93,7 @@
       "pri": "中",
       "note": "",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g13",
@@ -101,7 +101,7 @@
       "pri": "中",
       "note": "",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g14",
@@ -109,7 +109,7 @@
       "pri": "中",
       "note": "",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g15",
@@ -117,7 +117,7 @@
       "pri": "中",
       "note": "",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g16",

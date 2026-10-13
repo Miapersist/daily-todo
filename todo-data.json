@@ -46,7 +46,7 @@
       "pri": "中",
       "note": "考勤、补卡、请假、工时、房贷补贴",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g07",
@@ -54,7 +54,7 @@
       "pri": "中",
       "note": "羽毛球、健身、爬山、攀岩",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g08",
@@ -62,7 +62,7 @@
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g09",
@@ -77,7 +77,7 @@
       "pri": "高",
       "note": "",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g11",

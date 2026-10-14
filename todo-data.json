@@ -4231,7 +4231,7 @@
     {
       "id": 866,
       "title": "【权限】详设+蓝图签字",
-      "detail": "周一已催促，在传签中，成本已签字",
+      "detail": "已签2个，还剩财务，采购提醒要问杨科",
       "day": "9/24",
       "endDay": null,
       "priority": "高",
@@ -4246,7 +4246,7 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g03",
-      "progress": 20
+      "progress": 60
     },
     {
       "id": 867,

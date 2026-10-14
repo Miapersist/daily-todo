@@ -5208,6 +5208,26 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g11"
+    },
+    {
+      "id": 914,
+      "title": "用户权限的拉齐采购和成本做权限具体内容评审",
+      "detail": "",
+      "day": "10/14",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/14",
+      "startedAt": null,
+      "progress": 0,
+      "groupId": "g03",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

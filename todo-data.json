@@ -4234,7 +4234,7 @@
       "detail": "周一已催促，采购在传签中",
       "day": "9/24",
       "endDay": null,
-      "priority": "中",
+      "priority": "高",
       "type": "工作",
       "blocking": null,
       "completed": false,

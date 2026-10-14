@@ -5088,6 +5088,25 @@
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g05"
+    },
+    {
+      "id": 908,
+      "title": "todo已完成默认展开改为默认全部收起",
+      "detail": "",
+      "day": "10/14",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/14",
+      "startedAt": null,
+      "progress": 0,
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

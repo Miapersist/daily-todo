@@ -33,6 +33,13 @@
       "collapsed": true
     },
     {
+      "id": "g09",
+      "name": "新车型市况",
+      "pri": "高",
+      "note": "",
+      "collapsed": false
+    },
+    {
       "id": "g05",
       "name": "效率工具与AI",
       "pri": "中",
@@ -55,13 +62,6 @@
       "note": "羽毛球、健身、爬山、攀岩",
       "collapsed": false,
       "noReport": true
-    },
-    {
-      "id": "g09",
-      "name": "新车型市况",
-      "pri": "高",
-      "note": "",
-      "collapsed": false
     },
     {
       "id": "g08",

@@ -5125,7 +5125,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "groupId": "g05"
     }
   ],
   "dailyNotes": {}

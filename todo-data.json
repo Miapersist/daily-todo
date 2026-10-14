@@ -5132,7 +5132,7 @@
     {
       "id": 910,
       "title": "【报表】10点对接ioc",
-      "detail": "",
+      "detail": "传输给ioc",
       "day": "10/14",
       "endDay": null,
       "priority": "中",

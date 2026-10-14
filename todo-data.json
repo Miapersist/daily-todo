@@ -4230,7 +4230,7 @@
     },
     {
       "id": 866,
-      "title": "权限详设+蓝图签字",
+      "title": "【权限】详设+蓝图签字",
       "detail": "周一已催促，在传签中，成本已签字",
       "day": "9/24",
       "endDay": null,
@@ -4985,8 +4985,8 @@
     },
     {
       "id": 902,
-      "title": "报表-找到 ioc 对接人，确认报表如何往下传",
-      "detail": "已开会沟通和确认字段，缺少字段待业务推进",
+      "title": "【报表】-输出ioc对接接口清单&字段",
+      "detail": "已开会沟通和确认字段，缺少字段待业务推进，整理好跟敏周的接口整合",
       "day": "10/12",
       "endDay": null,
       "priority": "中",
@@ -5131,7 +5131,7 @@
     },
     {
       "id": 910,
-      "title": "【报表】10点对接ioc",
+      "title": "【报表】10点对接ioc会议",
       "detail": "传输给ioc",
       "day": "10/14",
       "endDay": null,
@@ -5142,7 +5142,7 @@
       "completedAt": null,
       "createdAt": "10/14",
       "startedAt": null,
-      "progress": 0,
+      "progress": 100,
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
@@ -5151,8 +5151,8 @@
     },
     {
       "id": 911,
-      "title": "【报表】输出原型给业务",
-      "detail": "",
+      "title": "【报表】修改因IOC接口对接变化的字段，修改详设和输出详设、原型给业务",
+      "detail": "已输出同步",
       "day": "10/14",
       "endDay": null,
       "priority": "中",

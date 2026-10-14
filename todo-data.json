@@ -4860,16 +4860,18 @@
       "priority": "低",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/13",
       "createdAt": "10/9",
       "startedAt": "10/9",
       "groupId": "g03",
-      "status": "doing",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "progress": 100
+      "progress": 100,
+      "completedNote": null,
+      "progressBefore": 100
     },
     {
       "id": 897,

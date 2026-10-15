@@ -5243,10 +5243,10 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/15",
-      "startedAt": null,
+      "startedAt": "10/15",
       "progress": 100,
       "groupId": "g03",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []

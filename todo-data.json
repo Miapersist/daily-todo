@@ -5280,16 +5280,18 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/16",
       "createdAt": "10/15",
-      "startedAt": null,
+      "startedAt": "10/16",
       "progress": 100,
       "groupId": "g03",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "completedNote": null,
+      "progressBefore": 100
     }
   ],
   "dailyNotes": {}

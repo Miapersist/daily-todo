@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "groups": [
     {
       "id": "g01",
@@ -5164,7 +5164,7 @@
       "completedAt": null,
       "createdAt": "10/14",
       "startedAt": "10/14",
-      "progress": 50,
+      "progress": 100,
       "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,

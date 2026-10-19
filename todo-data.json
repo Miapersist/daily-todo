@@ -5160,16 +5160,18 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/19",
       "createdAt": "10/14",
       "startedAt": "10/14",
       "progress": 100,
-      "status": "doing",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "completedNote": null,
+      "progressBefore": 100
     },
     {
       "id": 912,

@@ -5491,7 +5491,7 @@
     },
     {
       "id": 927,
-      "title": "报表找定清安排开发测试，武甲做完成本bo m",
+      "title": "报表找定清安排开发测试，武甲做完成本bom",
       "detail": "",
       "day": "10/20",
       "endDay": null,
@@ -5502,7 +5502,7 @@
       "completedAt": null,
       "createdAt": "10/20",
       "startedAt": null,
-      "progress": 0,
+      "progress": 100,
       "groupId": "g03",
       "status": "todo",
       "postponedCount": 0,

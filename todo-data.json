@@ -5512,10 +5512,10 @@
     {
       "id": 928,
       "title": "ioc看板接口：需要入湖和走输出api申请",
-      "detail": "",
+      "detail": "相关功能清单整理、业务签字、入湖申请、api申请",
       "day": "10/20",
       "endDay": null,
-      "priority": "中",
+      "priority": "低",
       "type": "工作",
       "blocking": null,
       "completed": false,

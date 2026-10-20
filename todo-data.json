@@ -5531,8 +5531,8 @@
     },
     {
       "id": 929,
-      "title": "用户权限还需要签字到科长",
-      "detail": "",
+      "title": "用户权限",
+      "detail": "还需要签字到科长",
       "day": "10/20",
       "endDay": null,
       "priority": "中",

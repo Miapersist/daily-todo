@@ -5548,6 +5548,26 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
+    },
+    {
+      "id": 930,
+      "title": "业务流程图——目前整理业务流程图的描述能力还有些欠缺，并且输出业务流程可以通过ai整合出泳道图",
+      "detail": "",
+      "day": "10/20",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/20",
+      "startedAt": null,
+      "progress": 0,
+      "groupId": "g12",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

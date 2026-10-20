@@ -5469,7 +5469,7 @@
     },
     {
       "id": 926,
-      "title": "用户权限和报表详设IT",
+      "title": "用户权限和报表详设IT签字",
       "detail": "",
       "day": "10/20",
       "endDay": null,
@@ -5479,10 +5479,10 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/20",
-      "startedAt": null,
+      "startedAt": "10/20",
       "progress": 0,
       "groupId": "g03",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []

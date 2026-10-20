@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "groups": [
     {
       "id": "g01",
@@ -5434,16 +5434,18 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/19",
       "createdAt": "10/19",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "10/19",
+      "progress": 100,
       "groupId": "g03",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "completedNote": null,
+      "progressBefore": 0
     },
     {
       "id": 925,

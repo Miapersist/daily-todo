@@ -5522,7 +5522,7 @@
       "completedAt": null,
       "createdAt": "10/20",
       "startedAt": null,
-      "progress": 0,
+      "progress": 50,
       "groupId": "g03",
       "status": "todo",
       "postponedCount": 0,

@@ -55,7 +55,7 @@
       "name": "车型成本项目",
       "pri": "高",
       "note": "用户权限、报表、蓝图、BOM/通用化率",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "g04",
@@ -5270,16 +5270,18 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/21",
       "createdAt": "10/15",
-      "startedAt": null,
+      "startedAt": "10/16",
       "progress": 100,
       "groupId": "g09",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "completedNote": null,
+      "progressBefore": 100
     },
     {
       "id": 917,

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "groups": [
     {
       "id": "g01",
@@ -5472,7 +5472,7 @@
     {
       "id": 926,
       "title": "用户权限和报表详设IT签字",
-      "detail": "用户已签；报表未",
+      "detail": "用户已签；报表已签字",
       "day": "10/20",
       "endDay": null,
       "priority": "中",

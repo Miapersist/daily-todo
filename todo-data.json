@@ -3,6 +3,14 @@
   "updatedAt": "2026-10-21",
   "groups": [
     {
+      "id": "g11",
+      "name": "备考个人计划",
+      "pri": "中",
+      "note": "",
+      "collapsed": true,
+      "noReport": true
+    },
+    {
       "id": "g01",
       "name": "备考·看课",
       "pri": "高",
@@ -75,14 +83,6 @@
       "id": "g10",
       "name": "项目日常提醒",
       "pri": "高",
-      "note": "",
-      "collapsed": false,
-      "noReport": true
-    },
-    {
-      "id": "g11",
-      "name": "备考个人计划",
-      "pri": "中",
       "note": "",
       "collapsed": false,
       "noReport": true

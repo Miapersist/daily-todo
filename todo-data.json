@@ -11,12 +11,36 @@
       "noReport": true
     },
     {
+      "id": "g05",
+      "name": "效率工具与AI",
+      "pri": "中",
+      "note": "skill、mac/idea、知识库、观自在、日报机器人",
+      "collapsed": true,
+      "noReport": true
+    },
+    {
       "id": "g01",
       "name": "备考·看课",
       "pri": "高",
       "note": "第9~18章、第2~8章基础课；含计算题/案例分析/导学专题",
       "collapsed": true,
       "asLife": true
+    },
+    {
+      "id": "g06",
+      "name": "行政事务",
+      "pri": "中",
+      "note": "考勤、补卡、请假、工时、房贷补贴",
+      "collapsed": true,
+      "noReport": true
+    },
+    {
+      "id": "g08",
+      "name": "生活家庭",
+      "pri": "中",
+      "note": "家政、家宴、亲友、数码采购、宠物",
+      "collapsed": true,
+      "noReport": true
     },
     {
       "id": "g02",
@@ -48,35 +72,11 @@
       "collapsed": false
     },
     {
-      "id": "g05",
-      "name": "效率工具与AI",
-      "pri": "中",
-      "note": "skill、mac/idea、知识库、观自在、日报机器人",
-      "collapsed": true,
-      "noReport": true
-    },
-    {
-      "id": "g06",
-      "name": "行政事务",
-      "pri": "中",
-      "note": "考勤、补卡、请假、工时、房贷补贴",
-      "collapsed": true,
-      "noReport": true
-    },
-    {
       "id": "g07",
       "name": "运动健康",
       "pri": "中",
       "note": "羽毛球、健身、爬山、攀岩",
       "collapsed": false,
-      "noReport": true
-    },
-    {
-      "id": "g08",
-      "name": "生活家庭",
-      "pri": "中",
-      "note": "家政、家宴、亲友、数码采购、宠物",
-      "collapsed": true,
       "noReport": true
     },
     {

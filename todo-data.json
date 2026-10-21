@@ -5574,6 +5574,26 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
+    },
+    {
+      "id": 931,
+      "title": "【研发内部】需求调整",
+      "detail": "",
+      "day": "10/21",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/21",
+      "startedAt": null,
+      "progress": 0,
+      "groupId": "g03",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

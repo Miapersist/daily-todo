@@ -5263,7 +5263,7 @@
     },
     {
       "id": 916,
-      "title": "【暂停】调研输出蓝图",
+      "title": "【暂停改为方略跟进新需求】调研输出蓝图",
       "detail": "",
       "day": "10/16",
       "endDay": null,
@@ -5274,7 +5274,7 @@
       "completedAt": null,
       "createdAt": "10/15",
       "startedAt": null,
-      "progress": 0,
+      "progress": 100,
       "groupId": "g09",
       "status": "todo",
       "postponedCount": 0,

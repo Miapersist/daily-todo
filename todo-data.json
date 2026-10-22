@@ -35,7 +35,8 @@
       "pri": "中",
       "note": "考勤、补卡、请假、工时、房贷补贴",
       "collapsed": true,
-      "noReport": true
+      "noReport": true,
+      "type": "生活"
     },
     {
       "id": "g08",
@@ -43,7 +44,8 @@
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
       "collapsed": true,
-      "noReport": true
+      "noReport": true,
+      "type": "生活"
     },
     {
       "id": "g02",

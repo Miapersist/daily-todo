@@ -5902,11 +5902,11 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/22",
-      "startedAt": null,
+      "startedAt": "10/22",
       "progress": 10,
       "order": 2720,
       "groupId": "g11",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []

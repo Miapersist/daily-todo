@@ -61,7 +61,7 @@
       "name": "车型成本项目",
       "pri": "高",
       "note": "用户权限、报表、蓝图、BOM/通用化率",
-      "collapsed": true,
+      "collapsed": false,
       "type": "工作"
     },
     {

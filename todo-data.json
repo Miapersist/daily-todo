@@ -94,7 +94,7 @@
       "name": "项目日常提醒",
       "pri": "高",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "工作"
     },

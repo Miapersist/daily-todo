@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "groups": [
     {
       "id": "g11",
@@ -16,7 +16,8 @@
       "pri": "中",
       "note": "skill、mac/idea、知识库、观自在、日报机器人",
       "collapsed": true,
-      "noReport": true
+      "noReport": true,
+      "type": "生活"
     },
     {
       "id": "g01",

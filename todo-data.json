@@ -5570,7 +5570,7 @@
     },
     {
       "id": 932,
-      "title": "整理工作流flow",
+      "title": "整理工作流flow，看下如何优化",
       "detail": "",
       "day": "10/22",
       "endDay": null,
@@ -5580,11 +5580,11 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/22",
-      "startedAt": null,
+      "startedAt": "10/22",
       "progress": 0,
       "order": 10,
       "groupId": "g12",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []

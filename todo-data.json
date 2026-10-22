@@ -61,24 +61,21 @@
       "name": "车型成本项目",
       "pri": "高",
       "note": "用户权限、报表、蓝图、BOM/通用化率",
-      "collapsed": false,
-      "type": "工作"
+      "collapsed": false
     },
     {
       "id": "g04",
       "name": "市况联动定价",
       "pri": "中",
       "note": "市况联动、定价单/报价单、IBOM、CE",
-      "collapsed": true,
-      "type": "工作"
+      "collapsed": true
     },
     {
       "id": "g09",
       "name": "新车型市况",
       "pri": "高",
       "note": "",
-      "collapsed": false,
-      "type": "工作"
+      "collapsed": false
     },
     {
       "id": "g07",
@@ -95,8 +92,7 @@
       "pri": "高",
       "note": "",
       "collapsed": false,
-      "noReport": true,
-      "type": "工作"
+      "noReport": true
     },
     {
       "id": "g12",
@@ -104,8 +100,7 @@
       "pri": "中",
       "note": "",
       "collapsed": false,
-      "noReport": true,
-      "type": "工作"
+      "noReport": true
     }
   ],
   "tasks": [
@@ -5572,6 +5567,27 @@
           "at": "10/22"
         }
       ]
+    },
+    {
+      "id": 932,
+      "title": "整理工作流flow",
+      "detail": "",
+      "day": "10/22",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/22",
+      "startedAt": null,
+      "progress": 0,
+      "order": 10,
+      "groupId": "g12",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

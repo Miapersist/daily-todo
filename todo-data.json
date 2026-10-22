@@ -83,7 +83,8 @@
       "pri": "中",
       "note": "羽毛球、健身、爬山、攀岩",
       "collapsed": false,
-      "noReport": true
+      "noReport": true,
+      "type": "生活"
     },
     {
       "id": "g10",

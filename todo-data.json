@@ -5910,6 +5910,27 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
+    },
+    {
+      "id": 935,
+      "title": "协助慧芬弄清市况取值",
+      "detail": "市况需要从零件剥离出",
+      "day": "10/22",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/22",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2730,
+      "groupId": "g03",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

@@ -620,6 +620,21 @@ function migrateGroups(){
   if(changed) saveTasksCache();
 }
 
+/* 一次性迁移：给每个分组补上「工作/生活」类型（按名字推断，之后可手动改） */
+var GTYPE_KEY='todo_migr_v4';
+function migrateGroupTypes(){
+  try{ if(localStorage.getItem(GTYPE_KEY)) return; }catch(e){ return; }
+  var lifeWords=['备考','运动','健康','生活','家庭'];
+  groups.forEach(function(g){
+    if(g.type) return;
+    var n=String(g.name||''), life=false;
+    lifeWords.forEach(function(k){ if(n.indexOf(k)>=0) life=true; });
+    g.type=life?'生活':'工作';
+  });
+  try{ localStorage.setItem(GTYPE_KEY,'1'); }catch(e){}
+  saveTasksCache();
+}
+
 function saveTasks() { saveTasksCache(); queueCloudSave(); }
 function saveTasksCache() {
   tasks.forEach(normTask);
@@ -1052,6 +1067,13 @@ function renderGroups() {
   var cards=groups.map(function(g){ return {g:g, isNone:false, items:list.filter(function(t){return t.groupId===g.id;})}; });
   var orphan=list.filter(function(t){ return !t.groupId||!groupById(t.groupId); });
   if(orphan.length||!groups.length) cards.push({g:{id:'__none',name:'未分类',pri:'none',note:'',collapsed:false}, isNone:true, items:orphan});
+  /* 按「类型」筛选时，只留下该类型的分组（未分类只在其下有命中任务时保留） */
+  if(typeFilter!=='all'){
+    cards=cards.filter(function(c){
+      if(c.isNone) return c.items.length>0;
+      return String(c.g.type||'')===typeFilter && c.items.length>0;
+    });
+  }
   var active=[], idle=[];
   cards.forEach(function(c){ var pend=0; c.items.forEach(function(t){ if(!t.completed)pend++; }); (pend>0?active:idle).push(c); });
   var ordered=active.concat(idle), body='';
@@ -1292,9 +1314,9 @@ function isLifeTask(t){
   if(t.groupId){ var g=groupById(t.groupId); if(g&&g.asLife) return true; }
   return t.type==='个人';
 }
-/* 「类型」筛选用：分组设了类型就以分组为准，否则看任务本身 */
+/* 「类型」筛选用：分组设了类型就以分组为准（生活→个人，与筛选按钮的取值对齐），否则看任务本身 */
 function taskTypeOf(t){
-  if(t.groupId){ var g=groupById(t.groupId); if(g&&g.type) return g.type; }
+  if(t.groupId){ var g=groupById(t.groupId); if(g&&g.type) return g.type==='生活'?'个人':g.type; }
   return t.type;
 }
 function reportScope(day){
@@ -1906,7 +1928,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){ if(pickerEl){ closePicker(); return; } if(postponeTaskId!==null){ postponeTaskId=null; render(); return; } if(completeTaskId!==null){ completeTaskId=null; render(); return; } if(showAddModal){ showAddModal=false; editingId=null; render(); } if(showImport){ W.closeImport(); } }
 });
 
-loadPrefs(); loadTasks(function(){ applyTheme(); migrateGroups(); render(); loadTasksSync(); });
+loadPrefs(); loadTasks(function(){ applyTheme(); migrateGroups(); migrateGroupTypes(); render(); loadTasksSync(); });
 try{ render(); }catch(err){ APP.innerHTML='<div style="padding:20px;color:#c00;font-family:monospace;white-space:pre-wrap;">Render error:\n'+(err.stack||err.message)+'</div>'; console.error(err); }
 })();
 </script>

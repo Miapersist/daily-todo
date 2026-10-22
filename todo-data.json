@@ -5546,7 +5546,7 @@
       "id": 931,
       "title": "【研发内部】研发跟进",
       "detail": "",
-      "day": "10/21",
+      "day": "10/22",
       "endDay": null,
       "priority": "中",
       "type": "工作",
@@ -5558,9 +5558,15 @@
       "progress": 0,
       "groupId": "g03",
       "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": []
+      "postponedCount": 1,
+      "postponedFrom": "10/21",
+      "postponeLog": [
+        {
+          "from": "10/21",
+          "to": "10/22",
+          "at": "10/22"
+        }
+      ]
     }
   ],
   "dailyNotes": {}

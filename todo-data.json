@@ -53,7 +53,8 @@
       "pri": "高",
       "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
       "collapsed": true,
-      "asLife": true
+      "asLife": true,
+      "type": "生活"
     },
     {
       "id": "g03",

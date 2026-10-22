@@ -1071,7 +1071,9 @@ function renderGroups() {
   if(typeFilter!=='all'){
     cards=cards.filter(function(c){
       if(c.isNone) return c.items.length>0;
-      return String(c.g.type||'')===typeFilter && c.items.length>0;
+      var gt=String(c.g.type||'');
+      if(gt==='生活') gt='个人';          /* 分组类型「生活」对应筛选按钮「个人」 */
+      return gt===typeFilter && c.items.length>0;
     });
   }
   var active=[], idle=[];

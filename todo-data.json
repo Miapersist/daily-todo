@@ -5659,7 +5659,7 @@
       "postponedFrom": null,
       "postponeLog": [],
       "order": 2520,
-      "_selected": true
+      "_selected": false
     },
     {
       "id": 915,
@@ -6215,10 +6215,10 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/26",
-      "startedAt": null,
+      "startedAt": "10/26",
       "progress": 0,
       "order": 2760,
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],

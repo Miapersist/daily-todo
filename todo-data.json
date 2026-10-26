@@ -6094,7 +6094,7 @@
     {
       "id": 933,
       "title": "需要输出后续文档（操作手册、测试用例等等）",
-      "detail": "",
+      "detail": "找测试用例skill",
       "day": "10/22",
       "endDay": null,
       "priority": "中",

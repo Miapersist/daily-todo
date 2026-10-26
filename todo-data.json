@@ -5642,7 +5642,7 @@
     {
       "id": 914,
       "title": "用户权限的拉齐采购和成本做权限具体内容评审",
-      "detail": "需业务慧芬推进，业务没空",
+      "detail": "需业务慧芬推进，慧芬提出对方无异议",
       "day": "10/14",
       "endDay": null,
       "priority": "中",
@@ -5652,7 +5652,7 @@
       "completedAt": null,
       "createdAt": "10/14",
       "startedAt": null,
-      "progress": 0,
+      "progress": 100,
       "groupId": "g03",
       "status": "todo",
       "postponedCount": 0,

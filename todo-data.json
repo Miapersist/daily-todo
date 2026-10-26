@@ -5387,7 +5387,7 @@
     {
       "id": 902,
       "title": "【报表】输出ioc对接接口清单&字段交付物（待确定内容已确认）",
-      "detail": "产量字段业务确定27年再改、现阶段用销量；成本通用化率报表字段待确定；",
+      "detail": "产量字段业务确定27年再改、现阶段用销量；成本通用化率报表待确定要不要传给ioc；",
       "day": "10/12",
       "endDay": null,
       "priority": "高",
@@ -6196,7 +6196,7 @@
       "completedAt": null,
       "createdAt": "10/26",
       "startedAt": null,
-      "progress": 0,
+      "progress": 50,
       "order": 2750,
       "status": "todo",
       "postponedCount": 0,

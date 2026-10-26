@@ -39,6 +39,13 @@
       "type": "生活"
     },
     {
+      "id": "g13",
+      "name": "阅读",
+      "pri": "高",
+      "note": "",
+      "collapsed": true
+    },
+    {
       "id": "g08",
       "name": "生活家庭",
       "pri": "中",
@@ -106,13 +113,6 @@
       "collapsed": true,
       "noReport": true,
       "type": "工作"
-    },
-    {
-      "id": "g13",
-      "name": "阅读",
-      "pri": "高",
-      "note": "",
-      "collapsed": true
     }
   ],
   "tasks": [

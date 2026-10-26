@@ -6313,6 +6313,27 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
+    },
+    {
+      "id": 943,
+      "title": "《P&G工作术》书籍阅读",
+      "detail": "",
+      "day": "10/26",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/26",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2810,
+      "groupId": "g12",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

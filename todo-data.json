@@ -6162,7 +6162,7 @@
     {
       "id": 936,
       "title": "车型成本项目的测试大纲需要顾问输出，输出后让梦灿去做审核",
-      "detail": "",
+      "detail": "已同步内部信息",
       "day": "10/26",
       "endDay": null,
       "priority": "中",
@@ -6172,7 +6172,7 @@
       "completedAt": null,
       "createdAt": "10/26",
       "startedAt": null,
-      "progress": 0,
+      "progress": 10,
       "order": 2740,
       "groupId": "g03",
       "status": "todo",

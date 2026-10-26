@@ -43,7 +43,7 @@
       "name": "生活家庭",
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "生活"
     },
@@ -61,7 +61,7 @@
       "name": "车型成本项目",
       "pri": "高",
       "note": "用户权限、报表、蓝图、BOM/通用化率",
-      "collapsed": false,
+      "collapsed": true,
       "type": "工作"
     },
     {
@@ -103,7 +103,7 @@
       "name": "工作整理和反思",
       "pri": "中",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "工作"
     },

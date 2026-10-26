@@ -6051,10 +6051,10 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/21",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "10/22",
+      "progress": 100,
       "groupId": "g03",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 1,
       "postponedFrom": "10/21",
       "postponeLog": [

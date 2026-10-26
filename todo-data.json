@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-26",
   "groups": [
     {
       "id": "g11",
@@ -5430,17 +5430,19 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/26",
       "createdAt": "10/14",
-      "startedAt": null,
-      "progress": 0,
-      "status": "todo",
+      "startedAt": "10/14",
+      "progress": 100,
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g11",
-      "order": 2510
+      "order": 2510,
+      "completedNote": null,
+      "progressBefore": 0
     },
     {
       "id": 914,

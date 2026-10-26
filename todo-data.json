@@ -84,7 +84,7 @@
       "name": "新车型市况",
       "pri": "高",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "type": "工作"
     },
     {
@@ -110,7 +110,7 @@
       "name": "工作整理和反思",
       "pri": "中",
       "note": "",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "工作"
     }

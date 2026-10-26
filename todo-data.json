@@ -43,7 +43,7 @@
       "name": "生活家庭",
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "生活"
     },
@@ -106,6 +106,13 @@
       "collapsed": false,
       "noReport": true,
       "type": "工作"
+    },
+    {
+      "id": "g13",
+      "name": "阅读",
+      "pri": "中",
+      "note": "",
+      "collapsed": false
     }
   ],
   "tasks": [

@@ -6108,7 +6108,7 @@
       "detail": "找测试用例skill；操作手册skill",
       "day": "10/22",
       "endDay": null,
-      "priority": "中",
+      "priority": "低",
       "type": "工作",
       "blocking": null,
       "completed": false,

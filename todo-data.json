@@ -6197,7 +6197,7 @@
     {
       "id": 937,
       "title": "ioc看板接口最新需求文档梳理和落地",
-      "detail": "待跟慧芬确认",
+      "detail": "已沟通确认",
       "day": "10/26",
       "endDay": null,
       "priority": "高",
@@ -6207,7 +6207,7 @@
       "completedAt": null,
       "createdAt": "10/26",
       "startedAt": null,
-      "progress": 51,
+      "progress": 100,
       "order": 2750,
       "status": "todo",
       "postponedCount": 0,

@@ -5055,7 +5055,7 @@
     {
       "id": 887,
       "title": "改造todo list",
-      "detail": "1、顶层的显示太多 2、",
+      "detail": "1、顶层的显示占屏太多——UI的功底不行要找uiskill替补；留下关键的切换类型和新增即可\n 2、排查为什么在输入框输入英文就会直接新增list",
       "day": "9/30",
       "endDay": null,
       "priority": "中",

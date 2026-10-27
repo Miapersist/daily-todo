@@ -5539,28 +5539,6 @@
       "progressBefore": 0
     },
     {
-      "id": 909,
-      "title": "排查为什么在输入框输入英文就会直接新增list",
-      "detail": "",
-      "day": "10/14",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "10/14",
-      "startedAt": null,
-      "progress": 0,
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "groupId": "g05",
-      "order": 2470,
-      "_selected": false
-    },
-    {
       "id": 910,
       "title": "【报表】10点对接ioc会议",
       "detail": "传输给ioc",

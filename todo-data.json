@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "groups": [
     {
       "id": "g11",
@@ -101,7 +101,7 @@
       "name": "项目日常提醒",
       "pri": "中",
       "note": "",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "工作"
     },

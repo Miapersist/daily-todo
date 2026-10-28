@@ -46,6 +46,15 @@
       "type": "生活"
     },
     {
+      "id": "g07",
+      "name": "运动健康",
+      "pri": "高",
+      "note": "羽毛球、健身、爬山、攀岩",
+      "collapsed": true,
+      "noReport": true,
+      "type": "生活"
+    },
+    {
       "id": "g01",
       "name": "备考·看课",
       "pri": "低",
@@ -86,15 +95,6 @@
       "note": "",
       "collapsed": true,
       "type": "工作"
-    },
-    {
-      "id": "g07",
-      "name": "运动健康",
-      "pri": "高",
-      "note": "羽毛球、健身、爬山、攀岩",
-      "collapsed": true,
-      "noReport": true,
-      "type": "生活"
     },
     {
       "id": "g10",

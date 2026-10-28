@@ -6110,7 +6110,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "focusDate": "10/28"
     },
     {
       "id": 934,
@@ -6180,7 +6181,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "focusDate": "10/28"
     },
     {
       "id": 937,

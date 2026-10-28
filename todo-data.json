@@ -6431,6 +6431,27 @@
       "postponeLog": [],
       "completedNote": null,
       "progressBefore": 0
+    },
+    {
+      "id": 948,
+      "title": "联通卡去重新看看",
+      "detail": "",
+      "day": "10/28",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/28",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2860,
+      "groupId": "g08",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

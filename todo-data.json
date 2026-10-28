@@ -435,7 +435,8 @@
       "postponeLog": [],
       "groupId": "g08",
       "progress": 100,
-      "order": 160
+      "order": 160,
+      "focusDate": "10/28"
     },
     {
       "id": 17,
@@ -4987,7 +4988,7 @@
     {
       "id": 884,
       "title": "观自在改造点-",
-      "detail": "1、情绪识别罗盘太少，需调整 2、月度加入 3、情绪的标记是否需要登记数量？",
+      "detail": "聚焦备注A",
       "day": "9/30",
       "endDay": null,
       "priority": "中",
@@ -6448,6 +6449,26 @@
       "progress": 0,
       "order": 2860,
       "groupId": "g08",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
+    },
+    {
+      "id": 949,
+      "title": "聚焦卡片测试",
+      "detail": "",
+      "day": "10/28",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/28",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2870,
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,

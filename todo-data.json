@@ -435,7 +435,8 @@
       "postponeLog": [],
       "groupId": "g08",
       "progress": 100,
-      "order": 160
+      "order": 160,
+      "focusDate": "10/28"
     },
     {
       "id": 17,
@@ -6488,6 +6489,26 @@
       "startedAt": null,
       "progress": 0,
       "order": 2880,
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
+    },
+    {
+      "id": 951,
+      "title": "聚焦卡片测试",
+      "detail": "",
+      "day": "10/28",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/28",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2890,
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,

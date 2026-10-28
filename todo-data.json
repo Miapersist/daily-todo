@@ -1767,8 +1767,7 @@
       "groupId": "g01",
       "progress": 0,
       "order": 810,
-      "_selected": false,
-      "focusDate": "10/28"
+      "_selected": false
     },
     {
       "id": 737,
@@ -6439,6 +6438,26 @@
       "startedAt": null,
       "progress": 0,
       "order": 2860,
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
+    },
+    {
+      "id": 949,
+      "title": "测试条目A",
+      "detail": "",
+      "day": "10/28",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/28",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2870,
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,

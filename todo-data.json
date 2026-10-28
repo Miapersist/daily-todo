@@ -50,7 +50,7 @@
       "name": "运动健康",
       "pri": "高",
       "note": "羽毛球、健身、爬山、攀岩",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "生活"
     },

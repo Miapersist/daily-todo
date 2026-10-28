@@ -6280,7 +6280,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "completedNote": null,
-      "progressBefore": 0
+      "progressBefore": 0,
+      "_selected": false
     },
     {
       "id": 941,
@@ -6301,7 +6302,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "_selected": false
     },
     {
       "id": 942,
@@ -6322,7 +6324,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "_selected": false
     },
     {
       "id": 943,
@@ -6344,7 +6347,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "focusDate": "10/28"
+      "focusDate": "10/28",
+      "_selected": false
     },
     {
       "id": 944,
@@ -6365,7 +6369,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "_selected": false
     },
     {
       "id": 945,
@@ -6386,7 +6391,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g13"
+      "groupId": "g13",
+      "_selected": false
     },
     {
       "id": 946,
@@ -6407,7 +6413,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "_selected": false
     },
     {
       "id": 947,
@@ -6430,7 +6437,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "completedNote": null,
-      "progressBefore": 0
+      "progressBefore": 0,
+      "_selected": false
     },
     {
       "id": 948,
@@ -6451,7 +6459,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "_selected": false
     },
     {
       "id": 949,
@@ -6472,28 +6481,32 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "_selected": false
     },
     {
       "id": 950,
-      "title": "更新周报",
+      "title": "更新26迭代项目周报",
       "detail": "",
       "day": "10/28",
       "endDay": null,
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/28",
       "createdAt": "10/28",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "10/28",
+      "progress": 100,
       "order": 2880,
       "groupId": "g03",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "_selected": false,
+      "completedNote": null,
+      "progressBefore": 100
     }
   ],
   "dailyNotes": {}

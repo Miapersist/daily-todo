@@ -5406,8 +5406,8 @@
       "priority": "高",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/27",
       "completedNote": null,
       "createdAt": "10/12",
       "startedAt": "10/12",
@@ -5417,8 +5417,9 @@
       "postponedFrom": null,
       "postponeLog": [],
       "_selected": false,
-      "status": "doing",
-      "order": 2410
+      "status": "done",
+      "order": 2410,
+      "progressBefore": 100
     },
     {
       "id": 903,

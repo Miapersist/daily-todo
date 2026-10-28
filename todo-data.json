@@ -4993,11 +4993,11 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/28",
       "createdAt": "9/30",
-      "startedAt": null,
-      "status": "todo",
+      "startedAt": "9/30",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
@@ -5005,7 +5005,9 @@
       "progress": 100,
       "order": 2230,
       "_selected": false,
-      "focusDate": "10/28"
+      "focusDate": "10/28",
+      "completedNote": null,
+      "progressBefore": 100
     },
     {
       "id": 885,

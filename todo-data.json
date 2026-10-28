@@ -6077,18 +6077,20 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/27",
       "createdAt": "10/22",
       "startedAt": "10/22",
-      "progress": 50,
+      "progress": 100,
       "order": 2700,
       "groupId": "g12",
-      "status": "doing",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "completedNote": null,
+      "progressBefore": 50
     },
     {
       "id": 933,
@@ -6338,7 +6340,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "focusDate": "10/28"
     },
     {
       "id": 944,

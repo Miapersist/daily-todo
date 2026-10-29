@@ -4312,7 +4312,8 @@
       "groupId": "g05",
       "progress": 0,
       "order": 1930,
-      "_selected": false
+      "_selected": false,
+      "focusDate": "10/29"
     },
     {
       "id": 855,
@@ -6484,7 +6485,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "focusDate": "10/29"
     },
     {
       "id": 950,
@@ -6523,7 +6525,7 @@
       "completedAt": null,
       "createdAt": "10/29",
       "startedAt": null,
-      "progress": 0,
+      "progress": 100,
       "order": 2890,
       "groupId": "g03",
       "status": "todo",
@@ -6573,7 +6575,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "focusDate": "10/29"
     }
   ],
   "dailyNotes": {}

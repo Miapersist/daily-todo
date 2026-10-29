@@ -2362,7 +2362,8 @@
       "groupId": "g08",
       "progress": 0,
       "order": 1070,
-      "_selected": false
+      "_selected": false,
+      "focusDate": "10/29"
     },
     {
       "id": 764,
@@ -6417,7 +6418,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "focusDate": "10/29"
     },
     {
       "id": 947,
@@ -6577,6 +6579,27 @@
       "postponedFrom": null,
       "postponeLog": [],
       "focusDate": "10/29"
+    },
+    {
+      "id": 954,
+      "title": "有机会学学多跟自己公司的领导搞关系，而不是客户领导",
+      "detail": "",
+      "day": "10/29",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/29",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2920,
+      "groupId": "g06",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-29",
   "groups": [
     {
       "id": "g11",
@@ -6117,8 +6117,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false,
-      "focusDate": "10/28"
+      "_selected": false
     },
     {
       "id": 934,
@@ -6189,7 +6188,7 @@
       "postponedFrom": null,
       "postponeLog": [],
       "_selected": false,
-      "focusDate": "10/28"
+      "focusDate": "10/29"
     },
     {
       "id": 937,

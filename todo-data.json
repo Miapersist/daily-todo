@@ -6553,6 +6553,27 @@
       "postponedFrom": null,
       "postponeLog": [],
       "focusDate": "10/29"
+    },
+    {
+      "id": 953,
+      "title": "参加workbuddy的小比赛",
+      "detail": "",
+      "day": "10/29",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/29",
+      "startedAt": null,
+      "progress": 0,
+      "order": 2910,
+      "groupId": "g05",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

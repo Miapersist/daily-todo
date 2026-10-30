@@ -121,6 +121,14 @@
       "collapsed": false,
       "noReport": true,
       "type": "工作"
+    },
+    {
+      "id": "g15",
+      "name": "投资学习",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false
     }
   ],
   "tasks": [
@@ -6762,6 +6770,27 @@
       "progress": 0,
       "order": 3000,
       "groupId": "g10",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
+    },
+    {
+      "id": 963,
+      "title": "芯片篇",
+      "detail": "",
+      "day": "10/30",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "10/30",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3010,
+      "groupId": "g15",
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,

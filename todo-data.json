@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-10-30",
   "groups": [
     {
       "id": "g11",
@@ -6407,19 +6407,21 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/29",
       "createdAt": "10/26",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "10/29",
+      "progress": 100,
       "order": 2840,
       "groupId": "g07",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "_selected": false,
-      "focusDate": "10/29"
+      "focusDate": "10/29",
+      "completedNote": "麦当劳的破楼梯注意 容易崴脚",
+      "progressBefore": 0
     },
     {
       "id": 947,

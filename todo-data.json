@@ -21,6 +21,15 @@
       "type": "生活"
     },
     {
+      "id": "g07",
+      "name": "运动健康",
+      "pri": "高",
+      "note": "羽毛球、健身、爬山、攀岩",
+      "collapsed": false,
+      "noReport": true,
+      "type": "生活"
+    },
+    {
       "id": "g06",
       "name": "行政事务",
       "pri": "中",
@@ -42,15 +51,6 @@
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
       "collapsed": true,
-      "noReport": true,
-      "type": "生活"
-    },
-    {
-      "id": "g07",
-      "name": "运动健康",
-      "pri": "高",
-      "note": "羽毛球、健身、爬山、攀岩",
-      "collapsed": false,
       "noReport": true,
       "type": "生活"
     },

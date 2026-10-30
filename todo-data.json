@@ -4282,17 +4282,17 @@
     {
       "id": 854,
       "title": "【快速搭建使用】学习知识库的使用和部署",
-      "detail": "obsidian下载试用；知识库结构初步搭建好啦",
+      "detail": "obsidian下载试用；知识库结构初步搭建好啦，开始实践",
       "day": "9/16",
       "endDay": null,
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "10/30",
       "createdAt": "9/16",
       "startedAt": "9/16",
-      "status": "doing",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
@@ -4300,7 +4300,9 @@
       "progress": 100,
       "order": 1930,
       "_selected": false,
-      "focusDate": "10/30"
+      "focusDate": "10/30",
+      "completedNote": null,
+      "progressBefore": 100
     },
     {
       "id": 855,

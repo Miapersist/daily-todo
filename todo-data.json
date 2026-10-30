@@ -965,28 +965,6 @@
       "_selected": false
     },
     {
-      "id": 326,
-      "title": "codex下载（等有新mac电脑再说）",
-      "detail": "",
-      "day": "11/1",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "8/4",
-      "startedAt": null,
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "groupId": "g05",
-      "progress": 0,
-      "order": 430,
-      "_selected": false
-    },
-    {
       "id": 327,
       "title": "补日考勤 14 15 16 20 21 28 29 31",
       "detail": "",

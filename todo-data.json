@@ -6641,7 +6641,7 @@
     },
     {
       "id": 957,
-      "title": "【接口】对接箱货系统了解",
+      "title": "【接口】对接模块货架系统接口沟通",
       "detail": "",
       "day": "10/30",
       "endDay": null,
@@ -6652,7 +6652,7 @@
       "completedAt": null,
       "createdAt": "10/30",
       "startedAt": null,
-      "progress": 0,
+      "progress": 30,
       "order": 2950,
       "groupId": "g03",
       "status": "todo",

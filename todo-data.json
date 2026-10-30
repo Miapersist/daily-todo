@@ -42,7 +42,7 @@
       "name": "行政事务",
       "pri": "中",
       "note": "考勤、补卡、请假、工时、房贷补贴",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "生活"
     },

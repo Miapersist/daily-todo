@@ -6555,7 +6555,7 @@
     {
       "id": 953,
       "title": "参加workbuddy的小比赛",
-      "detail": "11.1截止参赛，用观自在",
+      "detail": "11.1截止参赛，用观自在（还差月度未完成）",
       "day": "10/29",
       "endDay": null,
       "priority": "中",
@@ -6608,7 +6608,7 @@
       "completedAt": null,
       "createdAt": "10/29",
       "startedAt": null,
-      "progress": 0,
+      "progress": 20,
       "order": 2930,
       "groupId": "g07",
       "status": "todo",

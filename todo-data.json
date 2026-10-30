@@ -5977,7 +5977,7 @@
     {
       "id": 928,
       "title": "【申请流程】ioc看板接口：需要gpm入湖和ioc侧走输出api申请",
-      "detail": "相关功能清单整理、业务签字、入湖申请（财务和成本已签完字，已跟廖老师沟通）、api申请（ioc申请，已说明）；",
+      "detail": "相关功能清单整理、业务签字、入湖申请（财务和成本已签完字，已跟廖老师沟通申请）、api申请（ioc申请，已说明）；",
       "day": "10/20",
       "endDay": null,
       "priority": "高",
@@ -5987,15 +5987,14 @@
       "completedAt": null,
       "createdAt": "10/20",
       "startedAt": null,
-      "progress": 80,
+      "progress": 100,
       "groupId": "g03",
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "order": 2660,
-      "_selected": false,
-      "focusDate": "10/30"
+      "_selected": false
     },
     {
       "id": 929,

@@ -6664,7 +6664,7 @@
     {
       "id": 958,
       "title": "周末健身+学1新菜",
-      "detail": "",
+      "detail": "确定新菜",
       "day": "10/30",
       "endDay": null,
       "priority": "中",
@@ -6674,7 +6674,7 @@
       "completedAt": null,
       "createdAt": "10/30",
       "startedAt": null,
-      "progress": 0,
+      "progress": 50,
       "order": 2960,
       "groupId": "g07",
       "status": "todo",

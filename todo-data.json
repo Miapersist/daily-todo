@@ -30,6 +30,14 @@
       "type": "生活"
     },
     {
+      "id": "g14",
+      "name": "读书",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false
+    },
+    {
       "id": "g06",
       "name": "行政事务",
       "pri": "中",
@@ -113,14 +121,6 @@
       "collapsed": false,
       "noReport": true,
       "type": "工作"
-    },
-    {
-      "id": "g14",
-      "name": "读书",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false
     }
   ],
   "tasks": [

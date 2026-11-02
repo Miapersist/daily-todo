@@ -6883,7 +6883,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "groupId": "g03"
     }
   ],
   "dailyNotes": {}

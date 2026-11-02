@@ -6884,7 +6884,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "groupId": "g03"
+      "groupId": "g03",
+      "focusDate": "11/2"
     }
   ],
   "dailyNotes": {}

@@ -96,7 +96,8 @@
       "pri": "中",
       "note": "市况联动、定价单/报价单、IBOM、CE",
       "collapsed": true,
-      "type": "工作"
+      "type": "工作",
+      "asLife": true
     },
     {
       "id": "g09",

@@ -51,7 +51,8 @@
       "name": "阅读",
       "pri": "高",
       "note": "",
-      "collapsed": true
+      "collapsed": true,
+      "asLife": true
     },
     {
       "id": "g08",

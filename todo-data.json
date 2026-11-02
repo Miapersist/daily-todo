@@ -6990,6 +6990,27 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
+    },
+    {
+      "id": 972,
+      "title": "开启小红书账号",
+      "detail": "",
+      "day": "11/2",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/2",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3100,
+      "groupId": "g16",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

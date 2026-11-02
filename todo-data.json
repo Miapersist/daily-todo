@@ -103,7 +103,8 @@
       "pri": "高",
       "note": "",
       "collapsed": true,
-      "type": "工作"
+      "type": "工作",
+      "asLife": true
     },
     {
       "id": "g10",

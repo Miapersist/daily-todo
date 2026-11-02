@@ -129,7 +129,8 @@
       "pri": "中",
       "note": "",
       "type": "生活",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     }
   ],
   "tasks": [

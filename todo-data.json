@@ -6952,6 +6952,27 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
+    },
+    {
+      "id": 971,
+      "title": "【迭代项目】修改ppt-一个模块尽量一页写完，一页内容包含：调整说 明，流程图，调整截图。",
+      "detail": "",
+      "day": "11/2",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/2",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3090,
+      "groupId": "g03",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

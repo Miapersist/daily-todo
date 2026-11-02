@@ -6729,7 +6729,7 @@
       "completedAt": null,
       "createdAt": "10/30",
       "startedAt": "10/30",
-      "progress": 0,
+      "progress": 100,
       "order": 2980,
       "groupId": "g05",
       "status": "doing",

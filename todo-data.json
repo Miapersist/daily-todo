@@ -74,6 +74,14 @@
       "noReport": true
     },
     {
+      "id": "g16",
+      "name": "副业",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false
+    },
+    {
       "id": "g02",
       "name": "备考·做题",
       "pri": "低",
@@ -134,14 +142,6 @@
       "type": "生活",
       "collapsed": false,
       "asLife": true
-    },
-    {
-      "id": "g16",
-      "name": "副业",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false
     },
     {
       "id": "g17",

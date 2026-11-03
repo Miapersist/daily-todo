@@ -65,6 +65,14 @@
       "type": "生活"
     },
     {
+      "id": "g16",
+      "name": "副业",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false
+    },
+    {
       "id": "g01",
       "name": "备考·看课",
       "pri": "低",
@@ -72,14 +80,6 @@
       "collapsed": true,
       "type": "生活",
       "noReport": true
-    },
-    {
-      "id": "g16",
-      "name": "副业",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false
     },
     {
       "id": "g02",

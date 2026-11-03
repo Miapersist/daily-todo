@@ -30,21 +30,12 @@
       "type": "生活"
     },
     {
-      "id": "g16",
-      "name": "副业",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false
-    },
-    {
       "id": "g14",
       "name": "读书",
       "pri": "中",
       "note": "",
       "type": "生活",
-      "collapsed": false,
-      "asLife": true
+      "collapsed": false
     },
     {
       "id": "g06",
@@ -60,8 +51,7 @@
       "name": "阅读",
       "pri": "高",
       "note": "",
-      "collapsed": true,
-      "asLife": true
+      "collapsed": true
     },
     {
       "id": "g08",
@@ -73,22 +63,13 @@
       "type": "生活"
     },
     {
-      "id": "g15",
-      "name": "投资学习",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false,
-      "asLife": true
-    },
-    {
       "id": "g01",
       "name": "备考·看课",
       "pri": "低",
       "note": "第9~18章、第2~8章基础课；含计算题/案例分析/导学专题",
       "collapsed": true,
-      "type": "生活",
-      "noReport": true
+      "asLife": true,
+      "type": "生活"
     },
     {
       "id": "g02",
@@ -96,8 +77,8 @@
       "pri": "低",
       "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
       "collapsed": true,
-      "type": "生活",
-      "noReport": true
+      "asLife": true,
+      "type": "生活"
     },
     {
       "id": "g03",
@@ -113,8 +94,7 @@
       "pri": "中",
       "note": "市况联动、定价单/报价单、IBOM、CE",
       "collapsed": true,
-      "type": "工作",
-      "asLife": true
+      "type": "工作"
     },
     {
       "id": "g09",
@@ -122,8 +102,7 @@
       "pri": "高",
       "note": "",
       "collapsed": true,
-      "type": "工作",
-      "asLife": true
+      "type": "工作"
     },
     {
       "id": "g10",
@@ -142,6 +121,14 @@
       "collapsed": false,
       "noReport": true,
       "type": "工作"
+    },
+    {
+      "id": "g15",
+      "name": "投资学习",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false
     }
   ],
   "tasks": [
@@ -6007,8 +5994,7 @@
       "postponedFrom": null,
       "postponeLog": [],
       "order": 2660,
-      "_selected": false,
-      "focusDate": "11/3"
+      "_selected": false
     },
     {
       "id": 929,
@@ -6110,7 +6096,7 @@
     },
     {
       "id": 933,
-      "title": "【操作手册】需要输出后续文档（操作手册、uat测试用例等等）",
+      "title": "【操作手册】需要输出后续文档（操作手册、测试用例等等）",
       "detail": "待贴实际系统图",
       "day": "10/22",
       "endDay": null,
@@ -6128,7 +6114,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "focusDate": "11/2"
     },
     {
       "id": 934,
@@ -6187,21 +6174,19 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": true,
-      "completedAt": "11/2",
+      "completed": false,
+      "completedAt": null,
       "createdAt": "10/26",
       "startedAt": "10/26",
-      "progress": 100,
+      "progress": 80,
       "order": 2740,
       "groupId": "g03",
-      "status": "done",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "_selected": false,
-      "focusDate": "11/2",
-      "completedNote": null,
-      "progressBefore": 80
+      "focusDate": "11/2"
     },
     {
       "id": 937,
@@ -6318,7 +6303,7 @@
       "postponedFrom": null,
       "postponeLog": [],
       "_selected": false,
-      "focusDate": "11/3"
+      "focusDate": "11/2"
     },
     {
       "id": 942,
@@ -6492,11 +6477,11 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/28",
-      "startedAt": "10/28",
+      "startedAt": null,
       "progress": 0,
       "order": 2870,
       "groupId": "g05",
-      "status": "doing",
+      "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
@@ -6744,14 +6729,14 @@
       "completedAt": null,
       "createdAt": "10/30",
       "startedAt": "10/30",
-      "progress": 100,
+      "progress": 0,
       "order": 2980,
       "groupId": "g05",
       "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "focusDate": "11/3"
+      "focusDate": "11/2"
     },
     {
       "id": 961,
@@ -6837,7 +6822,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "focusDate": "11/3"
+      "focusDate": "11/2"
     },
     {
       "id": 965,
@@ -6875,7 +6860,7 @@
       "completedAt": null,
       "createdAt": "11/2",
       "startedAt": null,
-      "progress": 0,
+      "progress": 80,
       "order": 3040,
       "groupId": "g03",
       "status": "todo",
@@ -6892,24 +6877,22 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": true,
-      "completedAt": "11/2",
+      "completed": false,
+      "completedAt": null,
       "createdAt": "11/2",
-      "startedAt": "11/2",
-      "progress": 100,
+      "startedAt": null,
+      "progress": 0,
       "order": 3050,
-      "status": "done",
+      "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g03",
-      "focusDate": "11/2",
-      "completedNote": null,
-      "progressBefore": 0
+      "focusDate": "11/2"
     },
     {
       "id": 968,
-      "title": "知识库 长记手记 工作投资考试思考——obsidian本地（备忘录迁移、语雀迁移） 备忘——密码类 todo、观自在——git项目",
+      "title": "•主仓=Obsidian：知识库、长记手记、工作/投资/考试思考、日常记录，全进去。本地 Markdown 是你这套里唯一\"永远能带走\"的资产。 •收件箱=手机端一个速记入口：短记、情绪碎片、忽然冒出来的念头，一律先扔这里，每天或每周 归仓一次。关键是它必须能一键推到 Obsidian。 ．代码仓=Git：项目资料不动，它已经很健康。",
       "detail": "",
       "day": "11/2",
       "endDay": null,
@@ -6919,11 +6902,11 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "11/2",
-      "startedAt": "11/2",
+      "startedAt": null,
       "progress": 0,
       "order": 3060,
       "groupId": "g05",
-      "status": "doing",
+      "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
@@ -6951,8 +6934,8 @@
     },
     {
       "id": 970,
-      "title": "居家恢复每周3次以上锻炼",
-      "detail": "周二、三",
+      "title": "居家恢复每日锻炼",
+      "detail": "",
       "day": "11/2",
       "endDay": null,
       "priority": "中",
@@ -6965,133 +6948,6 @@
       "progress": 0,
       "order": 3080,
       "groupId": "g07",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": []
-    },
-    {
-      "id": 971,
-      "title": "【迭代项目】修改ppt-一个模块尽量一页写完，一页内容包含：调整说明，流程图，调整截图。",
-      "detail": "本周",
-      "day": "11/2",
-      "endDay": null,
-      "priority": "低",
-      "type": "工作",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/2",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3090,
-      "groupId": "g03",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "focusDate": "11/3"
-    },
-    {
-      "id": 972,
-      "title": "开启小红书账号",
-      "detail": "周末去城区citywalk",
-      "day": "11/2",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/2",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3100,
-      "groupId": "g16",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": []
-    },
-    {
-      "id": 974,
-      "title": "todolist 1、ai对话 2、今日聚焦保留 3、循环任务去除进度状态",
-      "detail": "",
-      "day": "11/3",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/3",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3120,
-      "groupId": "g05",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": []
-    },
-    {
-      "id": 975,
-      "title": "agents.md研究下是什么，还可以写红线和规则？",
-      "detail": "",
-      "day": "11/3",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/3",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3130,
-      "groupId": "g05",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": []
-    },
-    {
-      "id": 976,
-      "title": "看看图库怎么上传图片",
-      "detail": "",
-      "day": "11/3",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/3",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3140,
-      "groupId": "g16",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": []
-    },
-    {
-      "id": 977,
-      "title": "昨天的用例还有部分没改完原型",
-      "detail": "",
-      "day": "11/3",
-      "endDay": null,
-      "priority": "中",
-      "type": "工作",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/3",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3150,
-      "groupId": "g03",
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,

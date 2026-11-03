@@ -35,7 +35,8 @@
       "pri": "中",
       "note": "",
       "type": "生活",
-      "collapsed": false
+      "collapsed": false,
+      "asLife": true
     },
     {
       "id": "g06",
@@ -6852,7 +6853,7 @@
     {
       "id": 966,
       "title": "1103报表需求澄清",
-      "detail": "前四个报表已",
+      "detail": "前四个报表已澄清，还剩2个+ioc对接",
       "day": "11/2",
       "endDay": null,
       "priority": "高",

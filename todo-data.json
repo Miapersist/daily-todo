@@ -6007,7 +6007,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "order": 2660,
-      "_selected": false
+      "_selected": false,
+      "focusDate": "11/3"
     },
     {
       "id": 929,
@@ -6128,7 +6129,7 @@
       "postponedFrom": null,
       "postponeLog": [],
       "_selected": false,
-      "focusDate": "11/2"
+      "focusDate": "11/3"
     },
     {
       "id": 934,

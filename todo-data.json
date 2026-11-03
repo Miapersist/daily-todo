@@ -6989,7 +6989,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "focusDate": "11/3"
     },
     {
       "id": 972,

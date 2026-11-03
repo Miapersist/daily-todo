@@ -56,6 +56,14 @@
       "asLife": true
     },
     {
+      "id": "g16",
+      "name": "副业",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false
+    },
+    {
       "id": "g08",
       "name": "生活家庭",
       "pri": "中",
@@ -63,14 +71,6 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活"
-    },
-    {
-      "id": "g16",
-      "name": "副业",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false
     },
     {
       "id": "g15",

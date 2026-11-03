@@ -36,7 +36,7 @@
       "note": "",
       "type": "生活",
       "collapsed": false,
-      "asLife": true
+      "noReport": true
     },
     {
       "id": "g06",
@@ -52,7 +52,8 @@
       "name": "阅读",
       "pri": "高",
       "note": "",
-      "collapsed": true
+      "collapsed": true,
+      "noReport": true
     },
     {
       "id": "g08",
@@ -95,7 +96,8 @@
       "pri": "中",
       "note": "市况联动、定价单/报价单、IBOM、CE",
       "collapsed": true,
-      "type": "工作"
+      "type": "工作",
+      "noReport": true
     },
     {
       "id": "g09",
@@ -103,7 +105,8 @@
       "pri": "高",
       "note": "",
       "collapsed": true,
-      "type": "工作"
+      "type": "工作",
+      "noReport": true
     },
     {
       "id": "g10",
@@ -129,7 +132,8 @@
       "pri": "中",
       "note": "",
       "type": "生活",
-      "collapsed": false
+      "collapsed": false,
+      "noReport": true
     }
   ],
   "tasks": [

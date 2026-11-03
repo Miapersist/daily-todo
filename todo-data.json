@@ -73,6 +73,15 @@
       "collapsed": false
     },
     {
+      "id": "g15",
+      "name": "投资学习",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false,
+      "asLife": true
+    },
+    {
       "id": "g01",
       "name": "备考·看课",
       "pri": "低",
@@ -133,15 +142,6 @@
       "collapsed": false,
       "noReport": true,
       "type": "工作"
-    },
-    {
-      "id": "g15",
-      "name": "投资学习",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false,
-      "asLife": true
     },
     {
       "id": "g17",

@@ -6910,7 +6910,7 @@
     },
     {
       "id": 968,
-      "title": "•主仓=Obsidian：知识库、长记手记、工作/投资/考试思考、日常记录，全进去。本地 Markdown 是你这套里唯一\"永远能带走\"的资产。 •收件箱=手机端一个速记入口：短记、情绪碎片、忽然冒出来的念头，一律先扔这里，每天或每周 归仓一次。关键是它必须能一键推到 Obsidian。 ．代码仓=Git：项目资料不动，它已经很健康。",
+      "title": "知识库 长记手记 工作投资考试思考——obsidian本地、备忘录 todo、观自在——git项目",
       "detail": "",
       "day": "11/2",
       "endDay": null,
@@ -6920,11 +6920,11 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "11/2",
-      "startedAt": null,
+      "startedAt": "11/2",
       "progress": 0,
       "order": 3060,
       "groupId": "g05",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []

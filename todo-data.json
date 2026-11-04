@@ -6646,7 +6646,7 @@
     {
       "id": 956,
       "title": "宅门",
-      "detail": "买了；开始阅读-晚上半小时",
+      "detail": "买了；开始阅读",
       "day": "10/30",
       "endDay": null,
       "priority": "中",
@@ -6995,6 +6995,27 @@
       "postponedFrom": null,
       "postponeLog": [],
       "focusDate": "11/4"
+    },
+    {
+      "id": 972,
+      "title": "有空可以看看dsh，但是目前没什么意义，是研究底层agent的东西",
+      "detail": "",
+      "day": "11/4",
+      "endDay": null,
+      "priority": "低",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/4",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3100,
+      "groupId": "g05",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

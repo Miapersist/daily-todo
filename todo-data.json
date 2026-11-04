@@ -74,15 +74,6 @@
       "type": "生活"
     },
     {
-      "id": "g02",
-      "name": "备考·做题",
-      "pri": "低",
-      "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
-      "collapsed": true,
-      "asLife": true,
-      "type": "生活"
-    },
-    {
       "id": "g03",
       "name": "车型成本项目",
       "pri": "高",
@@ -127,6 +118,14 @@
       "type": "工作"
     },
     {
+      "id": "g16",
+      "name": "副业",
+      "pri": "中",
+      "note": "",
+      "type": "生活",
+      "collapsed": false
+    },
+    {
       "id": "g15",
       "name": "投资学习",
       "pri": "中",
@@ -136,12 +135,13 @@
       "noReport": true
     },
     {
-      "id": "g16",
-      "name": "副业",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false
+      "id": "g02",
+      "name": "备考·做题",
+      "pri": "低",
+      "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
+      "collapsed": true,
+      "asLife": true,
+      "type": "生活"
     }
   ],
   "tasks": [

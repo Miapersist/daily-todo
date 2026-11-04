@@ -6984,14 +6984,15 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "11/4",
-      "startedAt": null,
+      "startedAt": "11/4",
       "progress": 0,
       "order": 3090,
       "groupId": "g16",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "focusDate": "11/4"
     }
   ],
   "dailyNotes": {}

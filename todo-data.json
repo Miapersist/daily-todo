@@ -6917,7 +6917,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "focusDate": "11/4"
     },
     {
       "id": 969,
@@ -6959,7 +6960,8 @@
       "status": "todo",
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "focusDate": "11/4"
     }
   ],
   "dailyNotes": {}

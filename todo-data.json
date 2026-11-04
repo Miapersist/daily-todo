@@ -6462,15 +6462,16 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "10/28",
-      "startedAt": null,
+      "startedAt": "10/28",
       "progress": 0,
       "order": 2860,
       "groupId": "g08",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "_selected": false
+      "_selected": false,
+      "focusDate": "11/4"
     },
     {
       "id": 949,

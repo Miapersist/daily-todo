@@ -6971,6 +6971,27 @@
       "postponedFrom": null,
       "postponeLog": [],
       "focusDate": "11/4"
+    },
+    {
+      "id": 971,
+      "title": "小红书新号尝试发",
+      "detail": "",
+      "day": "11/4",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/4",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3090,
+      "groupId": "g16",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

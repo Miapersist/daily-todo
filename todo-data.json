@@ -7018,6 +7018,27 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []
+    },
+    {
+      "id": 973,
+      "title": "todolist 1、ai对话 2、今日聚焦保留 3、循环任务去除进度状态",
+      "detail": "",
+      "day": "11/4",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/4",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3110,
+      "groupId": "g05",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": []
     }
   ],
   "dailyNotes": {}

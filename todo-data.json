@@ -6876,11 +6876,11 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "11/2",
-      "startedAt": null,
+      "startedAt": "11/2",
       "progress": 80,
       "order": 3040,
       "groupId": "g03",
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": []

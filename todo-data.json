@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "groups": [
     {
       "id": "g11",
@@ -6743,7 +6743,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "focusDate": "11/2"
+      "focusDate": "11/4"
     },
     {
       "id": 961,

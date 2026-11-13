@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794555806285,
+  "savedAt": 1794555809185,
   "groups": [
     {
       "id": "g16",
@@ -7735,7 +7735,7 @@
     {
       "id": 979,
       "title": "【S】居家运动（引体向上从0突破1）",
-      "detail": "",
+      "detail": "引体向上12*4+散步20分钟",
       "day": "11/11",
       "endDay": null,
       "priority": "中",
@@ -7751,7 +7751,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794274988470,
+      "updatedAt": 1794555809179,
       "groupId": "g07"
     },
     {

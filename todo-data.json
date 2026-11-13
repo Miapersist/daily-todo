@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794554905756,
+  "savedAt": 1794554921940,
   "groups": [
     {
       "id": "g16",
@@ -108,7 +108,7 @@
       "name": "小红书",
       "pri": "中",
       "note": "",
-      "collapsed": true,
+      "collapsed": false,
       "type": "生活",
       "kind": "project",
       "area": "副业",
@@ -120,7 +120,7 @@
       "mode": "p",
       "slots": [],
       "completions": [],
-      "updatedAt": 1794553341305
+      "updatedAt": 1794554921928
     },
     {
       "id": "g06",

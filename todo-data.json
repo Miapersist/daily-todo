@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794550586485,
+  "savedAt": 1794550589465,
   "groups": [
     {
       "id": "g16",
@@ -48,10 +48,10 @@
       "name": "效率工具与AI",
       "pri": "中",
       "note": "skill、mac/idea、知识库、观自在、日报机器人",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794550586477,
+      "updatedAt": 1794550588540,
       "goal": "",
       "doneDef": "",
       "due": "",

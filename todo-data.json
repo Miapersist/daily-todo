@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794553354588,
+  "savedAt": 1794553367149,
   "groups": [
     {
       "id": "g16",
@@ -5679,7 +5679,6 @@
       "endDay": null,
       "priority": "中",
       "type": "个人",
-      "blocking": null,
       "completed": false,
       "completedAt": null,
       "createdAt": "10/9",
@@ -5692,7 +5691,8 @@
       "progress": 0,
       "order": 2320,
       "_selected": false,
-      "updatedAt": 0
+      "updatedAt": 1794553367141,
+      "blocked_by": "朱婷婷"
     },
     {
       "id": 894,

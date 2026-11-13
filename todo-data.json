@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794550378195,
+  "savedAt": 1794550382255,
   "groups": [
     {
       "id": "g16",
@@ -51,12 +51,12 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794550378190,
+      "updatedAt": 1794550381511,
       "goal": "",
       "doneDef": "",
       "due": "",
       "blocker": "",
-      "freq": 0,
+      "freq": 3,
       "mode": "p",
       "slots": [],
       "completions": [],

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794550268957,
+  "savedAt": 1794550271768,
   "groups": [
     {
       "id": "g16",
@@ -7972,29 +7972,6 @@
       "postponedFrom": null,
       "postponeLog": [],
       "updatedAt": 1794550247298
-    },
-    {
-      "id": 991,
-      "title": "效率工具与AI",
-      "detail": "",
-      "day": "11/13",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/13",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3290,
-      "groupId": "g05",
-      "areaSeq": true,
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "updatedAt": 1794550252788
     }
   ],
   "notes": {},
@@ -8006,6 +7983,10 @@
     {
       "id": 990,
       "at": 1794550268954
+    },
+    {
+      "id": 991,
+      "at": 1794550271683
     }
   ],
   "aiLog": [

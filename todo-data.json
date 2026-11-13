@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794559439112,
+  "savedAt": 1794559812071,
   "groups": [
     {
       "id": "g16",
@@ -248,10 +248,10 @@
       "name": "项目日常提醒",
       "pri": "中",
       "note": "",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "工作",
-      "updatedAt": 1794375693057,
+      "updatedAt": 1794559812060,
       "goal": "",
       "doneDef": "",
       "due": "",

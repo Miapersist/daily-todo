@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794554992031,
+  "savedAt": 1794555796370,
   "groups": [
     {
       "id": "g16",
@@ -71,10 +71,10 @@
       "name": "运动健康",
       "pri": "高",
       "note": "羽毛球、健身、爬山、攀岩",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794553332988,
+      "updatedAt": 1794555796361,
       "goal": "",
       "doneDef": "",
       "due": "",

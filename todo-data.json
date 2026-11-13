@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794550065899,
+  "savedAt": 1794550068451,
   "groups": [
     {
       "id": "g16",
@@ -169,7 +169,7 @@
       "note": "用户权限、报表、蓝图、BOM/通用化率",
       "collapsed": false,
       "type": "工作",
-      "updatedAt": 1794550065866,
+      "updatedAt": 1794550067853,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -179,7 +179,7 @@
       "slots": [],
       "completions": [],
       "kind": "project",
-      "area": "副业"
+      "area": "工作"
     },
     {
       "id": "g04",

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794554975133,
+  "savedAt": 1794554992031,
   "groups": [
     {
       "id": "g16",
@@ -7805,7 +7805,7 @@
     {
       "id": 982,
       "title": "每周 早上8点半提醒我为每周创建对应的主要的运动 内容",
-      "detail": "",
+      "detail": "考虑做成邮件提醒",
       "day": "11/13",
       "priority": "中",
       "type": "个人",
@@ -7816,7 +7816,7 @@
       "progress": 0,
       "order": 3200,
       "status": "todo",
-      "updatedAt": 1794499701219,
+      "updatedAt": 1794554992026,
       "groupId": "g05",
       "loop": true,
       "loopDate": "11/13",

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794553342510,
+  "savedAt": 1794553346636,
   "groups": [
     {
       "id": "g16",
@@ -282,6 +282,25 @@
       "area": "投资"
     },
     {
+      "id": "g16c",
+      "name": "小红书",
+      "pri": "中",
+      "note": "",
+      "collapsed": true,
+      "type": "生活",
+      "kind": "project",
+      "area": "副业",
+      "goal": "",
+      "doneDef": "",
+      "due": "",
+      "blocker": "",
+      "freq": 0,
+      "mode": "p",
+      "slots": [],
+      "completions": [],
+      "updatedAt": 1794553341305
+    },
+    {
       "id": "g01",
       "name": "备考·看课",
       "pri": "低",
@@ -360,25 +379,6 @@
       "slots": [],
       "completions": [],
       "updatedAt": 0
-    },
-    {
-      "id": "g16c",
-      "name": "小红书",
-      "pri": "中",
-      "note": "",
-      "collapsed": true,
-      "type": "生活",
-      "kind": "project",
-      "area": "副业",
-      "goal": "",
-      "doneDef": "",
-      "due": "",
-      "blocker": "",
-      "freq": 0,
-      "mode": "p",
-      "slots": [],
-      "completions": [],
-      "updatedAt": 1794553341305
     }
   ],
   "tasks": [

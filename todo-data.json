@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794553338156,
+  "savedAt": 1794553340269,
   "groups": [
     {
       "id": "g16",
@@ -89,9 +89,9 @@
       "pri": "中",
       "note": "",
       "type": "生活",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
-      "updatedAt": 1794553337938,
+      "updatedAt": 1794553339622,
       "goal": "",
       "doneDef": "",
       "due": "",

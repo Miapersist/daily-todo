@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794559812071,
+  "savedAt": 1794559818632,
   "groups": [
     {
       "id": "g16",
@@ -268,10 +268,10 @@
       "name": "工作整理和反思",
       "pri": "高",
       "note": "",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "工作",
-      "updatedAt": 1794375694324,
+      "updatedAt": 1794559818625,
       "goal": "",
       "doneDef": "",
       "due": "",

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560323225,
+  "savedAt": 1794560325842,
   "groups": [
     {
       "id": "g16",
@@ -6568,7 +6568,7 @@
       "title": "【研发内部】研发跟进",
       "detail": "",
       "day": "11/13",
-      "priority": "高",
+      "priority": "中",
       "type": "工作",
       "blocking": null,
       "completed": false,
@@ -6589,7 +6589,7 @@
       ],
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1794560323220,
+      "updatedAt": 1794560325837,
       "loop": true,
       "loopDate": "11/13"
     },

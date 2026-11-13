@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794549909558,
+  "savedAt": 1794549915192,
   "groups": [
     {
       "id": "g16",
@@ -6767,8 +6767,7 @@
       "id": 939,
       "title": "日会",
       "detail": "",
-      "day": "10/26",
-      "endDay": null,
+      "day": "11/13",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -6784,7 +6783,9 @@
       "postponedFrom": null,
       "postponeLog": [],
       "_selected": false,
-      "updatedAt": 1793947625114
+      "updatedAt": 1794549915187,
+      "loop": true,
+      "loopDate": "11/13"
     },
     {
       "id": 940,

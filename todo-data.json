@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560262495,
+  "savedAt": 1794560282796,
   "groups": [
     {
       "id": "g16",
@@ -7883,7 +7883,7 @@
     {
       "id": 986,
       "title": "用户权限-历史的领域和iam现有的科室对不上，需排查",
-      "detail": "元智导出数据跟2位业务核对；",
+      "detail": "元智导出数据跟2位业务核对；定清下周2 3上线，到时拿生产数据看看",
       "day": "11/13",
       "endDay": null,
       "priority": "中",
@@ -7900,7 +7900,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794560262489
+      "updatedAt": 1794560282789
     },
     {
       "id": 987,

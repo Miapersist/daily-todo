@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560333025,
+  "savedAt": 1794560337121,
   "groups": [
     {
       "id": "g16",
@@ -7331,8 +7331,7 @@
       "id": 962,
       "title": "每个月月底检查一次钉钉、tsr的工时提报审批",
       "detail": "",
-      "day": "10/30",
-      "endDay": null,
+      "day": "11/13",
       "priority": "高",
       "type": "工作",
       "blocking": null,
@@ -7347,7 +7346,9 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 0
+      "updatedAt": 1794560337118,
+      "loop": true,
+      "loopDate": "11/13"
     },
     {
       "id": 963,

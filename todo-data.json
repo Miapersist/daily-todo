@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794549915192,
+  "savedAt": 1794549943824,
   "groups": [
     {
       "id": "g16",
@@ -7304,7 +7304,6 @@
       "endDay": null,
       "priority": "高",
       "type": "工作",
-      "blocking": null,
       "completed": false,
       "completedAt": null,
       "createdAt": "10/30",
@@ -7317,7 +7316,8 @@
       "postponedFrom": null,
       "postponeLog": [],
       "focusDate": "11/2",
-      "updatedAt": 1794303219254
+      "updatedAt": 1794549943820,
+      "blocked_by": "李彦琦"
     },
     {
       "id": 962,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560255830,
+  "savedAt": 1794560262495,
   "groups": [
     {
       "id": "g16",
@@ -7888,7 +7888,7 @@
       "endDay": null,
       "priority": "中",
       "type": "工作",
-      "blocking": "定清下周2 3上线，到时拿生产数据看看",
+      "blocking": null,
       "completed": false,
       "completedAt": null,
       "createdAt": "11/13",
@@ -7896,12 +7896,11 @@
       "progress": 40,
       "order": 3240,
       "groupId": "g03",
-      "status": "block",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794560255824,
-      "blocked_by": "定清"
+      "updatedAt": 1794560262489
     },
     {
       "id": 987,

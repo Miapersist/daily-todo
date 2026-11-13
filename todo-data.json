@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794549979492,
+  "savedAt": 1794549987459,
   "groups": [
     {
       "id": "g16",
@@ -6818,7 +6818,7 @@
       "detail": "",
       "day": "11/18",
       "endDay": null,
-      "priority": "高",
+      "priority": "中",
       "type": "工作",
       "blocking": null,
       "completed": false,
@@ -6834,7 +6834,7 @@
       "postponeLog": [],
       "_selected": false,
       "focusDate": "11/2",
-      "updatedAt": 1794549979488
+      "updatedAt": 1794549987452
     },
     {
       "id": 942,

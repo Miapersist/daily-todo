@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560337121,
+  "savedAt": 1794561623980,
   "groups": [
     {
       "id": "g16",
@@ -71,10 +71,10 @@
       "name": "运动健康",
       "pri": "高",
       "note": "羽毛球、健身、爬山、攀岩",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794558115799,
+      "updatedAt": 1794561435205,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -7009,29 +7009,6 @@
       "updatedAt": 1793864003509
     },
     {
-      "id": 949,
-      "title": "【试玩】Step-5-Preview图文视频模型试用",
-      "detail": "做一个小猫跳舞的视频(抖音和小红书教程)",
-      "day": "10/28",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "10/28",
-      "startedAt": null,
-      "progress": 0,
-      "order": 2870,
-      "groupId": "g05",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "_selected": false,
-      "updatedAt": 1793864004923
-    },
-    {
       "id": 950,
       "title": "更新26迭代项目周报",
       "detail": "",
@@ -7526,21 +7503,32 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": true,
-      "completedAt": "11/10",
+      "completed": false,
+      "completedAt": null,
       "createdAt": "11/2",
       "startedAt": "11/2",
-      "progress": 100,
+      "progress": 70,
       "order": 3080,
       "groupId": "g07",
-      "status": "done",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "focusDate": "11/4",
-      "updatedAt": 1794274908771,
+      "updatedAt": 1794561495173,
       "completedNote": null,
-      "progressBefore": 70
+      "progressBefore": 70,
+      "perWeek": 3,
+      "weekKey": "2026-11-09",
+      "weekLog": [
+        "2026-11-13 17:18",
+        "2026-11-13 17:18"
+      ],
+      "weekdays": [
+        3,
+        4,
+        6
+      ]
     },
     {
       "id": 971,
@@ -7860,28 +7848,6 @@
       "focusDate": "11/13"
     },
     {
-      "id": 985,
-      "title": "健身工具搭建",
-      "detail": "",
-      "day": "11/13",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/13",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3230,
-      "groupId": "g05",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "updatedAt": 1794500361986
-    },
-    {
       "id": 986,
       "title": "用户权限-历史的领域和iam现有的科室对不上，需排查",
       "detail": "元智导出数据跟2位业务核对；定清下周2 3上线，到时拿生产数据看看",
@@ -7951,12 +7917,20 @@
   "notes": {},
   "trash": [
     {
+      "id": 949,
+      "at": 1794561418624
+    },
+    {
       "id": 975,
       "at": 1793932020658
     },
     {
       "id": 978,
       "at": 1794555810622
+    },
+    {
+      "id": 985,
+      "at": 1794561427906
     },
     {
       "id": 989,

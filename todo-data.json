@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794555829437,
+  "savedAt": 1794555833246,
   "groups": [
     {
       "id": "g16",
@@ -7722,14 +7722,14 @@
       "completed": false,
       "completedAt": null,
       "createdAt": "11/10",
-      "startedAt": null,
+      "startedAt": "11/11",
       "progress": 0,
       "order": 3170,
-      "status": "todo",
+      "status": "doing",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794555829431,
+      "updatedAt": 1794555833243,
       "groupId": "g07",
       "perWeek": 2,
       "weekKey": "2026-11-09",

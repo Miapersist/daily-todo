@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560325842,
+  "savedAt": 1794560333025,
   "groups": [
     {
       "id": "g16",
@@ -2363,8 +2363,7 @@
       "id": 748,
       "title": "每周四对车型变革项目、迭代项目、一体化项目更新周报、课题、进度、会议纪要更新",
       "detail": "（相关在线文档链接集中更新置顶）\n【金山文档 | WPS云文档】 26年零采一体化迭代优化项目GPM周报(在线持续更新)\nhttps://www.kdocs.cn/l/cuwb2SrnODYF\n【金山文档 | WPS云文档】 26年零采一体化迭代优化项目管理\nhttps://www.kdocs.cn/l/cm12qyp4RCh3\n\n【金山文档 | WPS云文档】 车型物料成本管理变革项目管理\nhttps://www.kdocs.cn/l/cf2rzM0lraOs\n\n【金山文档 | WPS云文档】 测试计划表\nhttps://www.kdocs.cn/l/cmBXDWVr7BLX\n\n【金山文档 | WPS云文档】 零采一体化测试数据结果\nhttps://www.kdocs.cn/l/ce6sT6LoWPyY",
-      "day": "9/3",
-      "endDay": null,
+      "day": "11/13",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -2380,7 +2379,9 @@
       "progress": 0,
       "order": 930,
       "_selected": false,
-      "updatedAt": 0
+      "updatedAt": 1794560333020,
+      "loop": true,
+      "loopDate": "11/13"
     },
     {
       "id": 749,

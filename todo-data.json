@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794552488228,
+  "savedAt": 1794553335859,
   "groups": [
     {
       "id": "g16",
@@ -48,10 +48,10 @@
       "name": "效率工具与AI",
       "pri": "中",
       "note": "skill、mac/idea、知识库、观自在、日报机器人",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794550588540,
+      "updatedAt": 1794553331888,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -68,10 +68,10 @@
       "name": "运动健康",
       "pri": "高",
       "note": "羽毛球、健身、爬山、攀岩",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794549889004,
+      "updatedAt": 1794553332988,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -89,9 +89,9 @@
       "pri": "中",
       "note": "",
       "type": "生活",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
-      "updatedAt": 1794550095617,
+      "updatedAt": 1794553333805,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -108,10 +108,10 @@
       "name": "行政事务",
       "pri": "中",
       "note": "考勤、补卡、请假、工时、房贷补贴",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794550094316,
+      "updatedAt": 1794553334671,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -7958,16 +7958,16 @@
       "at": 1793932020658
     },
     {
+      "id": 989,
+      "at": 1794550274282
+    },
+    {
       "id": 990,
       "at": 1794550268954
     },
     {
       "id": 991,
       "at": 1794550271683
-    },
-    {
-      "id": 989,
-      "at": 1794550274282
     }
   ],
   "aiLog": [

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560316875,
+  "savedAt": 1794560323225,
   "groups": [
     {
       "id": "g16",
@@ -6589,8 +6589,7 @@
       ],
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1794560242523,
-      "focusDate": "11/9",
+      "updatedAt": 1794560323220,
       "loop": true,
       "loopDate": "11/13"
     },

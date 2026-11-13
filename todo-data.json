@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794560236735,
+  "savedAt": 1794560242530,
   "groups": [
     {
       "id": "g16",
@@ -6567,8 +6567,7 @@
       "id": 931,
       "title": "【研发内部】研发跟进",
       "detail": "",
-      "day": "10/22",
-      "endDay": null,
+      "day": "11/13",
       "priority": "高",
       "type": "工作",
       "blocking": null,
@@ -6590,8 +6589,10 @@
       ],
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1794190113155,
-      "focusDate": "11/9"
+      "updatedAt": 1794560242523,
+      "focusDate": "11/9",
+      "loop": true,
+      "loopDate": "11/13"
     },
     {
       "id": 932,

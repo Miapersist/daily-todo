@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794553399580,
+  "savedAt": 1794554899252,
   "groups": [
     {
       "id": "g16",
@@ -122,6 +122,25 @@
       "completions": [],
       "kind": "area",
       "area": "生活"
+    },
+    {
+      "id": "g16c",
+      "name": "小红书",
+      "pri": "中",
+      "note": "",
+      "collapsed": true,
+      "type": "生活",
+      "kind": "project",
+      "area": "副业",
+      "goal": "",
+      "doneDef": "",
+      "due": "",
+      "blocker": "",
+      "freq": 0,
+      "mode": "p",
+      "slots": [],
+      "completions": [],
+      "updatedAt": 1794553341305
     },
     {
       "id": "g13",
@@ -280,25 +299,6 @@
       "completions": [],
       "kind": "area",
       "area": "投资"
-    },
-    {
-      "id": "g16c",
-      "name": "小红书",
-      "pri": "中",
-      "note": "",
-      "collapsed": true,
-      "type": "生活",
-      "kind": "project",
-      "area": "副业",
-      "goal": "",
-      "doneDef": "",
-      "due": "",
-      "blocker": "",
-      "freq": 0,
-      "mode": "p",
-      "slots": [],
-      "completions": [],
-      "updatedAt": 1794553341305
     },
     {
       "id": "g01",

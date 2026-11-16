@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848505277,
+  "savedAt": 1794848534461,
   "groups": [
     {
       "id": "g16",
@@ -5337,14 +5337,19 @@
       "order": 3180,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794848505274,
+      "updatedAt": 1794848534457,
       "focusDate": "11/10",
       "endDay": null,
       "cycle": {
         "freq": "week",
-        "mode": "n",
-        "weekdays": [],
-        "n": 4,
+        "mode": "days",
+        "weekdays": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "n": 1,
         "monthDays": []
       },
       "cycleSkip": {
@@ -5769,6 +5774,33 @@
       "id": 1002,
       "completedNote": null,
       "cycleFrom": 979,
+      "cycleWeek": "2026-11-16"
+    },
+    {
+      "title": "做健身记录工具（目的：引体向上破1）",
+      "detail": "4.训练方式不对，一直在低效率重复 •只吊杆（悬垂）：能练握力，但练不到向心拉动（往上拉的动作） • 弹力带引体高度太高：太省力，没刺激到接近极限的拉力 • 反向划船练太少：反向划船是引体前置王牌动作，很多人跳过 •动作幅度不全：只练半程，没练到从悬垂到下巴过杆完整发力",
+      "day": "11/17",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/17",
+      "progress": 0,
+      "order": 3410,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1794848534457,
+      "focusDate": "11/10",
+      "endDay": null,
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [],
+        "flex": 1
+      },
+      "id": 1003,
+      "completedNote": null,
+      "cycleFrom": 980,
       "cycleWeek": "2026-11-16"
     }
   ],

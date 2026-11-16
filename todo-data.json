@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848981948,
+  "savedAt": 1794848984155,
   "groups": [
     {
       "id": "g16",
@@ -155,9 +155,9 @@
       "name": "阅读",
       "pri": "高",
       "note": "",
-      "collapsed": true,
+      "collapsed": false,
       "noReport": true,
-      "updatedAt": 1794848981945,
+      "updatedAt": 1794848982478,
       "goal": "",
       "doneDef": "",
       "due": "",

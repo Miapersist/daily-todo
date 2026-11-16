@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794811643849,
+  "savedAt": 1794811680037,
   "groups": [
     {
       "id": "g16",
@@ -7115,18 +7115,20 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/16",
       "createdAt": "10/29",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "10/29",
+      "progress": 100,
       "order": 2920,
       "groupId": "g06",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 0
+      "updatedAt": 1794811680018,
+      "completedNote": "在进行了，平时朋友圈和沟通的时候注意，看看向上管理的书，记得表现自己",
+      "progressBefore": 0
     },
     {
       "id": 956,

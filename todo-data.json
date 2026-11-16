@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849882323,
+  "savedAt": 1794849903324,
   "groups": [
     {
       "id": "g05",
@@ -4951,7 +4951,7 @@
       "title": "芯片篇",
       "detail": "",
       "day": "10/30",
-      "endDay": null,
+      "endDay": "11/30",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -4963,7 +4963,7 @@
       "order": 3010,
       "groupId": "g15",
       "status": "todo",
-      "updatedAt": 0
+      "updatedAt": 1794849903321
     },
     {
       "id": 964,

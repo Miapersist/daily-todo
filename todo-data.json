@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794821411208,
+  "savedAt": 1794821415719,
   "groups": [
     {
       "id": "g16",
@@ -5375,12 +5375,16 @@
       "progress": 0,
       "order": 3200,
       "status": "doing",
-      "updatedAt": 1794821407027,
+      "updatedAt": 1794821415714,
       "groupId": "g05",
       "completedNote": null,
       "startedAt": "11/16",
       "weekly": true,
-      "weeklyKey": "2026-11-16"
+      "weeklyKey": "2026-11-16",
+      "endDay": null,
+      "weekdays": [
+        1
+      ]
     },
     {
       "id": 983,

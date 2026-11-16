@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794847029657,
+  "savedAt": 1794847248046,
   "groups": [
     {
       "id": "g16",
@@ -5369,21 +5369,11 @@
       "progress": 0,
       "order": 3200,
       "status": "doing",
-      "updatedAt": 1794821415714,
+      "updatedAt": 1794847248040,
       "groupId": "g05",
       "completedNote": null,
       "startedAt": "11/16",
-      "endDay": null,
-      "weekdays": [
-        1
-      ],
-      "cycle": {
-        "freq": "week",
-        "mode": "n",
-        "weekdays": [],
-        "n": 1,
-        "monthDays": []
-      }
+      "endDay": null
     },
     {
       "id": 983,
@@ -5715,7 +5705,7 @@
       "progress": 100,
       "order": 3380,
       "_selected": false,
-      "updatedAt": 1794847029653,
+      "updatedAt": 1794847248040,
       "completedNote": "提醒邮件已完成",
       "endDay": null,
       "weekdays": [
@@ -5740,7 +5730,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847029653,
+      "updatedAt": 1794847248040,
       "groupId": "g07",
       "weekdays": [
         1,
@@ -5767,7 +5757,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847029653,
+      "updatedAt": 1794847248040,
       "groupId": "g05",
       "completedNote": null,
       "endDay": null,

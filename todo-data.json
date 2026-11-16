@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794796841880,
+  "savedAt": 1794796846860,
   "groups": [
     {
       "id": "g16",
@@ -188,10 +188,10 @@
       "id": "g03",
       "name": "车型成本项目",
       "pri": "高",
-      "note": "用户权限、报表、蓝图、BOM/通用化率整理未作的todo",
+      "note": "用户权限、报表、蓝图、BOM/通用化率",
       "collapsed": false,
       "type": "工作",
-      "updatedAt": 1794796841874,
+      "updatedAt": 1794796846855,
       "goal": "",
       "doneDef": "",
       "due": "",

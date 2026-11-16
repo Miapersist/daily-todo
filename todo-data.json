@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850360769,
+  "savedAt": 1794850371199,
   "groups": [
     {
       "id": "g05",
@@ -214,7 +214,7 @@
       "name": "观自在",
       "pri": "中",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "type": "生活",
       "kind": "project",
       "area": "副业",
@@ -226,7 +226,7 @@
       "mode": "p",
       "slots": [],
       "completions": [],
-      "updatedAt": 1794849810071
+      "updatedAt": 1794850371195
     },
     {
       "id": "g16c",

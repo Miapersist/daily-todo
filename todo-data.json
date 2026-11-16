@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849422212,
+  "savedAt": 1794849423787,
   "groups": [
     {
       "id": "g11",
@@ -77,9 +77,9 @@
       "pri": "中",
       "note": "",
       "type": "生活",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
-      "updatedAt": 1794554905749,
+      "updatedAt": 1794849422666,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -96,10 +96,10 @@
       "name": "行政事务",
       "pri": "中",
       "note": "考勤、补卡、请假、工时、房贷补贴",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794553354587,
+      "updatedAt": 1794849423700,
       "goal": "",
       "doneDef": "",
       "due": "",

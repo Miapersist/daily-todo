@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794847273643,
+  "savedAt": 1794847285607,
   "groups": [
     {
       "id": "g16",
@@ -50,7 +50,7 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794847273637,
+      "updatedAt": 1794847285604,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -65,6 +65,7 @@
         "2026-11-16 14:41",
         "2026-11-16 17:23",
         "2026-11-17 00:36",
+        "2026-11-17 00:41",
         "2026-11-17 00:41"
       ],
       "kind": "area",
@@ -5602,16 +5603,18 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/17",
       "createdAt": "11/16",
       "startedAt": "11/16",
-      "progress": 0,
+      "progress": 100,
       "order": 3330,
       "groupId": "g05",
-      "status": "doing",
-      "updatedAt": 1794821703994,
-      "focusDate": "11/16"
+      "status": "done",
+      "updatedAt": 1794847285604,
+      "focusDate": "11/16",
+      "completedNote": "在了",
+      "progressBefore": 0
     },
     {
       "id": 996,
@@ -5707,7 +5710,7 @@
       "progress": 100,
       "order": 3380,
       "_selected": false,
-      "updatedAt": 1794847273637,
+      "updatedAt": 1794847285604,
       "completedNote": "提醒邮件已完成",
       "endDay": null,
       "weekdays": [
@@ -5732,7 +5735,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847273637,
+      "updatedAt": 1794847285604,
       "groupId": "g07",
       "weekdays": [
         1,
@@ -5759,7 +5762,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847273637,
+      "updatedAt": 1794847285604,
       "groupId": "g05",
       "completedNote": null,
       "endDay": null,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794844687409,
+  "savedAt": 1794846640171,
   "groups": [
     {
       "id": "g16",
@@ -1434,17 +1434,17 @@
       "_selected": false,
       "updatedAt": 1794811770448,
       "completedNote": null,
-      "weekly": true,
-      "weeklyKey": "2026-11-16",
       "endDay": null,
-      "perWeek": 1,
-      "weekKey": "2026-11-16",
-      "weekLog": [
-        "2026-11-16 14:49"
-      ],
       "weekdays": [
         1
-      ]
+      ],
+      "cycle": {
+        "freq": "week",
+        "mode": "n",
+        "weekdays": [],
+        "n": 1,
+        "monthDays": []
+      }
     },
     {
       "id": 749,
@@ -4398,7 +4398,7 @@
       "id": 931,
       "title": "【研发内部】研发跟进",
       "detail": "",
-      "day": "11/16",
+      "day": "11/17",
       "priority": "中",
       "type": "工作",
       "blocking": null,
@@ -4410,9 +4410,9 @@
       "status": "todo",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1794759279837,
+      "updatedAt": 1794844810935,
       "loop": true,
-      "loopDate": "11/16",
+      "loopDate": "11/17",
       "completedNote": null
     },
     {
@@ -4551,7 +4551,7 @@
       "id": 939,
       "title": "日会",
       "detail": "",
-      "day": "11/16",
+      "day": "11/17",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -4563,9 +4563,9 @@
       "groupId": "g03",
       "status": "todo",
       "_selected": false,
-      "updatedAt": 1794759279837,
+      "updatedAt": 1794844810935,
       "loop": true,
-      "loopDate": "11/16",
+      "loopDate": "11/17",
       "completedNote": null
     },
     {
@@ -4931,23 +4931,21 @@
       "id": 960,
       "title": "【每日】早间新闻10min",
       "detail": "",
-      "day": "11/16",
+      "day": "11/17",
       "priority": "低",
       "type": "个人",
       "blocking": null,
-      "completed": true,
-      "completedAt": "11/16",
+      "completed": false,
+      "completedAt": null,
       "createdAt": "10/30",
-      "progress": 100,
+      "progress": 0,
       "order": 2980,
       "groupId": "g05",
-      "status": "done",
-      "updatedAt": 1794808535808,
+      "status": "todo",
+      "updatedAt": 1794844810935,
       "loop": true,
-      "loopDate": "11/16",
-      "completedNote": null,
-      "startedAt": "11/16",
-      "progressBefore": 0
+      "loopDate": "11/17",
+      "completedNote": null
     },
     {
       "id": 961,
@@ -5258,10 +5256,7 @@
       "groupId": "g16c",
       "status": "todo",
       "updatedAt": 1794796954356,
-      "focusDate": "11/10",
-      "perWeek": 2,
-      "weekKey": "2026-11-16",
-      "weekLog": []
+      "focusDate": "11/10"
     },
     {
       "id": 977,
@@ -5302,11 +5297,6 @@
       "status": "doing",
       "updatedAt": 1794809330968,
       "groupId": "g07",
-      "perWeek": 4,
-      "weekKey": "2026-11-16",
-      "weekLog": [
-        "2026-11-16 08:49"
-      ],
       "weekdays": [
         1,
         3,
@@ -5314,8 +5304,13 @@
         7
       ],
       "endDay": null,
-      "weekly": true,
-      "weeklyKey": "2026-11-16"
+      "cycle": {
+        "freq": "week",
+        "mode": "n",
+        "weekdays": [],
+        "n": 1,
+        "monthDays": []
+      }
     },
     {
       "id": 980,
@@ -5376,12 +5371,17 @@
       "groupId": "g05",
       "completedNote": null,
       "startedAt": "11/16",
-      "weekly": true,
-      "weeklyKey": "2026-11-16",
       "endDay": null,
       "weekdays": [
         1
-      ]
+      ],
+      "cycle": {
+        "freq": "week",
+        "mode": "n",
+        "weekdays": [],
+        "n": 1,
+        "monthDays": []
+      }
     },
     {
       "id": 983,
@@ -5695,6 +5695,82 @@
       "groupId": "g08",
       "status": "todo",
       "updatedAt": 1794814204456
+    },
+    {
+      "title": "周一对车型变革项目、迭代项目、一体化项目更新周报、课题、进度、会议纪要更新",
+      "detail": "（相关在线文档链接集中更新置顶）\n【金山文档 | WPS云文档】 26年零采一体化迭代优化项目GPM周报(在线持续更新)\nhttps://www.kdocs.cn/l/cuwb2SrnODYF\n【金山文档 | WPS云文档】 26年零采一体化迭代优化项目管理\nhttps://www.kdocs.cn/l/cm12qyp4RCh3\n\n【金山文档 | WPS云文档】 车型物料成本管理变革项目管理\nhttps://www.kdocs.cn/l/cf2rzM0lraOs\n\n【金山文档 | WPS云文档】 测试计划表\nhttps://www.kdocs.cn/l/cmBXDWVr7BLX\n\n【金山文档 | WPS云文档】 零采一体化测试数据结果\nhttps://www.kdocs.cn/l/ce6sT6LoWPyY",
+      "day": null,
+      "priority": "低",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/17",
+      "status": "todo",
+      "groupId": "g10",
+      "progress": 0,
+      "order": 3380,
+      "_selected": false,
+      "updatedAt": 1794846638326,
+      "completedNote": null,
+      "endDay": null,
+      "weekdays": [
+        1
+      ],
+      "id": 1000,
+      "cycleFrom": 748,
+      "cycleWeek": "2026-11-16"
+    },
+    {
+      "title": "运动（引体向上从0突破1）",
+      "detail": "羽毛球1次/引体向上12*4+居家运动项目3次/健身房1-2次\n重要目标：1、引体向上3个，当前悬吊最长53秒",
+      "day": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/17",
+      "progress": 0,
+      "order": 3380,
+      "status": "todo",
+      "updatedAt": 1794846638326,
+      "groupId": "g07",
+      "weekdays": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "endDay": null,
+      "id": 1000,
+      "completedNote": null,
+      "cycleFrom": 979,
+      "cycleWeek": "2026-11-16"
+    },
+    {
+      "title": "每周 早上8点半提醒我为每周创建对应的主要的运动 内容",
+      "detail": "考虑做成邮件提醒",
+      "day": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/17",
+      "progress": 0,
+      "order": 3380,
+      "status": "todo",
+      "updatedAt": 1794846638326,
+      "groupId": "g05",
+      "completedNote": null,
+      "endDay": null,
+      "weekdays": [
+        1
+      ],
+      "id": 1000,
+      "cycleFrom": 982,
+      "cycleWeek": "2026-11-16"
     }
   ],
   "notes": {},

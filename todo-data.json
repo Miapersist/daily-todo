@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794790290683,
+  "savedAt": 1794790303065,
   "groups": [
     {
       "id": "g16",
@@ -7465,39 +7465,6 @@
       "updatedAt": 0
     },
     {
-      "id": 970,
-      "title": "居家恢复每周3次锻炼",
-      "detail": "",
-      "day": "11/2",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/2",
-      "startedAt": "11/2",
-      "progress": 70,
-      "order": 3080,
-      "groupId": "g07",
-      "status": "doing",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "focusDate": "11/4",
-      "updatedAt": 1794759279912,
-      "completedNote": null,
-      "progressBefore": 70,
-      "perWeek": 3,
-      "weekKey": "2026-11-16",
-      "weekLog": [],
-      "weekdays": [
-        3,
-        4,
-        6
-      ]
-    },
-    {
       "id": 971,
       "title": "小红书新号尝试发",
       "detail": "",
@@ -7938,6 +7905,10 @@
     {
       "id": 955,
       "at": 1794790290679
+    },
+    {
+      "id": 970,
+      "at": 1794790303061
     }
   ],
   "aiLog": [

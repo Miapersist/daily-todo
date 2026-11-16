@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794790182633,
+  "savedAt": 1794790191183,
   "groups": [
     {
       "id": "g16",
@@ -7692,8 +7692,7 @@
       "id": 979,
       "title": "【S】运动（引体向上从0突破1）",
       "detail": "引体向上12*4+居家运动项目/健身房（当前悬吊最长53秒）",
-      "day": "11/11",
-      "endDay": null,
+      "day": "11/16",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -7707,7 +7706,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794790182629,
+      "updatedAt": 1794790191176,
       "groupId": "g07",
       "perWeek": 4,
       "weekKey": "2026-11-16",
@@ -7719,7 +7718,9 @@
         3,
         4,
         7
-      ]
+      ],
+      "loop": true,
+      "loopDate": "11/16"
     },
     {
       "id": 980,

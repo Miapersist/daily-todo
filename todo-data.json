@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794795409103,
+  "savedAt": 1794795421600,
   "groups": [
     {
       "id": "g16",
@@ -7874,7 +7874,7 @@
     {
       "id": 990,
       "title": "《人性的弱点》戴尔・卡耐基（豆包）",
-      "detail": "",
+      "detail": "https://www.doubao.com/thread/xHSssgzEXSyZgQBDB",
       "day": "11/16",
       "endDay": null,
       "priority": "中",
@@ -7891,7 +7891,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794795409089
+      "updatedAt": 1794795421589
     }
   ],
   "notes": {},

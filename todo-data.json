@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849182662,
+  "savedAt": 1794849189562,
   "groups": [
     {
       "id": "g16",
@@ -139,25 +139,6 @@
       "noReport": true,
       "type": "生活",
       "updatedAt": 1794553354587,
-      "goal": "",
-      "doneDef": "",
-      "due": "",
-      "blocker": "",
-      "freq": 0,
-      "mode": "p",
-      "slots": [],
-      "completions": [],
-      "kind": "area",
-      "area": "生活"
-    },
-    {
-      "id": "g13",
-      "name": "阅读",
-      "pri": "高",
-      "note": "",
-      "collapsed": false,
-      "noReport": true,
-      "updatedAt": 1794848982478,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -6169,6 +6150,10 @@
       "why": "懒得看了",
       "title": "动漫-黄金神威试看",
       "groupId": "g08"
+    },
+    {
+      "id": "g13",
+      "at": 1794849189559
     }
   ],
   "aiLog": [

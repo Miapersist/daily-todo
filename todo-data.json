@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849196758,
+  "savedAt": 1794849199359,
   "groups": [
     {
       "id": "g16",
@@ -214,10 +214,10 @@
       "name": "新车型市况",
       "pri": "高",
       "note": "",
-      "collapsed": true,
+      "collapsed": false,
       "type": "工作",
       "noReport": true,
-      "updatedAt": 0,
+      "updatedAt": 1794849199356,
       "goal": "",
       "doneDef": "",
       "due": "",

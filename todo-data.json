@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848846138,
+  "savedAt": 1794848857271,
   "groups": [
     {
       "id": "g16",
@@ -4859,7 +4859,7 @@
       "endDay": "12/30",
       "priority": "低",
       "type": "个人",
-      "blocking": null,
+      "blocking": "图书馆的书优先",
       "completed": false,
       "completedAt": null,
       "createdAt": "10/30",
@@ -4867,8 +4867,8 @@
       "progress": 50,
       "order": 2940,
       "groupId": "g14",
-      "status": "doing",
-      "updatedAt": 1794848846134
+      "status": "block",
+      "updatedAt": 1794848857267
     },
     {
       "id": 957,

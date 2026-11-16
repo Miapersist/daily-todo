@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794847307325,
+  "savedAt": 1794847327694,
   "groups": [
     {
       "id": "g16",
@@ -5648,7 +5648,7 @@
       "title": "在win本上面弄这种持续的服务",
       "detail": "",
       "day": "11/21",
-      "endDay": null,
+      "endDay": "11/22",
       "priority": "低",
       "type": "个人",
       "blocking": null,
@@ -5660,7 +5660,7 @@
       "order": 3350,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794847307321
+      "updatedAt": 1794847327688
     },
     {
       "id": 998,
@@ -5699,6 +5699,33 @@
       "groupId": "g08",
       "status": "todo",
       "updatedAt": 1794814204456
+    },
+    {
+      "title": "运动（引体向上从0突破1）",
+      "detail": "羽毛球1次/引体向上12*4+居家运动项目3次/健身房1-2次\n重要目标：1、引体向上3个，当前悬吊最长53秒",
+      "day": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/17",
+      "progress": 0,
+      "order": 3380,
+      "status": "todo",
+      "updatedAt": 1794847308396,
+      "groupId": "g07",
+      "weekdays": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "endDay": null,
+      "id": 1000,
+      "completedNote": null,
+      "cycleFrom": 979,
+      "cycleWeek": "2026-11-16"
     }
   ],
   "notes": {},

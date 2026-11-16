@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849061295,
+  "savedAt": 1794849071245,
   "groups": [
     {
       "id": "g16",
@@ -5462,15 +5462,17 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/14",
       "createdAt": "11/13",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "11/14",
+      "progress": 100,
       "order": 3250,
       "groupId": "g08",
-      "status": "todo",
-      "updatedAt": 1794537163235
+      "status": "done",
+      "updatedAt": 1794849071243,
+      "completedNote": null,
+      "progressBefore": 0
     },
     {
       "id": 988,

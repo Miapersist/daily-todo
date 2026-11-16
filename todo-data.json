@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849753643,
+  "savedAt": 1794849758126,
   "groups": [
     {
       "id": "g05",
@@ -116,9 +116,9 @@
       "name": "车型成本项目",
       "pri": "高",
       "note": "用户权限、报表、蓝图、BOM/通用化率",
-      "collapsed": true,
+      "collapsed": false,
       "type": "工作",
-      "updatedAt": 1794849425966,
+      "updatedAt": 1794849758122,
       "goal": "",
       "doneDef": "",
       "due": "",

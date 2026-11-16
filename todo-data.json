@@ -1,27 +1,7 @@
 {
   "v": 3,
-  "savedAt": 1794849340769,
+  "savedAt": 1794849350240,
   "groups": [
-    {
-      "id": "g16",
-      "name": "副业",
-      "pri": "中",
-      "note": "",
-      "type": "生活",
-      "collapsed": false,
-      "updatedAt": 1794849339252,
-      "asLife": true,
-      "goal": "",
-      "doneDef": "",
-      "due": "",
-      "blocker": "",
-      "freq": 0,
-      "mode": "p",
-      "slots": [],
-      "completions": [],
-      "kind": "project",
-      "area": "副业"
-    },
     {
       "id": "g11",
       "name": "备考个人计划",
@@ -6192,6 +6172,10 @@
     {
       "id": "g13",
       "at": 1794849189559
+    },
+    {
+      "id": "g16",
+      "at": 1794849350237
     }
   ],
   "aiLog": [

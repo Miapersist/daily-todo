@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849928890,
+  "savedAt": 1794849940576,
   "groups": [
     {
       "id": "g05",
@@ -5790,7 +5790,7 @@
       "title": "确认基本是否能跟知识库互通，跑一周看看分析效果+记录情况",
       "detail": "",
       "day": "11/17",
-      "endDay": null,
+      "endDay": "11/22",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -5802,7 +5802,7 @@
       "order": 3430,
       "groupId": "g16a",
       "status": "todo",
-      "updatedAt": 1794849270514
+      "updatedAt": 1794849940570
     },
     {
       "id": 1006,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849216727,
+  "savedAt": 1794849270517,
   "groups": [
     {
       "id": "g16",
@@ -5804,6 +5804,25 @@
       "completedNote": null,
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16"
+    },
+    {
+      "id": 1005,
+      "title": "确认基本是否能跟知识库互通，跑一周看看分析效果+记录情况",
+      "detail": "",
+      "day": "11/17",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/17",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3430,
+      "groupId": "g16a",
+      "status": "todo",
+      "updatedAt": 1794849270514
     }
   ],
   "notes": {},

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794812225680,
+  "savedAt": 1794812241896,
   "groups": [
     {
       "id": "g16",
@@ -253,7 +253,7 @@
       "collapsed": false,
       "noReport": true,
       "type": "工作",
-      "updatedAt": 1794559812060,
+      "updatedAt": 1794812241892,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -262,7 +262,7 @@
       "mode": "p",
       "slots": [],
       "completions": [],
-      "kind": "area",
+      "kind": "project",
       "area": "工作"
     },
     {

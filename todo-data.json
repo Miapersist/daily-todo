@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848534461,
+  "savedAt": 1794848642345,
   "groups": [
     {
       "id": "g16",
@@ -5762,19 +5762,20 @@
       "progress": 0,
       "order": 3400,
       "status": "todo",
-      "updatedAt": 1794848500143,
+      "updatedAt": 1794848642340,
       "groupId": "g07",
-      "weekdays": [
-        1,
-        3,
-        4,
-        7
-      ],
       "endDay": null,
       "id": 1002,
       "completedNote": null,
       "cycleFrom": 979,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "cycle": {
+        "freq": "week",
+        "mode": "n",
+        "weekdays": [],
+        "n": 4,
+        "monthDays": []
+      }
     },
     {
       "title": "做健身记录工具（目的：引体向上破1）",

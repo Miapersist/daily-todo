@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794847400344,
+  "savedAt": 1794847707144,
   "groups": [
     {
       "id": "g16",
@@ -5523,7 +5523,7 @@
       "title": "《人性的弱点》戴尔・卡耐基（豆包）",
       "detail": "https://www.doubao.com/thread/xHSssgzEXSyZgQBDB",
       "day": "11/16",
-      "endDay": null,
+      "endDay": "11/30",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -5535,7 +5535,7 @@
       "order": 3280,
       "groupId": "g14",
       "status": "todo",
-      "updatedAt": 1794795421589
+      "updatedAt": 1794847707140
     },
     {
       "id": 991,
@@ -5760,7 +5760,7 @@
       "order": 3390,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794847400339,
+      "updatedAt": 1794847707140,
       "id": 1001,
       "completedNote": null,
       "cycleFrom": 983,
@@ -5781,7 +5781,7 @@
       "order": 3390,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794847400339,
+      "updatedAt": 1794847707140,
       "id": 1001,
       "completedNote": null,
       "cycleFrom": 983,

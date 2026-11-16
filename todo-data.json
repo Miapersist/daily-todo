@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849423787,
+  "savedAt": 1794849426157,
   "groups": [
     {
       "id": "g11",
@@ -116,10 +116,10 @@
       "name": "生活家庭",
       "pri": "中",
       "note": "家政、家宴、亲友、数码采购、宠物",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794795431419,
+      "updatedAt": 1794849424683,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -136,9 +136,9 @@
       "name": "车型成本项目",
       "pri": "高",
       "note": "用户权限、报表、蓝图、BOM/通用化率",
-      "collapsed": false,
+      "collapsed": true,
       "type": "工作",
-      "updatedAt": 1794796846855,
+      "updatedAt": 1794849425966,
       "goal": "",
       "doneDef": "",
       "due": "",

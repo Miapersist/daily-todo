@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850173652,
+  "savedAt": 1794850216536,
   "groups": [
     {
       "id": "g05",
@@ -5660,7 +5660,7 @@
       "id": 998,
       "title": "《向上管理》书籍阅读",
       "detail": "",
-      "day": "11/16",
+      "day": "12/1",
       "endDay": null,
       "priority": "中",
       "type": "工作",
@@ -5673,7 +5673,7 @@
       "order": 3360,
       "groupId": "g12",
       "status": "todo",
-      "updatedAt": 1794811712251
+      "updatedAt": 1794850216532
     },
     {
       "id": 999,

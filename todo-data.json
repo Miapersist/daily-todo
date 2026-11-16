@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794797258738,
+  "savedAt": 1794797265351,
   "groups": [
     {
       "id": "g16",
@@ -7728,15 +7728,16 @@
       "createdAt": "11/10",
       "progress": 0,
       "order": 3200,
-      "status": "todo",
-      "updatedAt": 1794759279837,
+      "status": "doing",
+      "updatedAt": 1794797265347,
       "groupId": "g05",
       "loop": true,
       "loopDate": "11/16",
       "completedNote": null,
       "postponedCount": 0,
       "postponedFrom": null,
-      "postponeLog": []
+      "postponeLog": [],
+      "startedAt": "11/16"
     },
     {
       "id": 983,

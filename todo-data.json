@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794847014106,
+  "savedAt": 1794847029657,
   "groups": [
     {
       "id": "g16",
@@ -5707,23 +5707,25 @@
       "priority": "低",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/17",
       "createdAt": "11/17",
-      "status": "todo",
+      "status": "done",
       "groupId": "g10",
-      "progress": 0,
+      "progress": 100,
       "order": 3380,
       "_selected": false,
-      "updatedAt": 1794847014102,
-      "completedNote": null,
+      "updatedAt": 1794847029653,
+      "completedNote": "提醒邮件已完成",
       "endDay": null,
       "weekdays": [
         1
       ],
       "id": 1000,
       "cycleFrom": 748,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "startedAt": "11/17",
+      "progressBefore": 0
     },
     {
       "title": "运动（引体向上从0突破1）",
@@ -5738,7 +5740,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847014102,
+      "updatedAt": 1794847029653,
       "groupId": "g07",
       "weekdays": [
         1,
@@ -5765,7 +5767,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847014102,
+      "updatedAt": 1794847029653,
       "groupId": "g05",
       "completedNote": null,
       "endDay": null,

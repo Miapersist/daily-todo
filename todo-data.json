@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850150758,
+  "savedAt": 1794850173652,
   "groups": [
     {
       "id": "g05",
@@ -5640,8 +5640,8 @@
       "id": 997,
       "title": "在win本上面弄这种持续的服务",
       "detail": "",
-      "day": "11/21",
-      "endDay": "11/22",
+      "day": "11/22",
+      "endDay": null,
       "priority": "低",
       "type": "个人",
       "blocking": null,
@@ -5653,7 +5653,7 @@
       "order": 3350,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794850063967,
+      "updatedAt": 1794850173649,
       "focusDate": "11/17"
     },
     {

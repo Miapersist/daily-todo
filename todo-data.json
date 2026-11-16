@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849034931,
+  "savedAt": 1794849048498,
   "groups": [
     {
       "id": "g16",
@@ -5697,7 +5697,7 @@
       "id": 999,
       "title": "洗鞋子",
       "detail": "",
-      "day": "11/16",
+      "day": "11/22",
       "endDay": null,
       "priority": "中",
       "type": "个人",
@@ -5710,7 +5710,7 @@
       "order": 3370,
       "groupId": "g08",
       "status": "todo",
-      "updatedAt": 1794814204456
+      "updatedAt": 1794849048494
     },
     {
       "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",

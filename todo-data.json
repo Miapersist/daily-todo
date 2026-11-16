@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794809461548,
+  "savedAt": 1794811263229,
   "groups": [
     {
       "id": "g16",
@@ -51,7 +51,7 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794808535808,
+      "updatedAt": 1794811263211,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -62,7 +62,8 @@
       "completions": [
         "2026-11-13 15:29",
         "2026-11-13 15:29",
-        "2026-11-16 13:55"
+        "2026-11-16 13:55",
+        "2026-11-16 14:41"
       ],
       "kind": "area",
       "area": "副业"
@@ -7977,18 +7978,20 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/16",
       "createdAt": "11/16",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "11/16",
+      "progress": 100,
       "order": 3320,
       "groupId": "g05",
-      "status": "todo",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794796926588
+      "updatedAt": 1794811263211,
+      "completedNote": "3、AI 分析全空——因为我的电脑sleep了，看来还是得在win上面弄这种持续的服务",
+      "progressBefore": 0
     },
     {
       "id": 995,

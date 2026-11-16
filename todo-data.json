@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849210592,
+  "savedAt": 1794849215161,
   "groups": [
     {
       "id": "g16",
@@ -334,7 +334,7 @@
       "name": "daily-todo",
       "pri": "中",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "type": "生活",
       "kind": "project",
       "area": "副业",
@@ -346,7 +346,7 @@
       "mode": "p",
       "slots": [],
       "completions": [],
-      "updatedAt": 0
+      "updatedAt": 1794849215156
     },
     {
       "id": "g16b",

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850374094,
+  "savedAt": 1794850395967,
   "groups": [
     {
       "id": "g05",
@@ -5221,18 +5221,8 @@
       "order": 3140,
       "groupId": "g16c",
       "status": "block",
-      "updatedAt": 1794848926364,
-      "focusDate": "11/10",
-      "cycle": {
-        "freq": "week",
-        "mode": "days",
-        "weekdays": [
-          6,
-          7
-        ],
-        "n": 1,
-        "monthDays": []
-      }
+      "updatedAt": 1794850395963,
+      "focusDate": "11/10"
     },
     {
       "id": 977,

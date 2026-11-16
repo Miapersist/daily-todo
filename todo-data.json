@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849444999,
+  "savedAt": 1794849464660,
   "groups": [
     {
       "id": "g11",
@@ -191,25 +191,6 @@
       "area": "工作"
     },
     {
-      "id": "g16c",
-      "name": "小红书",
-      "pri": "中",
-      "note": "",
-      "collapsed": true,
-      "type": "生活",
-      "kind": "project",
-      "area": "副业",
-      "goal": "",
-      "doneDef": "",
-      "due": "",
-      "blocker": "",
-      "freq": 0,
-      "mode": "p",
-      "slots": [],
-      "completions": [],
-      "updatedAt": 1794849361335
-    },
-    {
       "id": "g10",
       "name": "项目日常提醒",
       "pri": "中",
@@ -346,6 +327,25 @@
       "slots": [],
       "completions": [],
       "updatedAt": 1794849375734
+    },
+    {
+      "id": "g16c",
+      "name": "小红书",
+      "pri": "中",
+      "note": "",
+      "collapsed": true,
+      "type": "生活",
+      "kind": "project",
+      "area": "副业",
+      "goal": "",
+      "doneDef": "",
+      "due": "",
+      "blocker": "",
+      "freq": 0,
+      "mode": "p",
+      "slots": [],
+      "completions": [],
+      "updatedAt": 1794849361335
     }
   ],
   "tasks": [

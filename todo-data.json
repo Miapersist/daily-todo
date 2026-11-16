@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849945588,
+  "savedAt": 1794850002924,
   "groups": [
     {
       "id": "g05",
@@ -5689,8 +5689,8 @@
     {
       "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",
       "detail": "",
-      "day": "11/17",
-      "endDay": null,
+      "day": "12/1",
+      "endDay": "12/30",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -5701,7 +5701,7 @@
       "order": 3390,
       "groupId": "g05",
       "status": "doing",
-      "updatedAt": 1794848715955,
+      "updatedAt": 1794850002919,
       "id": 1001,
       "completedNote": null,
       "cycleFrom": 983,
@@ -5823,6 +5823,27 @@
       "groupId": "g16b",
       "status": "todo",
       "updatedAt": 1794849928887
+    },
+    {
+      "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",
+      "detail": "",
+      "day": "11/17",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/17",
+      "progress": 0,
+      "order": 3450,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1794850002919,
+      "id": 1007,
+      "completedNote": null,
+      "cycleFrom": 983,
+      "cycleWeek": "2026-11-16"
     }
   ],
   "notes": {},

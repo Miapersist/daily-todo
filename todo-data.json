@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794796912776,
+  "savedAt": 1794796926594,
   "groups": [
     {
       "id": "g16",
@@ -7961,7 +7961,7 @@
     {
       "id": 994,
       "title": "AI的分析怎么没出来",
-      "detail": "",
+      "detail": "修复我的ai分析",
       "day": "11/16",
       "endDay": null,
       "priority": "中",
@@ -7978,7 +7978,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794796829960
+      "updatedAt": 1794796926588
     },
     {
       "id": 995,

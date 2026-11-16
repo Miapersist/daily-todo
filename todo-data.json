@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849426157,
+  "savedAt": 1794849428557,
   "groups": [
     {
       "id": "g11",
@@ -215,10 +215,10 @@
       "name": "工作整理和反思",
       "pri": "高",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "noReport": true,
       "type": "工作",
-      "updatedAt": 1794817920688,
+      "updatedAt": 1794849426816,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -295,7 +295,7 @@
       "name": "daily-todo",
       "pri": "中",
       "note": "",
-      "collapsed": false,
+      "collapsed": true,
       "type": "生活",
       "kind": "project",
       "area": "副业",
@@ -307,7 +307,7 @@
       "mode": "p",
       "slots": [],
       "completions": [],
-      "updatedAt": 1794849216288
+      "updatedAt": 1794849428383
     },
     {
       "id": "g16b",

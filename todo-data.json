@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794796869935,
+  "savedAt": 1794796894428,
   "groups": [
     {
       "id": "g16",
@@ -5692,10 +5692,10 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "progress": 0,
+      "progress": 50,
       "order": 2320,
       "_selected": false,
-      "updatedAt": 1794789564491,
+      "updatedAt": 1794796894422,
       "blocked_by": "朱婷婷",
       "blocking": "hr一直没回复"
     },

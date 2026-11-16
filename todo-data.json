@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848715960,
+  "savedAt": 1794848839644,
   "groups": [
     {
       "id": "g16",
@@ -4856,8 +4856,8 @@
       "title": "宅门",
       "detail": "买了；开始阅读-晚上半小时；记得写简短的读后感",
       "day": "10/30",
-      "endDay": "11/30",
-      "priority": "中",
+      "endDay": "12/30",
+      "priority": "低",
       "type": "个人",
       "blocking": null,
       "completed": false,
@@ -4868,7 +4868,7 @@
       "order": 2940,
       "groupId": "g14",
       "status": "doing",
-      "updatedAt": 1794790361111
+      "updatedAt": 1794848839636
     },
     {
       "id": 957,

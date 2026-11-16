@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850269478,
+  "savedAt": 1794850283987,
   "groups": [
     {
       "id": "g05",
@@ -4327,7 +4327,7 @@
       "id": 930,
       "title": "业务流程图——目前整理业务流程图的描述能力还有些欠缺，并且输出业务流程可以通过ai整合出泳道图",
       "detail": "",
-      "day": "10/20",
+      "day": "12/20",
       "endDay": null,
       "priority": "中",
       "type": "工作",
@@ -4341,7 +4341,7 @@
       "status": "todo",
       "order": 2680,
       "_selected": false,
-      "updatedAt": 0
+      "updatedAt": 1794850283981
     },
     {
       "id": 931,

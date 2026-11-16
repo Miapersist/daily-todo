@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794790376763,
+  "savedAt": 1794795409103,
   "groups": [
     {
       "id": "g16",
@@ -7870,6 +7870,28 @@
       "updatedAt": 1794789573726,
       "completedNote": null,
       "progressBefore": 0
+    },
+    {
+      "id": 990,
+      "title": "《人性的弱点》戴尔・卡耐基（豆包）",
+      "detail": "",
+      "day": "11/16",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/16",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3280,
+      "groupId": "g14",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": [],
+      "updatedAt": 1794795409089
     }
   ],
   "notes": {},

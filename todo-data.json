@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794797222947,
+  "savedAt": 1794797258738,
   "groups": [
     {
       "id": "g16",
@@ -8025,7 +8025,8 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794796869922
+      "updatedAt": 1794797258729,
+      "focusDate": "11/16"
     }
   ],
   "notes": {},

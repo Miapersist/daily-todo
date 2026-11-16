@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794815674589,
+  "savedAt": 1794815677389,
   "groups": [
     {
       "id": "g16",
@@ -331,10 +331,10 @@
       "name": "备考·做题",
       "pri": "低",
       "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
-      "collapsed": false,
+      "collapsed": true,
       "asLife": true,
       "type": "生活",
-      "updatedAt": 1794815660728,
+      "updatedAt": 1794815674745,
       "goal": "",
       "doneDef": "",
       "due": "",

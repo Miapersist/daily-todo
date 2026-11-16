@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794818018058,
+  "savedAt": 1794818021677,
   "groups": [
     {
       "id": "g16",
@@ -51,7 +51,7 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794818018050,
+      "updatedAt": 1794818019910,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -66,7 +66,7 @@
         "2026-11-16 14:41"
       ],
       "kind": "area",
-      "area": "投资"
+      "area": "副业"
     },
     {
       "id": "g07",

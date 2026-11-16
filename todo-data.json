@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794796706244,
+  "savedAt": 1794796829967,
   "groups": [
     {
       "id": "g16",
@@ -7957,6 +7957,28 @@
       "postponedFrom": null,
       "postponeLog": [],
       "updatedAt": 1794796642527
+    },
+    {
+      "id": 994,
+      "title": "AI的分析怎么没出来",
+      "detail": "",
+      "day": "11/16",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/16",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3320,
+      "groupId": "g05",
+      "status": "todo",
+      "postponedCount": 0,
+      "postponedFrom": null,
+      "postponeLog": [],
+      "updatedAt": 1794796829960
     }
   ],
   "notes": {},

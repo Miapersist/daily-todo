@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850063971,
+  "savedAt": 1794850093654,
   "groups": [
     {
       "id": "g05",
@@ -5815,8 +5815,8 @@
       "id": 1006,
       "title": "可作为小红书素材发布",
       "detail": "",
-      "day": "11/17",
-      "endDay": "11/22",
+      "day": "12/6",
+      "endDay": "12/12",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -5828,7 +5828,7 @@
       "order": 3440,
       "groupId": "g16b",
       "status": "todo",
-      "updatedAt": 1794849928887
+      "updatedAt": 1794850093651
     }
   ],
   "notes": {},

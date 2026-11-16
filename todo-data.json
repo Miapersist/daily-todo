@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794821406268,
+  "savedAt": 1794821411208,
   "groups": [
     {
       "id": "g16",
@@ -5375,10 +5375,8 @@
       "progress": 0,
       "order": 3200,
       "status": "doing",
-      "updatedAt": 1794821406260,
+      "updatedAt": 1794821407027,
       "groupId": "g05",
-      "loop": true,
-      "loopDate": "11/16",
       "completedNote": null,
       "startedAt": "11/16",
       "weekly": true,

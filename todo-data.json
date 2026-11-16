@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850022946,
+  "savedAt": 1794850051755,
   "groups": [
     {
       "id": "g05",
@@ -5293,16 +5293,14 @@
       "order": 3180,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794848534457,
+      "updatedAt": 1794850051752,
       "focusDate": "11/10",
       "endDay": null,
       "cycle": {
         "freq": "week",
         "mode": "days",
         "weekdays": [
-          2,
           3,
-          5,
           6
         ],
         "n": 1,

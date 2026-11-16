@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794847296429,
+  "savedAt": 1794847307325,
   "groups": [
     {
       "id": "g16",
@@ -5649,7 +5649,7 @@
       "detail": "",
       "day": "11/21",
       "endDay": null,
-      "priority": "中",
+      "priority": "低",
       "type": "个人",
       "blocking": null,
       "completed": false,
@@ -5660,7 +5660,7 @@
       "order": 3350,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794811282807
+      "updatedAt": 1794847307321
     },
     {
       "id": 998,

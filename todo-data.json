@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794811766606,
+  "savedAt": 1794811771255,
   "groups": [
     {
       "id": "g16",
@@ -2377,7 +2377,7 @@
       "progress": 0,
       "order": 930,
       "_selected": false,
-      "updatedAt": 1794811766602,
+      "updatedAt": 1794811770448,
       "completedNote": null,
       "postponedCount": 0,
       "postponedFrom": null,
@@ -2387,7 +2387,9 @@
       "endDay": null,
       "perWeek": 1,
       "weekKey": "2026-11-16",
-      "weekLog": [],
+      "weekLog": [
+        "2026-11-16 14:49"
+      ],
       "weekdays": [
         1
       ]

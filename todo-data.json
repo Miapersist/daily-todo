@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794846845183,
+  "savedAt": 1794847014106,
   "groups": [
     {
       "id": "g16",
@@ -50,7 +50,7 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794821032813,
+      "updatedAt": 1794847014102,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -63,7 +63,8 @@
         "2026-11-13 15:29",
         "2026-11-16 13:55",
         "2026-11-16 14:41",
-        "2026-11-16 17:23"
+        "2026-11-16 17:23",
+        "2026-11-17 00:36"
       ],
       "kind": "area",
       "area": "副业"
@@ -5567,15 +5568,17 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/17",
       "createdAt": "11/16",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "11/16",
+      "progress": 100,
       "order": 3310,
       "groupId": "g05",
-      "status": "todo",
-      "updatedAt": 1794821613577
+      "status": "done",
+      "updatedAt": 1794847014102,
+      "completedNote": "已改好",
+      "progressBefore": 0
     },
     {
       "id": 994,
@@ -5712,7 +5715,7 @@
       "progress": 0,
       "order": 3380,
       "_selected": false,
-      "updatedAt": 1794846843868,
+      "updatedAt": 1794847014102,
       "completedNote": null,
       "endDay": null,
       "weekdays": [
@@ -5735,7 +5738,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794846843868,
+      "updatedAt": 1794847014102,
       "groupId": "g07",
       "weekdays": [
         1,
@@ -5762,7 +5765,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794846843868,
+      "updatedAt": 1794847014102,
       "groupId": "g05",
       "completedNote": null,
       "endDay": null,

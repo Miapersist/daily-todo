@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849024898,
+  "savedAt": 1794849034931,
   "groups": [
     {
       "id": "g16",
@@ -1270,26 +1270,6 @@
       "groupId": "g05",
       "progress": 100,
       "order": 850,
-      "_selected": false,
-      "updatedAt": 0
-    },
-    {
-      "id": 741,
-      "title": "动漫-黄金神威试看",
-      "detail": "",
-      "day": "10/31",
-      "endDay": null,
-      "priority": "低",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "8/5",
-      "startedAt": null,
-      "status": "todo",
-      "groupId": "g08",
-      "progress": 0,
-      "order": 860,
       "_selected": false,
       "updatedAt": 0
     },
@@ -6170,6 +6150,13 @@
     {
       "id": 1002,
       "at": 1794848473926
+    },
+    {
+      "id": 741,
+      "at": 1794849034928,
+      "why": "懒得看了",
+      "title": "动漫-黄金神威试看",
+      "groupId": "g08"
     }
   ],
   "aiLog": [

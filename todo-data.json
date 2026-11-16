@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794790230556,
+  "savedAt": 1794790290683,
   "groups": [
     {
       "id": "g16",
@@ -7125,28 +7125,6 @@
       "updatedAt": 0
     },
     {
-      "id": 955,
-      "title": "引体向上3个",
-      "detail": "",
-      "day": "10/29",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "10/29",
-      "startedAt": null,
-      "progress": 20,
-      "order": 2930,
-      "groupId": "g07",
-      "status": "todo",
-      "postponedCount": 0,
-      "postponedFrom": null,
-      "postponeLog": [],
-      "updatedAt": 1794790085643
-    },
-    {
       "id": 956,
       "title": "宅门",
       "detail": "买了；开始阅读-晚上半小时；记得写简短的读后感",
@@ -7956,6 +7934,10 @@
     {
       "id": 991,
       "at": 1794550271683
+    },
+    {
+      "id": 955,
+      "at": 1794790290679
     }
   ],
   "aiLog": [

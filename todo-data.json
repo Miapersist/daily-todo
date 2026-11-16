@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794811282811,
+  "savedAt": 1794811643849,
   "groups": [
     {
       "id": "g16",
@@ -5493,19 +5493,21 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/16",
       "createdAt": "9/30",
       "startedAt": "9/30",
-      "status": "doing",
+      "status": "done",
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
       "groupId": "g06",
-      "progress": 0,
+      "progress": 100,
       "order": 2240,
       "_selected": false,
-      "updatedAt": 1794554937048
+      "updatedAt": 1794811643834,
+      "completedNote": "不回血了，在家做居家办公电脑",
+      "progressBefore": 0
     },
     {
       "id": 886,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794796954363,
+  "savedAt": 1794797222947,
   "groups": [
     {
       "id": "g16",
@@ -7942,7 +7942,7 @@
     {
       "id": 993,
       "title": "todo list的搜索框目前无法正常输入，并且需要放出来",
-      "detail": "",
+      "detail": "1、bug：todo list的搜索框目前无法正常输入，并且需要放出来\n2、改进：todolist在每个分组下可以快速新增",
       "day": "11/16",
       "endDay": null,
       "priority": "中",
@@ -7959,7 +7959,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794796642527
+      "updatedAt": 1794797222932
     },
     {
       "id": 994,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794790303065,
+  "savedAt": 1794790307096,
   "groups": [
     {
       "id": "g16",
@@ -7636,7 +7636,7 @@
     {
       "id": 979,
       "title": "运动（引体向上从0突破1）",
-      "detail": "羽毛球/引体向上12*4+居家运动项目/健身房（当前悬吊最长53秒）",
+      "detail": "羽毛球1ci1/引体向上12*4+居家运动项目/健身房（当前悬吊最长53秒）",
       "day": "11/16",
       "priority": "中",
       "type": "个人",
@@ -7651,7 +7651,7 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794790230108,
+      "updatedAt": 1794790307090,
       "groupId": "g07",
       "perWeek": 4,
       "weekKey": "2026-11-16",

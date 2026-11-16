@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850148778,
+  "savedAt": 1794850150758,
   "groups": [
     {
       "id": "g05",
@@ -5786,13 +5786,14 @@
       "progress": 0,
       "order": 3420,
       "status": "todo",
-      "updatedAt": 1794848667722,
+      "updatedAt": 1794850150599,
       "groupId": "g07",
       "endDay": null,
       "id": 1004,
       "completedNote": null,
       "cycleFrom": 979,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "focusDate": "11/17"
     },
     {
       "id": 1005,

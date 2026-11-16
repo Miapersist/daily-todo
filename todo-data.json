@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850002924,
+  "savedAt": 1794850022946,
   "groups": [
     {
       "id": "g05",
@@ -5374,7 +5374,7 @@
       "order": 3210,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794847382422,
+      "updatedAt": 1794850022936,
       "cycle": {
         "freq": "week",
         "mode": "days",
@@ -5384,6 +5384,13 @@
         ],
         "n": 1,
         "monthDays": []
+      },
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [
+          "11/17"
+        ],
+        "flex": 0
       }
     },
     {
@@ -5823,27 +5830,6 @@
       "groupId": "g16b",
       "status": "todo",
       "updatedAt": 1794849928887
-    },
-    {
-      "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",
-      "detail": "",
-      "day": "11/17",
-      "endDay": null,
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/17",
-      "progress": 0,
-      "order": 3450,
-      "groupId": "g05",
-      "status": "todo",
-      "updatedAt": 1794850002919,
-      "id": 1007,
-      "completedNote": null,
-      "cycleFrom": 983,
-      "cycleWeek": "2026-11-16"
     }
   ],
   "notes": {},
@@ -6195,6 +6181,10 @@
     {
       "id": "g16",
       "at": 1794849350237
+    },
+    {
+      "id": 1007,
+      "at": 1794850022943
     }
   ],
   "aiLog": [

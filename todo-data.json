@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848650910,
+  "savedAt": 1794848654757,
   "groups": [
     {
       "id": "g16",
@@ -5755,8 +5755,8 @@
       "createdAt": "11/17",
       "progress": 0,
       "order": 3400,
-      "status": "todo",
-      "updatedAt": 1794848642340,
+      "status": "doing",
+      "updatedAt": 1794848654753,
       "groupId": "g07",
       "endDay": null,
       "id": 1002,
@@ -5769,7 +5769,8 @@
         "weekdays": [],
         "n": 4,
         "monthDays": []
-      }
+      },
+      "startedAt": "11/17"
     },
     {
       "title": "做健身记录工具（目的：引体向上破1）",

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794796926594,
+  "savedAt": 1794796954363,
   "groups": [
     {
       "id": "g16",
@@ -7604,8 +7604,11 @@
       "postponedCount": 0,
       "postponedFrom": null,
       "postponeLog": [],
-      "updatedAt": 1794272251788,
-      "focusDate": "11/10"
+      "updatedAt": 1794796954356,
+      "focusDate": "11/10",
+      "perWeek": 2,
+      "weekKey": "2026-11-16",
+      "weekLog": []
     },
     {
       "id": 977,

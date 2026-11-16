@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794846640171,
+  "savedAt": 1794846838041,
   "groups": [
     {
       "id": "g16",
@@ -4940,12 +4940,13 @@
       "createdAt": "10/30",
       "progress": 0,
       "order": 2980,
-      "groupId": "g05",
+      "groupId": "g15",
       "status": "todo",
-      "updatedAt": 1794844810935,
+      "updatedAt": 1794846838036,
       "loop": true,
       "loopDate": "11/17",
-      "completedNote": null
+      "completedNote": null,
+      "endDay": null
     },
     {
       "id": 961,
@@ -5711,7 +5712,7 @@
       "progress": 0,
       "order": 3380,
       "_selected": false,
-      "updatedAt": 1794846638326,
+      "updatedAt": 1794846838036,
       "completedNote": null,
       "endDay": null,
       "weekdays": [
@@ -5734,7 +5735,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794846638326,
+      "updatedAt": 1794846838036,
       "groupId": "g07",
       "weekdays": [
         1,
@@ -5761,7 +5762,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794846638326,
+      "updatedAt": 1794846838036,
       "groupId": "g05",
       "completedNote": null,
       "endDay": null,

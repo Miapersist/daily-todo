@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794821019593,
+  "savedAt": 1794821032821,
   "groups": [
     {
       "id": "g16",
@@ -50,7 +50,7 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794821019581,
+      "updatedAt": 1794821032813,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -62,7 +62,8 @@
         "2026-11-13 15:29",
         "2026-11-13 15:29",
         "2026-11-16 13:55",
-        "2026-11-16 14:41"
+        "2026-11-16 14:41",
+        "2026-11-16 17:23"
       ],
       "kind": "area",
       "area": "副业"
@@ -5624,16 +5625,18 @@
       "priority": "高",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/16",
       "createdAt": "11/16",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "11/16",
+      "progress": 100,
       "order": 3340,
       "groupId": "g05",
-      "status": "todo",
-      "updatedAt": 1794797258729,
-      "focusDate": "11/16"
+      "status": "done",
+      "updatedAt": 1794821032813,
+      "focusDate": "11/16",
+      "completedNote": "造图效果不佳",
+      "progressBefore": 0
     },
     {
       "id": 997,

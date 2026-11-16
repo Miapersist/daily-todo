@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794849191556,
+  "savedAt": 1794849194744,
   "groups": [
     {
       "id": "g16",
@@ -194,10 +194,10 @@
       "name": "市况联动定价",
       "pri": "中",
       "note": "市况联动、定价单/报价单、IBOM、CE",
-      "collapsed": true,
+      "collapsed": false,
       "type": "工作",
       "noReport": true,
-      "updatedAt": 0,
+      "updatedAt": 1794849194740,
       "goal": "",
       "doneDef": "",
       "due": "",

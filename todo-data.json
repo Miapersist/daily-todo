@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794842030221,
+  "savedAt": 1794842038155,
   "groups": [
     {
       "id": "g16",
@@ -5334,10 +5334,8 @@
       "order": 3180,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794842030213,
-      "focusDate": "11/10",
-      "weekly": true,
-      "weeklyKey": "2026-11-16"
+      "updatedAt": 1794842033562,
+      "focusDate": "11/10"
     },
     {
       "id": 981,

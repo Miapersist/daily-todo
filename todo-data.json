@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794847248046,
+  "savedAt": 1794847273643,
   "groups": [
     {
       "id": "g16",
@@ -50,7 +50,7 @@
       "collapsed": false,
       "noReport": true,
       "type": "生活",
-      "updatedAt": 1794847014102,
+      "updatedAt": 1794847273637,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -64,7 +64,8 @@
         "2026-11-16 13:55",
         "2026-11-16 14:41",
         "2026-11-16 17:23",
-        "2026-11-17 00:36"
+        "2026-11-17 00:36",
+        "2026-11-17 00:41"
       ],
       "kind": "area",
       "area": "副业"
@@ -5363,17 +5364,18 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/17",
       "createdAt": "11/10",
-      "progress": 0,
+      "progress": 100,
       "order": 3200,
-      "status": "doing",
-      "updatedAt": 1794847248040,
+      "status": "done",
+      "updatedAt": 1794847273637,
       "groupId": "g05",
-      "completedNote": null,
+      "completedNote": "Users > lyq > Documents >code > daily-todo >操作手册>•邮件提醒_1117.md",
       "startedAt": "11/16",
-      "endDay": null
+      "endDay": null,
+      "progressBefore": 0
     },
     {
       "id": 983,
@@ -5705,7 +5707,7 @@
       "progress": 100,
       "order": 3380,
       "_selected": false,
-      "updatedAt": 1794847248040,
+      "updatedAt": 1794847273637,
       "completedNote": "提醒邮件已完成",
       "endDay": null,
       "weekdays": [
@@ -5730,7 +5732,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847248040,
+      "updatedAt": 1794847273637,
       "groupId": "g07",
       "weekdays": [
         1,
@@ -5757,7 +5759,7 @@
       "progress": 0,
       "order": 3380,
       "status": "todo",
-      "updatedAt": 1794847248040,
+      "updatedAt": 1794847273637,
       "groupId": "g05",
       "completedNote": null,
       "endDay": null,

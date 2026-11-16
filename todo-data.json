@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848667726,
+  "savedAt": 1794848703875,
   "groups": [
     {
       "id": "g16",
@@ -5751,16 +5751,16 @@
       "type": "个人",
       "blocking": null,
       "completed": true,
-      "completedAt": "11/17",
+      "completedAt": "11/16",
       "createdAt": "11/17",
       "progress": 100,
       "order": 3400,
       "status": "done",
-      "updatedAt": 1794848667722,
+      "updatedAt": 1794848703871,
       "groupId": "g07",
       "endDay": null,
       "id": 1002,
-      "completedNote": null,
+      "completedNote": "羽毛球，但是赛后自己点了外卖烧烤加餐了，soo",
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16",
       "cycle": {

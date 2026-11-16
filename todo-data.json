@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850349917,
+  "savedAt": 1794850351537,
   "groups": [
     {
       "id": "g05",
@@ -5695,7 +5695,8 @@
       "order": 3370,
       "groupId": "g08",
       "status": "todo",
-      "updatedAt": 1794849048494
+      "updatedAt": 1794850350846,
+      "focusDate": "11/17"
     },
     {
       "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",

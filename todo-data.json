@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794850315565,
+  "savedAt": 1794850318815,
   "groups": [
     {
       "id": "g05",
@@ -4405,9 +4405,8 @@
       "groupId": "g03",
       "status": "block",
       "_selected": false,
-      "updatedAt": 1794850315563,
-      "blocked_by": "研发",
-      "focusDate": "11/17"
+      "updatedAt": 1794850318813,
+      "blocked_by": "研发"
     },
     {
       "id": 935,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794848907650,
+  "savedAt": 1794848912567,
   "groups": [
     {
       "id": "g16",
@@ -5253,7 +5253,7 @@
       "detail": "",
       "day": "11/9",
       "endDay": null,
-      "priority": "中",
+      "priority": "低",
       "type": "个人",
       "blocking": "缺少最新素材，思考下每周发什么比较好",
       "completed": false,
@@ -5264,7 +5264,7 @@
       "order": 3140,
       "groupId": "g16c",
       "status": "block",
-      "updatedAt": 1794848907647,
+      "updatedAt": 1794848912563,
       "focusDate": "11/10"
     },
     {

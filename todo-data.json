@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794886444646,
+  "savedAt": 1794886448570,
   "groups": [
     {
       "id": "g05",
@@ -5415,7 +5415,7 @@
       "endDay": null,
       "priority": "中",
       "type": "工作",
-      "blocking": "定清说下周2、3上线，到时拿生产数据看看",
+      "blocking": "本周2、3上线，到时拿生产数据看看",
       "completed": false,
       "completedAt": null,
       "createdAt": "11/13",
@@ -5424,7 +5424,7 @@
       "order": 3240,
       "groupId": "g03",
       "status": "block",
-      "updatedAt": 1794886444642,
+      "updatedAt": 1794886448559,
       "focusDate": "11/17",
       "blocked_by": "定清"
     },

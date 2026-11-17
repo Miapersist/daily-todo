@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794875396514,
+  "savedAt": 1794875401793,
   "groups": [
     {
       "id": "g05",
@@ -5771,7 +5771,7 @@
     {
       "title": "运动（引体向上从0突破1）",
       "detail": "羽毛球1次/引体向上12*4+居家运动项目3次/健身房1-2次\n重要目标：1、引体向上3个，当前悬吊最长53秒",
-      "day": null,
+      "day": "11/16",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -5781,7 +5781,7 @@
       "progress": 0,
       "order": 3420,
       "status": "doing",
-      "updatedAt": 1794875396500,
+      "updatedAt": 1794875401790,
       "groupId": "g07",
       "endDay": null,
       "id": 1004,

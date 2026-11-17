@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794886128697,
+  "savedAt": 1794886145599,
   "groups": [
     {
       "id": "g05",
@@ -5862,15 +5862,17 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/17",
       "createdAt": "11/17",
       "startedAt": "11/17",
-      "progress": 0,
+      "progress": 100,
       "order": 3460,
       "groupId": "g03",
-      "status": "doing",
-      "updatedAt": 1794883466484
+      "status": "done",
+      "updatedAt": 1794886145593,
+      "completedNote": null,
+      "progressBefore": 0
     },
     {
       "id": 1009,

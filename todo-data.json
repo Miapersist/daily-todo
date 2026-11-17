@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794875435239,
+  "savedAt": 1794875468855,
   "groups": [
     {
       "id": "g05",
@@ -5755,9 +5755,8 @@
       "order": 3410,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794848534457,
+      "updatedAt": 1794875468848,
       "focusDate": "11/10",
-      "endDay": null,
       "cycleSkip": {
         "week": "2026-11-16",
         "days": [],
@@ -5766,7 +5765,9 @@
       "id": 1003,
       "completedNote": null,
       "cycleFrom": 980,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "loop": true,
+      "loopDate": "11/17"
     },
     {
       "title": "运动（引体向上从0突破1）",

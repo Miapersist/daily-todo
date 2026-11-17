@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794886448570,
+  "savedAt": 1794893892039,
   "groups": [
     {
       "id": "g05",
@@ -5123,7 +5123,7 @@
     {
       "id": 972,
       "title": "ioc申请文档填写",
-      "detail": "跟研发沟通、需看看程朗的历史清单如何填写（明天找对应人咨询）",
+      "detail": "",
       "day": "11/16",
       "endDay": "11/20",
       "priority": "高",
@@ -5136,7 +5136,7 @@
       "order": 3100,
       "groupId": "g03",
       "status": "block",
-      "updatedAt": 1794886434160,
+      "updatedAt": 1794893892028,
       "focusDate": "11/17",
       "blocking": "等研发同事提供",
       "blocked_by": "高鑫"

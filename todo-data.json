@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794886413344,
+  "savedAt": 1794886424232,
   "groups": [
     {
       "id": "g05",
@@ -5135,9 +5135,10 @@
       "progress": 50,
       "order": 3100,
       "groupId": "g03",
-      "status": "doing",
-      "updatedAt": 1794886412491,
-      "focusDate": "11/17"
+      "status": "block",
+      "updatedAt": 1794886424227,
+      "focusDate": "11/17",
+      "blocking": "等研发同事"
     },
     {
       "id": 973,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794886407996,
+  "savedAt": 1794886411197,
   "groups": [
     {
       "id": "g05",
@@ -5128,7 +5128,6 @@
       "endDay": "11/20",
       "priority": "高",
       "type": "工作",
-      "blocking": "研发联调没时间",
       "completed": false,
       "completedAt": null,
       "createdAt": "11/5",
@@ -5136,8 +5135,8 @@
       "progress": 50,
       "order": 3100,
       "groupId": "g03",
-      "status": "block",
-      "updatedAt": 1794886407992,
+      "status": "doing",
+      "updatedAt": 1794886411194,
       "blocked_by": "高鑫",
       "focusDate": "11/17"
     },

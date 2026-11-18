@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794963015920,
+  "savedAt": 1794963178758,
   "groups": [
     {
       "id": "g05",
@@ -5987,6 +5987,25 @@
       "completedNote": null,
       "cycleFrom": 980,
       "cycleWeek": "2026-11-16"
+    },
+    {
+      "id": 1014,
+      "title": "每日新闻读取还是有点多 考虑下怎么减少时间",
+      "detail": "",
+      "day": "11/18",
+      "endDay": "11/18",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/18",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3520,
+      "groupId": "g15",
+      "status": "todo",
+      "updatedAt": 1794963178753
     }
   ],
   "notes": {},

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794986118017,
+  "savedAt": 1794986129167,
   "groups": [
     {
       "id": "g05",
@@ -4346,7 +4346,7 @@
     },
     {
       "id": 931,
-      "title": "【研发内部】研发跟进",
+      "title": "【研发内部】用户权限&报表研发跟进",
       "detail": "",
       "day": "11/18",
       "priority": "中",
@@ -4360,7 +4360,7 @@
       "status": "doing",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1794963015916,
+      "updatedAt": 1794986129163,
       "loop": true,
       "loopDate": "11/18",
       "completedNote": null,

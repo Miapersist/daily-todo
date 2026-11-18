@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794963337155,
+  "savedAt": 1794963344821,
   "groups": [
     {
       "id": "g05",
@@ -5405,8 +5405,7 @@
       "order": 3220,
       "groupId": "g12",
       "status": "todo",
-      "updatedAt": 1794559829091,
-      "focusDate": "11/13"
+      "updatedAt": 1794963344818
     },
     {
       "id": 986,

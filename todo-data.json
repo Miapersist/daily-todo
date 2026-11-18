@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794985952146,
+  "savedAt": 1794985958021,
   "groups": [
     {
       "id": "g05",
@@ -5535,7 +5535,6 @@
       "endDay": null,
       "priority": "中",
       "type": "工作",
-      "blocking": "测试资源有冲突，需pm协调",
       "completed": false,
       "completedAt": null,
       "createdAt": "11/16",
@@ -5543,8 +5542,8 @@
       "progress": 0,
       "order": 3300,
       "groupId": "g03",
-      "status": "block",
-      "updatedAt": 1794812225672,
+      "status": "todo",
+      "updatedAt": 1794985958011,
       "blocked_by": "敏周"
     },
     {

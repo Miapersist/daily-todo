@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794985930629,
+  "savedAt": 1794985933601,
   "groups": [
     {
       "id": "g05",
@@ -4531,8 +4531,8 @@
       "id": 941,
       "title": "【确认】用户权限清单收集和对应配置导入",
       "detail": "已催促",
-      "day": "11/20",
-      "endDay": null,
+      "day": "11/18",
+      "endDay": "11/20",
       "priority": "中",
       "type": "工作",
       "blocking": null,
@@ -4545,7 +4545,7 @@
       "groupId": "g03",
       "status": "doing",
       "_selected": false,
-      "updatedAt": 1794985928643
+      "updatedAt": 1794985933595
     },
     {
       "id": 942,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794968793824,
+  "savedAt": 1794968852158,
   "groups": [
     {
       "id": "g05",
@@ -6018,6 +6018,25 @@
       "groupId": "g03",
       "status": "todo",
       "updatedAt": 1794967575465
+    },
+    {
+      "id": 1016,
+      "title": "每周四中午前把用户权限进度发给项目经理 红梅",
+      "detail": "",
+      "day": "11/18",
+      "endDay": "12/31",
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/18",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3540,
+      "groupId": "g10",
+      "status": "todo",
+      "updatedAt": 1794968852155
     }
   ],
   "notes": {},

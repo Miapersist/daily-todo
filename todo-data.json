@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794903238212,
+  "savedAt": 1794961661330,
   "groups": [
     {
       "id": "g05",
@@ -4348,7 +4348,7 @@
       "id": 931,
       "title": "【研发内部】研发跟进",
       "detail": "",
-      "day": "11/17",
+      "day": "11/18",
       "priority": "中",
       "type": "工作",
       "blocking": null,
@@ -4360,9 +4360,9 @@
       "status": "todo",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1794850304597,
+      "updatedAt": 1794931329622,
       "loop": true,
-      "loopDate": "11/17",
+      "loopDate": "11/18",
       "completedNote": null,
       "focusDate": "11/17"
     },
@@ -4502,7 +4502,7 @@
       "id": 939,
       "title": "日会",
       "detail": "",
-      "day": "11/17",
+      "day": "11/18",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -4512,13 +4512,12 @@
       "progress": 0,
       "order": 2770,
       "groupId": "g03",
-      "status": "doing",
+      "status": "todo",
       "_selected": false,
-      "updatedAt": 1794883462053,
+      "updatedAt": 1794931329622,
       "loop": true,
-      "loopDate": "11/17",
-      "completedNote": null,
-      "startedAt": "11/17"
+      "loopDate": "11/18",
+      "completedNote": null
     },
     {
       "id": 941,
@@ -4885,7 +4884,7 @@
       "id": 960,
       "title": "【每日】早间新闻10min",
       "detail": "",
-      "day": "11/17",
+      "day": "11/18",
       "priority": "低",
       "type": "个人",
       "blocking": null,
@@ -4895,13 +4894,11 @@
       "progress": 0,
       "order": 2980,
       "groupId": "g15",
-      "status": "doing",
-      "updatedAt": 1794849945585,
+      "status": "todo",
+      "updatedAt": 1794931329622,
       "loop": true,
-      "loopDate": "11/17",
-      "completedNote": null,
-      "endDay": null,
-      "startedAt": "11/17"
+      "loopDate": "11/18",
+      "completedNote": null
     },
     {
       "id": 961,
@@ -5758,7 +5755,7 @@
       "order": 3410,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794893949443,
+      "updatedAt": 1794931329789,
       "focusDate": "11/10",
       "cycleSkip": {
         "week": "2026-11-16",
@@ -5769,7 +5766,9 @@
       "completedNote": null,
       "cycleFrom": 980,
       "cycleWeek": "2026-11-16",
-      "endDay": "11/22"
+      "endDay": "11/22",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-16"
     },
     {
       "title": "运动（引体向上从0突破1）",
@@ -5954,6 +5953,33 @@
       "groupId": "g06",
       "status": "todo",
       "updatedAt": 1794901424411
+    },
+    {
+      "title": "做健身记录工具（目的：引体向上破1）",
+      "detail": "4.训练方式不对，一直在低效率重复 •只吊杆（悬垂）：能练握力，但练不到向心拉动（往上拉的动作） • 弹力带引体高度太高：太省力，没刺激到接近极限的拉力 • 反向划船练太少：反向划船是引体前置王牌动作，很多人跳过 •动作幅度不全：只练半程，没练到从悬垂到下巴过杆完整发力",
+      "day": "11/18",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/18",
+      "progress": 0,
+      "order": 3510,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1794931329789,
+      "focusDate": "11/10",
+      "endDay": null,
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [],
+        "flex": 1
+      },
+      "id": 1013,
+      "completedNote": null,
+      "cycleFrom": 980,
+      "cycleWeek": "2026-11-16"
     }
   ],
   "notes": {},
@@ -6579,6 +6605,14 @@
       "at": "01:35",
       "d": "11/17",
       "ts": 1794850544560
+    },
+    {
+      "role": "bot",
+      "text": "11月17日工作简报：\n车型成本项目：\n1、【操作手册】需要输出后续文档（操作手册、测试用例等等），完成80%，进度受阻；\n　备注：待贴实际系统图\n2、【测试】统一统筹页、敏感字段元数据、字段权限配置（价格目录、价格审批单、工装价格库 列表查询的脱敏逻辑）这块开发好，已经发上测试环境了；价格目录、工装价格库导出脱敏也发上测试环境了，有空可以看看，完成10%，进度受阻；\n　备注：开始测试【统一统筹页】测试问题记录测试清单；\n3、ioc申请文档填写，完成50%，进度受阻；\n4、【研发内部】研发跟进；\n5、用户权限-历史的领域和iam现有的科室对不上，需排查，完成40%，进度受阻；\n　备注：元智导出数据跟2位业务核对；定清下周2 3上线，到时拿生产数据看看\n6、报表12 56研发完毕，可以测试了，完成0%，进度受阻；\n7、补充需求规格书（用户权限），完成100%，进度正常；\n8、日会；",
+      "at": "17:28",
+      "d": "11/17",
+      "ts": 1794907714115,
+      "tag": "17:28 工作简报"
     }
   ]
 }

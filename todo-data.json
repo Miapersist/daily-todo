@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794985962538,
+  "savedAt": 1794985971714,
   "groups": [
     {
       "id": "g05",
@@ -5530,7 +5530,7 @@
     {
       "id": 992,
       "title": "报表12 56研发完毕，可以测试了",
-      "detail": "",
+      "detail": "项目经理已安排测试资源",
       "day": "11/16",
       "endDay": null,
       "priority": "中",
@@ -5543,7 +5543,7 @@
       "order": 3300,
       "groupId": "g03",
       "status": "todo",
-      "updatedAt": 1794985961495
+      "updatedAt": 1794985971711
     },
     {
       "id": 993,

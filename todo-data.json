@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794985940729,
+  "savedAt": 1794985949902,
   "groups": [
     {
       "id": "g05",
@@ -5414,7 +5414,6 @@
       "endDay": null,
       "priority": "中",
       "type": "工作",
-      "blocking": "本周2、3上线，到时拿生产数据看看",
       "completed": false,
       "completedAt": null,
       "createdAt": "11/13",
@@ -5422,8 +5421,8 @@
       "progress": 40,
       "order": 3240,
       "groupId": "g03",
-      "status": "block",
-      "updatedAt": 1794886448559,
+      "status": "doing",
+      "updatedAt": 1794985949894,
       "focusDate": "11/17",
       "blocked_by": "定清"
     },

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794968786275,
+  "savedAt": 1794968788208,
   "groups": [
     {
       "id": "g05",
@@ -312,10 +312,10 @@
       "name": "备考·看课",
       "pri": "低",
       "note": "第9~18章、第2~8章基础课；含计算题/案例分析/导学专题",
-      "collapsed": false,
+      "collapsed": true,
       "asLife": true,
       "type": "生活",
-      "updatedAt": 1794968786269,
+      "updatedAt": 1794968787102,
       "goal": "",
       "doneDef": "",
       "due": "",

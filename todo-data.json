@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794963333722,
+  "savedAt": 1794963337155,
   "groups": [
     {
       "id": "g05",
@@ -5786,14 +5786,13 @@
       "progress": 0,
       "order": 3420,
       "status": "doing",
-      "updatedAt": 1794875435233,
+      "updatedAt": 1794963337151,
       "groupId": "g07",
       "endDay": "11/22",
       "id": 1004,
       "completedNote": null,
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16",
-      "focusDate": "11/17",
       "startedAt": "11/17",
       "cycleMissed": true,
       "missedWeek": "2026-11-16"

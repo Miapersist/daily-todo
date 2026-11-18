@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794962771578,
+  "savedAt": 1794963006373,
   "groups": [
     {
       "id": "g05",
@@ -4506,18 +4506,24 @@
       "priority": "低",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/17",
       "createdAt": "10/26",
-      "progress": 0,
+      "progress": 100,
       "order": 2770,
       "groupId": "g03",
-      "status": "todo",
+      "status": "done",
       "_selected": false,
-      "updatedAt": 1794931329622,
+      "updatedAt": 1794963006368,
       "loop": true,
       "loopDate": "11/18",
-      "completedNote": null
+      "completedNote": "沟通了测试资源问题和ioc开发问题",
+      "startedAt": "11/17",
+      "progressBefore": 0,
+      "loopLog": [
+        "11/18"
+      ],
+      "loopKey": "2026-11-16"
     },
     {
       "id": 941,

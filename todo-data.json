@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794985991838,
+  "savedAt": 1794986010732,
   "groups": [
     {
       "id": "g05",
@@ -5412,7 +5412,7 @@
       "title": "用户权限-历史的领域和iam现有的科室对不上，需排查",
       "detail": "元智导出数据跟2位业务核对；定清下周2 3上线，到时拿生产数据看看",
       "day": "11/13",
-      "endDay": null,
+      "endDay": "11/18",
       "priority": "中",
       "type": "工作",
       "completed": false,
@@ -5423,7 +5423,7 @@
       "order": 3240,
       "groupId": "g03",
       "status": "doing",
-      "updatedAt": 1794985950460,
+      "updatedAt": 1794986010728,
       "focusDate": "11/17"
     },
     {

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1794985582918,
+  "savedAt": 1794985585594,
   "groups": [
     {
       "id": "g05",
@@ -4923,8 +4923,7 @@
       "groupId": "g03",
       "status": "block",
       "focusDate": "11/2",
-      "updatedAt": 1794985582909,
-      "blocked_by": "本人",
+      "updatedAt": 1794985584290,
       "blocking": "已开发完页面6个，完成4个页面测试"
     },
     {

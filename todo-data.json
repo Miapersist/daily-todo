@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795071416878,
+  "savedAt": 1795071425582,
   "groups": [
     {
       "id": "g05",
@@ -5416,10 +5416,11 @@
       "progress": 40,
       "order": 3240,
       "groupId": "g03",
-      "status": "doing",
-      "updatedAt": 1795071416874,
+      "status": "block",
+      "updatedAt": 1795071425571,
       "focusDate": "11/17",
-      "blocked_by": "李彦琦"
+      "blocked_by": "李彦琦",
+      "blocking": "测试没来得及处理"
     },
     {
       "id": 987,

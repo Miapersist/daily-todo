@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795018794191,
+  "savedAt": 1795049163982,
   "groups": [
     {
       "id": "g05",
@@ -5836,14 +5836,15 @@
       "createdAt": "11/17",
       "progress": 0,
       "order": 3450,
-      "status": "todo",
-      "updatedAt": 1794875435233,
+      "status": "doing",
+      "updatedAt": 1795049163968,
       "groupId": "g07",
       "endDay": null,
       "id": 1007,
       "completedNote": null,
       "cycleFrom": 979,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "startedAt": "11/19"
     },
     {
       "id": 1008,
@@ -5958,7 +5959,7 @@
       "order": 3510,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1794931329789,
+      "updatedAt": 1795018794217,
       "focusDate": "11/10",
       "endDay": null,
       "cycleSkip": {
@@ -5969,7 +5970,9 @@
       "id": 1013,
       "completedNote": null,
       "cycleFrom": 980,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-16"
     },
     {
       "id": 1014,
@@ -6055,6 +6058,55 @@
       "groupId": "g16a",
       "status": "todo",
       "updatedAt": 1794993232362
+    },
+    {
+      "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",
+      "detail": "",
+      "day": "11/19",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/19",
+      "progress": 0,
+      "order": 3560,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1795018794217,
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [
+          "11/17"
+        ],
+        "flex": 0
+      },
+      "id": 1018,
+      "completedNote": null,
+      "cycleFrom": 983,
+      "cycleWeek": "2026-11-16"
+    },
+    {
+      "title": "每周四中午前把用户权限进度发给项目经理 红梅",
+      "detail": "",
+      "day": "11/19",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/19",
+      "progress": 0,
+      "order": 3560,
+      "groupId": "g10",
+      "status": "todo",
+      "updatedAt": 1795018794217,
+      "id": 1019,
+      "completedNote": null,
+      "cycleFrom": 1016,
+      "cycleWeek": "2026-11-16"
     }
   ],
   "notes": {},

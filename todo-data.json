@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795049174693,
+  "savedAt": 1795049201008,
   "groups": [
     {
       "id": "g05",
@@ -5831,20 +5831,21 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/18",
       "createdAt": "11/17",
-      "progress": 0,
+      "progress": 100,
       "order": 3450,
-      "status": "doing",
-      "updatedAt": 1795049168332,
+      "status": "done",
+      "updatedAt": 1795049201001,
       "groupId": "g07",
       "endDay": "11/22",
       "id": 1007,
-      "completedNote": null,
+      "completedNote": "卷腹24*5=120 俯卧撑25*4=100  深蹲100  平板支撑1.5分*3组 二头肌弯举1.5kg*80个 三头背举1.5kg*30个*2组 引体向上58kg辅助带 12个*4组 飞鸟1.5kg*20*3",
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16",
-      "startedAt": "11/19"
+      "startedAt": "11/18",
+      "progressBefore": 0
     },
     {
       "id": 1008,
@@ -6106,6 +6107,27 @@
       "id": 1019,
       "completedNote": null,
       "cycleFrom": 1016,
+      "cycleWeek": "2026-11-16"
+    },
+    {
+      "title": "运动（引体向上从0突破1）",
+      "detail": "羽毛球1次/引体向上12*4+居家运动项目3次/健身房1-2次\n重要目标：1、引体向上3个，当前悬吊最长53秒",
+      "day": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/19",
+      "progress": 0,
+      "order": 3570,
+      "status": "todo",
+      "updatedAt": 1795049201001,
+      "groupId": "g07",
+      "endDay": null,
+      "id": 1020,
+      "completedNote": null,
+      "cycleFrom": 979,
       "cycleWeek": "2026-11-16"
     }
   ],

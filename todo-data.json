@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795049366205,
+  "savedAt": 1795050303878,
   "groups": [
     {
       "id": "g05",
@@ -6129,6 +6129,25 @@
       "completedNote": null,
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16"
+    },
+    {
+      "id": 1021,
+      "title": "【uat上线时间安排】用户权限开发和测试时间排期",
+      "detail": "",
+      "day": "11/19",
+      "endDay": "11/19",
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/19",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3580,
+      "groupId": "g03",
+      "status": "todo",
+      "updatedAt": 1795050303872
     }
   ],
   "notes": {},

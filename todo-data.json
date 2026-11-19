@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795080781714,
+  "savedAt": 1795105951072,
   "groups": [
     {
       "id": "g05",
@@ -4330,7 +4330,7 @@
       "id": 931,
       "title": "【研发内部】用户权限&报表研发跟进",
       "detail": "调整交互",
-      "day": "11/19",
+      "day": "11/20",
       "priority": "中",
       "type": "工作",
       "blocking": null,
@@ -4342,9 +4342,9 @@
       "status": "todo",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1795080721529,
+      "updatedAt": 1795105951006,
       "loop": true,
-      "loopDate": "11/19",
+      "loopDate": "11/20",
       "completedNote": null
     },
     {
@@ -4484,7 +4484,7 @@
       "id": 939,
       "title": "日会",
       "detail": "1119日会要跟敏周说明权限会往后延期的事情",
-      "day": "11/19",
+      "day": "11/20",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -4496,9 +4496,9 @@
       "groupId": "g03",
       "status": "todo",
       "_selected": false,
-      "updatedAt": 1795071515853,
+      "updatedAt": 1795105951006,
       "loop": true,
-      "loopDate": "11/19",
+      "loopDate": "11/20",
       "completedNote": null,
       "loopLog": [
         "11/18"
@@ -4868,7 +4868,7 @@
       "id": 960,
       "title": "【每日】早间新闻10min",
       "detail": "",
-      "day": "11/19",
+      "day": "11/20",
       "priority": "低",
       "type": "个人",
       "blocking": null,
@@ -4879,9 +4879,9 @@
       "order": 2980,
       "groupId": "g15",
       "status": "todo",
-      "updatedAt": 1795018794125,
+      "updatedAt": 1795105951006,
       "loop": true,
-      "loopDate": "11/19",
+      "loopDate": "11/20",
       "completedNote": null
     },
     {

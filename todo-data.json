@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795071466625,
+  "savedAt": 1795071486474,
   "groups": [
     {
       "id": "g05",
@@ -4392,7 +4392,7 @@
       "title": "【操作手册、uat用例】用户权限和报表需要输出文档",
       "detail": "待贴实际系统图",
       "day": "10/22",
-      "endDay": "11/24",
+      "endDay": "11/23",
       "priority": "高",
       "type": "工作",
       "blocking": "报表等开发完页面",
@@ -4405,7 +4405,7 @@
       "groupId": "g03",
       "status": "block",
       "_selected": false,
-      "updatedAt": 1794986065483,
+      "updatedAt": 1795071486470,
       "blocked_by": "研发",
       "focusDate": "11/18"
     },

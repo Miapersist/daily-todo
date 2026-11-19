@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795072834962,
+  "savedAt": 1795072852079,
   "groups": [
     {
       "id": "g05",
@@ -4673,8 +4673,8 @@
       "id": 948,
       "title": "联通卡去重新看看",
       "detail": "",
-      "day": "10/28",
-      "endDay": null,
+      "day": "11/22",
+      "endDay": "11/22",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -4687,7 +4687,7 @@
       "groupId": "g08",
       "status": "doing",
       "_selected": false,
-      "updatedAt": 1793864003509
+      "updatedAt": 1795072852074
     },
     {
       "id": 950,

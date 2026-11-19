@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795058024485,
+  "savedAt": 1795067247411,
   "groups": [
     {
       "id": "g05",
@@ -6096,18 +6096,20 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/19",
       "createdAt": "11/19",
-      "progress": 0,
+      "progress": 100,
       "order": 3560,
       "groupId": "g10",
-      "status": "todo",
-      "updatedAt": 1795018794217,
+      "status": "done",
+      "updatedAt": 1795067247401,
       "id": 1019,
       "completedNote": null,
       "cycleFrom": 1016,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "startedAt": "11/19",
+      "progressBefore": 0
     },
     {
       "title": "运动（引体向上从0突破1）",

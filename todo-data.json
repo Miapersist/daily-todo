@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795080230598,
+  "savedAt": 1795080266899,
   "groups": [
     {
       "id": "g05",
@@ -3639,18 +3639,20 @@
       "endDay": null,
       "priority": "中",
       "type": "个人",
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/19",
       "createdAt": "10/9",
       "startedAt": "11/20",
       "groupId": "g06",
-      "status": "block",
-      "progress": 50,
+      "status": "done",
+      "progress": 100,
       "order": 2320,
       "_selected": false,
-      "updatedAt": 1795080230591,
+      "updatedAt": 1795080266890,
       "blocked_by": "朱婷婷",
-      "blocking": "发邮件了，领导会再催hr"
+      "blocking": "发邮件了，领导会再催hr",
+      "completedNote": "解决了，也是用姐夫的方法来做的，也把情况同步给姐夫了。刚hr跟我说根据补发的金额中间有一点基数的微调 。基数是1588*5月 10月还是随12月工资错期一个月发；到时候一定要调基数 到明年再说；",
+      "progressBefore": 50
     },
     {
       "id": 894,

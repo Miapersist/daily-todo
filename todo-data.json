@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795072268875,
+  "savedAt": 1795072272593,
   "groups": [
     {
       "id": "g05",
@@ -5539,9 +5539,8 @@
       "progress": 10,
       "order": 3300,
       "groupId": "g03",
-      "status": "block",
-      "updatedAt": 1795072268872,
-      "blocking": "更新交互"
+      "status": "todo",
+      "updatedAt": 1795072272589
     },
     {
       "id": 993,

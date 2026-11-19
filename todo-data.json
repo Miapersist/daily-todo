@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795070493422,
+  "savedAt": 1795070530256,
   "groups": [
     {
       "id": "g05",
@@ -6152,6 +6152,25 @@
       "updatedAt": 1795070492908,
       "completedNote": null,
       "progressBefore": 0
+    },
+    {
+      "id": 1022,
+      "title": "【AI测试】使用定清分析的测试bug工具测试用户权限",
+      "detail": "",
+      "day": "11/19",
+      "endDay": "11/19",
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/19",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3590,
+      "groupId": "g03",
+      "status": "todo",
+      "updatedAt": 1795070530250
     }
   ],
   "notes": {},

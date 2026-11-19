@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795072908525,
+  "savedAt": 1795072929544,
   "groups": [
     {
       "id": "g05",
@@ -6156,6 +6156,25 @@
       "status": "doing",
       "updatedAt": 1795071377938,
       "focusDate": "11/19"
+    },
+    {
+      "id": 1023,
+      "title": "周五看电影",
+      "detail": "",
+      "day": "11/20",
+      "endDay": "11/20",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/19",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3600,
+      "groupId": "g08",
+      "status": "todo",
+      "updatedAt": 1795072929540
     }
   ],
   "notes": {},

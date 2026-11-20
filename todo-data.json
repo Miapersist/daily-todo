@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795143902561,
+  "savedAt": 1795143937505,
   "groups": [
     {
       "id": "g05",
@@ -6209,6 +6209,25 @@
       "completedNote": null,
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16"
+    },
+    {
+      "id": 1025,
+      "title": "win本先去除云枢",
+      "detail": "",
+      "day": "11/20",
+      "endDay": "11/20",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/20",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3620,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1795143937497
     }
   ],
   "notes": {},

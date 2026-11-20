@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795146317855,
+  "savedAt": 1795146352229,
   "groups": [
     {
       "id": "g05",
@@ -6251,6 +6251,25 @@
       "updatedAt": 1795146254136,
       "completedNote": null,
       "progressBefore": 0
+    },
+    {
+      "id": 1027,
+      "title": "从0到1走起，把定位、市场调研过程输出成商业画布html",
+      "detail": "",
+      "day": "11/20",
+      "endDay": "11/20",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/20",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3640,
+      "groupId": "g1016",
+      "status": "todo",
+      "updatedAt": 1795146352225
     }
   ],
   "notes": {},

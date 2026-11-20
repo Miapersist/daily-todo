@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795140955582,
+  "savedAt": 1795140957452,
   "groups": [
     {
       "id": "g05",
@@ -4339,13 +4339,14 @@
       "createdAt": "10/21",
       "progress": 0,
       "groupId": "g03",
-      "status": "todo",
+      "status": "doing",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1795140955578,
+      "updatedAt": 1795140956310,
       "loop": true,
       "loopDate": "11/20",
-      "completedNote": null
+      "completedNote": null,
+      "startedAt": "11/20"
     },
     {
       "id": 932,

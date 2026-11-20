@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795146124616,
+  "savedAt": 1795146139363,
   "groups": [
     {
       "id": "g05",
@@ -6022,15 +6022,17 @@
       "priority": "中",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/20",
       "createdAt": "11/18",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "11/18",
+      "progress": 100,
       "order": 3550,
       "groupId": "g16a",
-      "status": "todo",
-      "updatedAt": 1794993232362
+      "status": "done",
+      "updatedAt": 1795146139357,
+      "completedNote": "改好了",
+      "progressBefore": 0
     },
     {
       "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",

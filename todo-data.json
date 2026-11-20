@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795143840742,
+  "savedAt": 1795143902561,
   "groups": [
     {
       "id": "g05",
@@ -5618,7 +5618,7 @@
     {
       "id": 997,
       "title": "在win本上面弄这种持续的服务",
-      "detail": "win本先弄了",
+      "detail": "win本先弄了云🌲",
       "day": "11/22",
       "endDay": null,
       "priority": "低",
@@ -5632,7 +5632,7 @@
       "order": 3350,
       "groupId": "g05",
       "status": "doing",
-      "updatedAt": 1795057565905
+      "updatedAt": 1795143902555
     },
     {
       "id": 998,

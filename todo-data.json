@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795140663060,
+  "savedAt": 1795140672112,
   "groups": [
     {
       "id": "g05",
@@ -4483,7 +4483,7 @@
     {
       "id": 939,
       "title": "日会",
-      "detail": "1119日会要跟敏周说明权限会往后延期的事情",
+      "detail": "",
       "day": "11/20",
       "priority": "低",
       "type": "工作",
@@ -4496,7 +4496,7 @@
       "groupId": "g03",
       "status": "todo",
       "_selected": false,
-      "updatedAt": 1795105951006,
+      "updatedAt": 1795140672101,
       "loop": true,
       "loopDate": "11/20",
       "completedNote": null,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795146097143,
+  "savedAt": 1795146124616,
   "groups": [
     {
       "id": "g05",
@@ -5966,25 +5966,6 @@
       "missedWeek": "2026-11-16"
     },
     {
-      "id": 1014,
-      "title": "每日新闻读取还是有点多 考虑下怎么减少时间",
-      "detail": "",
-      "day": "11/18",
-      "endDay": "11/18",
-      "priority": "中",
-      "type": "个人",
-      "blocking": null,
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "11/18",
-      "startedAt": null,
-      "progress": 0,
-      "order": 3520,
-      "groupId": "g15",
-      "status": "todo",
-      "updatedAt": 1794963178753
-    },
-    {
       "id": 1015,
       "title": "【上线准备】uat事项要准备，预计12月初成本bom搞完uat，用户和报表后续做贯彻+uat测试",
       "detail": "沟通研发自测安排和同步项目经理情况，还需要排期测试时间",
@@ -6609,6 +6590,13 @@
       "why": "没影响",
       "title": "身份证需约时间看看为什么提示挂失",
       "groupId": "g08"
+    },
+    {
+      "id": 1014,
+      "at": 1795146124612,
+      "why": "中午饭后快速看 有些不关注的新闻不看就行",
+      "title": "每日新闻读取还是有点多 考虑下怎么减少时间",
+      "groupId": "g15"
     }
   ],
   "aiLog": [

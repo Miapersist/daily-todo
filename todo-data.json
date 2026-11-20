@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795140991716,
+  "savedAt": 1795140994153,
   "groups": [
     {
       "id": "g05",
@@ -207,7 +207,8 @@
       "mode": "p",
       "slots": [],
       "completions": [],
-      "updatedAt": 1794849808721
+      "updatedAt": 1795140994075,
+      "asLife": true
     },
     {
       "id": "g16b",
@@ -333,9 +334,8 @@
       "pri": "低",
       "note": "计算题专项、真题1~5套、案例话术、错题二刷、考试日",
       "collapsed": true,
-      "asLife": true,
       "type": "生活",
-      "updatedAt": 1794815674745,
+      "updatedAt": 1795140992176,
       "goal": "",
       "doneDef": "",
       "due": "",
@@ -345,7 +345,8 @@
       "slots": [],
       "completions": [],
       "kind": "area",
-      "area": "考试"
+      "area": "考试",
+      "noReport": true
     }
   ],
   "tasks": [

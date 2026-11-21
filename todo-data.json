@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795190584814,
+  "savedAt": 1795278349699,
   "groups": [
     {
       "id": "g05",
@@ -4352,7 +4352,7 @@
       "id": 931,
       "title": "【研发内部】用户权限&报表研发跟进",
       "detail": "",
-      "day": "11/21",
+      "day": "11/22",
       "priority": "中",
       "type": "工作",
       "blocking": null,
@@ -4364,9 +4364,9 @@
       "status": "todo",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1795190584711,
+      "updatedAt": 1795278349548,
       "loop": true,
-      "loopDate": "11/21",
+      "loopDate": "11/22",
       "completedNote": null
     },
     {
@@ -4506,7 +4506,7 @@
       "id": 939,
       "title": "日会",
       "detail": "",
-      "day": "11/21",
+      "day": "11/22",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -4518,9 +4518,9 @@
       "groupId": "g03",
       "status": "todo",
       "_selected": false,
-      "updatedAt": 1795190584711,
+      "updatedAt": 1795278349548,
       "loop": true,
-      "loopDate": "11/21",
+      "loopDate": "11/22",
       "completedNote": null,
       "loopLog": [
         "11/18"
@@ -4890,7 +4890,7 @@
       "id": 960,
       "title": "【每日】早间新闻10min",
       "detail": "",
-      "day": "11/21",
+      "day": "11/22",
       "priority": "低",
       "type": "个人",
       "blocking": null,
@@ -4901,9 +4901,9 @@
       "order": 2980,
       "groupId": "g15",
       "status": "todo",
-      "updatedAt": 1795190584711,
+      "updatedAt": 1795278349548,
       "loop": true,
-      "loopDate": "11/21",
+      "loopDate": "11/22",
       "completedNote": null
     },
     {
@@ -6269,6 +6269,32 @@
       "groupId": "g1016",
       "status": "todo",
       "updatedAt": 1795146352225
+    },
+    {
+      "title": "做健身记录工具（目的：引体向上破1）",
+      "detail": "4.训练方式不对，一直在低效率重复 •只吊杆（悬垂）：能练握力，但练不到向心拉动（往上拉的动作） • 弹力带引体高度太高：太省力，没刺激到接近极限的拉力 • 反向划船练太少：反向划船是引体前置王牌动作，很多人跳过 •动作幅度不全：只练半程，没练到从悬垂到下巴过杆完整发力",
+      "day": "11/21",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/21",
+      "progress": 0,
+      "order": 3650,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1795190584855,
+      "endDay": null,
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [],
+        "flex": 1
+      },
+      "id": 1028,
+      "completedNote": null,
+      "cycleFrom": 980,
+      "cycleWeek": "2026-11-16"
     }
   ],
   "notes": {},

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795278349699,
+  "savedAt": 1795364594208,
   "groups": [
     {
       "id": "g05",
@@ -4352,7 +4352,7 @@
       "id": 931,
       "title": "【研发内部】用户权限&报表研发跟进",
       "detail": "",
-      "day": "11/22",
+      "day": "11/23",
       "priority": "中",
       "type": "工作",
       "blocking": null,
@@ -4364,9 +4364,9 @@
       "status": "todo",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1795278349548,
+      "updatedAt": 1795363301965,
       "loop": true,
-      "loopDate": "11/22",
+      "loopDate": "11/23",
       "completedNote": null
     },
     {
@@ -4506,7 +4506,7 @@
       "id": 939,
       "title": "日会",
       "detail": "",
-      "day": "11/22",
+      "day": "11/23",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -4518,9 +4518,9 @@
       "groupId": "g03",
       "status": "todo",
       "_selected": false,
-      "updatedAt": 1795278349548,
+      "updatedAt": 1795363301965,
       "loop": true,
-      "loopDate": "11/22",
+      "loopDate": "11/23",
       "completedNote": null,
       "loopLog": [
         "11/18"
@@ -4890,7 +4890,7 @@
       "id": 960,
       "title": "【每日】早间新闻10min",
       "detail": "",
-      "day": "11/22",
+      "day": "11/23",
       "priority": "低",
       "type": "个人",
       "blocking": null,
@@ -4901,9 +4901,9 @@
       "order": 2980,
       "groupId": "g15",
       "status": "todo",
-      "updatedAt": 1795278349548,
+      "updatedAt": 1795363301965,
       "loop": true,
-      "loopDate": "11/22",
+      "loopDate": "11/23",
       "completedNote": null
     },
     {
@@ -5705,12 +5705,14 @@
       "order": 3390,
       "groupId": "g05",
       "status": "doing",
-      "updatedAt": 1794850002919,
+      "updatedAt": 1795363302069,
       "id": 1001,
       "completedNote": null,
       "cycleFrom": 983,
       "cycleWeek": "2026-11-16",
-      "startedAt": "11/17"
+      "startedAt": "11/17",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-16"
     },
     {
       "title": "运动（引体向上从0突破1）",
@@ -5725,7 +5727,7 @@
       "progress": 100,
       "order": 3400,
       "status": "done",
-      "updatedAt": 1794848703871,
+      "updatedAt": 1795363302069,
       "groupId": "g07",
       "endDay": null,
       "id": 1002,
@@ -5740,7 +5742,8 @@
         "monthDays": []
       },
       "startedAt": "11/17",
-      "progressBefore": 0
+      "progressBefore": 0,
+      "cycleClosed": true
     },
     {
       "title": "做健身记录工具（目的：引体向上破1）",
@@ -5845,7 +5848,7 @@
       "progress": 100,
       "order": 3450,
       "status": "done",
-      "updatedAt": 1795049201001,
+      "updatedAt": 1795363302069,
       "groupId": "g07",
       "endDay": "11/22",
       "id": 1007,
@@ -5853,7 +5856,8 @@
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16",
       "startedAt": "11/18",
-      "progressBefore": 0
+      "progressBefore": 0,
+      "cycleClosed": true
     },
     {
       "id": 1008,
@@ -6097,13 +6101,14 @@
       "order": 3560,
       "groupId": "g10",
       "status": "done",
-      "updatedAt": 1795067247401,
+      "updatedAt": 1795363302069,
       "id": 1019,
       "completedNote": null,
       "cycleFrom": 1016,
       "cycleWeek": "2026-11-16",
       "startedAt": "11/19",
-      "progressBefore": 0
+      "progressBefore": 0,
+      "cycleClosed": true
     },
     {
       "title": "运动（引体向上从0突破1）",
@@ -6118,7 +6123,7 @@
       "progress": 100,
       "order": 3570,
       "status": "done",
-      "updatedAt": 1795141613756,
+      "updatedAt": 1795363302069,
       "groupId": "g07",
       "endDay": null,
       "id": 1020,
@@ -6126,7 +6131,8 @@
       "cycleFrom": 979,
       "cycleWeek": "2026-11-16",
       "startedAt": "11/19",
-      "progressBefore": 75
+      "progressBefore": 75,
+      "cycleClosed": true
     },
     {
       "id": 1021,
@@ -6203,13 +6209,15 @@
       "progress": 0,
       "order": 3610,
       "status": "todo",
-      "updatedAt": 1795141632270,
+      "updatedAt": 1795363302069,
       "groupId": "g07",
       "endDay": null,
       "id": 1024,
       "completedNote": null,
       "cycleFrom": 979,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-16"
     },
     {
       "id": 1025,
@@ -6284,7 +6292,7 @@
       "order": 3650,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1795190584855,
+      "updatedAt": 1795278349733,
       "endDay": null,
       "cycleSkip": {
         "week": "2026-11-16",
@@ -6294,7 +6302,60 @@
       "id": 1028,
       "completedNote": null,
       "cycleFrom": 980,
-      "cycleWeek": "2026-11-16"
+      "cycleWeek": "2026-11-16",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-16"
+    },
+    {
+      "title": "周一对车型变革项目、迭代项目、一体化项目更新周报、课题、进度、会议纪要更新",
+      "detail": "（相关在线文档链接集中更新置顶）\n【金山文档 | WPS云文档】 26年零采一体化迭代优化项目GPM周报(在线持续更新)\nhttps://www.kdocs.cn/l/cuwb2SrnODYF\n【金山文档 | WPS云文档】 26年零采一体化迭代优化项目管理\nhttps://www.kdocs.cn/l/cm12qyp4RCh3\n\n【金山文档 | WPS云文档】 车型物料成本管理变革项目管理\nhttps://www.kdocs.cn/l/cf2rzM0lraOs\n\n【金山文档 | WPS云文档】 测试计划表\nhttps://www.kdocs.cn/l/cmBXDWVr7BLX\n\n【金山文档 | WPS云文档】 零采一体化测试数据结果\nhttps://www.kdocs.cn/l/ce6sT6LoWPyY",
+      "day": null,
+      "priority": "低",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/23",
+      "status": "todo",
+      "groupId": "g10",
+      "progress": 0,
+      "order": 3660,
+      "_selected": false,
+      "updatedAt": 1795363302069,
+      "completedNote": null,
+      "endDay": null,
+      "weekdays": [
+        1
+      ],
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [],
+        "flex": 1
+      },
+      "id": 1029,
+      "cycleFrom": 748,
+      "cycleWeek": "2026-11-23"
+    },
+    {
+      "title": "运动（引体向上从0突破1）",
+      "detail": "羽毛球1次/引体向上12*4+居家运动项目3次/健身房1-2次\n重要目标：1、引体向上3个，当前悬吊最长53秒",
+      "day": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/23",
+      "progress": 0,
+      "order": 3660,
+      "status": "todo",
+      "updatedAt": 1795363302069,
+      "groupId": "g07",
+      "endDay": null,
+      "id": 1030,
+      "completedNote": null,
+      "cycleFrom": 979,
+      "cycleWeek": "2026-11-23"
     }
   ],
   "notes": {},

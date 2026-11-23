@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795413126656,
+  "savedAt": 1795418151776,
   "groups": [
     {
       "id": "g05",
@@ -6502,6 +6502,25 @@
       "groupId": "g08",
       "status": "todo",
       "updatedAt": 1795412984218
+    },
+    {
+      "id": 1037,
+      "title": "25年功能验收截图",
+      "detail": "技术规格书链接 https://doc.weixin.qq.com/sheet/e3_AQMAdwZQAGsCNC6ZBeZepTce8J4An?scode=APQA4gfjAAg4F8eoLYAQoAegZCADU&tab=000002 需求如有变更，以变更后的为准。 规格书上没有，但是已经完成的也可以加进去。 周三下班前完成，我这边汇总整理。",
+      "day": "11/23",
+      "endDay": "11/25",
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/23",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3730,
+      "groupId": "g03",
+      "status": "todo",
+      "updatedAt": 1795418151768
     }
   ],
   "notes": {},

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795446961362,
+  "savedAt": 1795447001051,
   "groups": [
     {
       "id": "g05",
@@ -6729,7 +6729,16 @@
       "order": 3750,
       "groupId": "g10",
       "status": "todo",
-      "updatedAt": 1795446961348
+      "updatedAt": 1795447001047,
+      "cycle": {
+        "freq": "month",
+        "mode": "days",
+        "weekdays": [],
+        "n": 1,
+        "monthDays": [
+          28
+        ]
+      }
     }
   ],
   "notes": {},

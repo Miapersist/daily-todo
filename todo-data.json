@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795412984225,
+  "savedAt": 1795413031811,
   "groups": [
     {
       "id": "g05",
@@ -5278,14 +5278,19 @@
       "progress": 25,
       "order": 3170,
       "status": "doing",
-      "updatedAt": 1794848650904,
+      "updatedAt": 1795413031806,
       "groupId": "g07",
       "endDay": null,
       "cycle": {
         "freq": "week",
-        "mode": "n",
-        "weekdays": [],
-        "n": 4,
+        "mode": "days",
+        "weekdays": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "n": 1,
         "monthDays": []
       }
     },
@@ -6487,6 +6492,27 @@
       "groupId": "g08",
       "status": "todo",
       "updatedAt": 1795412984218
+    },
+    {
+      "title": "运动（引体向上从0突破1）",
+      "detail": "羽毛球1次/引体向上12*4+居家运动项目3次/健身房1-2次\n重要目标：1、引体向上3个，当前悬吊最长53秒",
+      "day": "11/23",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/23",
+      "progress": 0,
+      "order": 3730,
+      "status": "todo",
+      "updatedAt": 1795413031806,
+      "groupId": "g07",
+      "endDay": null,
+      "id": 1037,
+      "completedNote": null,
+      "cycleFrom": 979,
+      "cycleWeek": "2026-11-23"
     }
   ],
   "notes": {},

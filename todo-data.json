@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795413124389,
+  "savedAt": 1795413126656,
   "groups": [
     {
       "id": "g05",
@@ -6373,7 +6373,7 @@
       "progress": 0,
       "order": 3660,
       "status": "todo",
-      "updatedAt": 1795413124386,
+      "updatedAt": 1795413126653,
       "groupId": "g07",
       "endDay": "11/23",
       "id": 1030,
@@ -6386,7 +6386,8 @@
         "weekdays": [],
         "n": 4,
         "monthDays": []
-      }
+      },
+      "focusDate": "11/23"
     },
     {
       "id": 1031,

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795413100908,
+  "savedAt": 1795413108677,
   "groups": [
     {
       "id": "g05",
@@ -5278,19 +5278,14 @@
       "progress": 25,
       "order": 3170,
       "status": "doing",
-      "updatedAt": 1795413031806,
+      "updatedAt": 1795413108671,
       "groupId": "g07",
       "endDay": null,
       "cycle": {
         "freq": "week",
-        "mode": "days",
-        "weekdays": [
-          1,
-          3,
-          5,
-          7
-        ],
-        "n": 1,
+        "mode": "n",
+        "weekdays": [],
+        "n": 4,
         "monthDays": []
       }
     },

@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795512048470,
+  "savedAt": 1795512050622,
   "groups": [
     {
       "id": "g05",
@@ -6765,7 +6765,7 @@
       "order": 3760,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1795450736188,
+      "updatedAt": 1795512048712,
       "cycleSkip": {
         "week": "2026-11-16",
         "days": [
@@ -6776,7 +6776,8 @@
       "id": 1050,
       "completedNote": null,
       "cycleFrom": 983,
-      "cycleWeek": "2026-11-23"
+      "cycleWeek": "2026-11-23",
+      "focusDate": "11/24"
     },
     {
       "title": "钉钉安全项目打卡",

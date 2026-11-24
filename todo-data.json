@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795509855171,
+  "savedAt": 1795509877488,
   "groups": [
     {
       "id": "g05",
@@ -6473,8 +6473,8 @@
       "id": 1035,
       "title": "羽毛球",
       "detail": "",
-      "day": "11/23",
-      "endDay": "11/23",
+      "day": "11/25",
+      "endDay": "11/25",
       "priority": "中",
       "type": "个人",
       "blocking": null,
@@ -6484,9 +6484,9 @@
       "startedAt": null,
       "progress": 0,
       "order": 3710,
-      "groupId": "g08",
+      "groupId": "g07",
       "status": "todo",
-      "updatedAt": 1795404227412
+      "updatedAt": 1795509877482
     },
     {
       "id": 1036,

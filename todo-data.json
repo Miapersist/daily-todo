@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795509916751,
+  "savedAt": 1795509937182,
   "groups": [
     {
       "id": "g05",
@@ -4910,17 +4910,23 @@
       "priority": "低",
       "type": "个人",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/24",
       "createdAt": "10/30",
-      "progress": 0,
+      "progress": 100,
       "order": 2980,
       "groupId": "g15",
-      "status": "todo",
-      "updatedAt": 1795450736152,
+      "status": "done",
+      "updatedAt": 1795509937179,
       "loop": true,
       "loopDate": "11/24",
-      "completedNote": null
+      "completedNote": null,
+      "startedAt": "11/24",
+      "progressBefore": 0,
+      "loopLog": [
+        "11/24"
+      ],
+      "loopKey": "2026-11-23"
     },
     {
       "id": 961,

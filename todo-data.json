@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795488592909,
+  "savedAt": 1795507064789,
   "groups": [
     {
       "id": "g05",
@@ -6837,6 +6837,25 @@
       "groupId": "g07",
       "status": "todo",
       "updatedAt": 1795486773611
+    },
+    {
+      "id": 1053,
+      "title": "洗一下烧水壶&买一下厨房帘子+客厅的帘子",
+      "detail": "",
+      "day": "11/24",
+      "endDay": "11/24",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/24",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3780,
+      "groupId": "g08",
+      "status": "todo",
+      "updatedAt": 1795507061037
     }
   ],
   "notes": {},

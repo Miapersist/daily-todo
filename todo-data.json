@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795536412143,
+  "savedAt": 1795589355582,
   "groups": [
     {
       "id": "g05",
@@ -6763,7 +6763,7 @@
       "order": 3760,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1795512048712,
+      "updatedAt": 1795536412212,
       "cycleSkip": {
         "week": "2026-11-16",
         "days": [
@@ -6775,7 +6775,9 @@
       "completedNote": null,
       "cycleFrom": 983,
       "cycleWeek": "2026-11-23",
-      "focusDate": "11/24"
+      "focusDate": "11/24",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-23"
     },
     {
       "title": "钉钉安全项目打卡",
@@ -6792,11 +6794,13 @@
       "order": 3760,
       "groupId": "g10",
       "status": "todo",
-      "updatedAt": 1795450736188,
+      "updatedAt": 1795536412212,
       "id": 1051,
       "completedNote": null,
       "cycleFrom": 1048,
-      "cycleWeek": "2026-11-23"
+      "cycleWeek": "2026-11-23",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-23"
     },
     {
       "id": 1052,
@@ -6884,6 +6888,32 @@
       "groupId": "g03",
       "status": "todo",
       "updatedAt": 1795511230651
+    },
+    {
+      "title": "做健身记录工具（目的：引体向上破1）",
+      "detail": "4.训练方式不对，一直在低效率重复 •只吊杆（悬垂）：能练握力，但练不到向心拉动（往上拉的动作） • 弹力带引体高度太高：太省力，没刺激到接近极限的拉力 • 反向划船练太少：反向划船是引体前置王牌动作，很多人跳过 •动作幅度不全：只练半程，没练到从悬垂到下巴过杆完整发力",
+      "day": "11/25",
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/25",
+      "progress": 0,
+      "order": 3810,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1795536412212,
+      "endDay": null,
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [],
+        "flex": 1
+      },
+      "id": 1056,
+      "completedNote": null,
+      "cycleFrom": 980,
+      "cycleWeek": "2026-11-23"
     }
   ],
   "notes": {},

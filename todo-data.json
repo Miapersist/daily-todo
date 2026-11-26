@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795598903254,
+  "savedAt": 1795651765169,
   "groups": [
     {
       "id": "g05",
@@ -4369,7 +4369,7 @@
       "id": 931,
       "title": "【研发内部】用户权限&报表研发跟进",
       "detail": "",
-      "day": "11/25",
+      "day": "11/26",
       "priority": "中",
       "type": "工作",
       "blocking": null,
@@ -4381,9 +4381,9 @@
       "status": "todo",
       "order": 2690,
       "_selected": false,
-      "updatedAt": 1795536412072,
+      "updatedAt": 1795624193532,
       "loop": true,
-      "loopDate": "11/25",
+      "loopDate": "11/26",
       "completedNote": null
     },
     {
@@ -4523,7 +4523,7 @@
       "id": 939,
       "title": "日会",
       "detail": "",
-      "day": "11/25",
+      "day": "11/26",
       "priority": "低",
       "type": "工作",
       "blocking": null,
@@ -4535,9 +4535,9 @@
       "groupId": "g03",
       "status": "todo",
       "_selected": false,
-      "updatedAt": 1795536412072,
+      "updatedAt": 1795624193532,
       "loop": true,
-      "loopDate": "11/25",
+      "loopDate": "11/26",
       "completedNote": null,
       "loopLog": [
         "11/18"
@@ -4907,7 +4907,7 @@
       "id": 960,
       "title": "【每日】早间新闻10min",
       "detail": "",
-      "day": "11/25",
+      "day": "11/26",
       "priority": "低",
       "type": "个人",
       "blocking": null,
@@ -4918,9 +4918,9 @@
       "order": 2980,
       "groupId": "g15",
       "status": "todo",
-      "updatedAt": 1795536412072,
+      "updatedAt": 1795624193532,
       "loop": true,
-      "loopDate": "11/25",
+      "loopDate": "11/26",
       "completedNote": null,
       "loopLog": [
         "11/24"
@@ -6903,7 +6903,7 @@
       "order": 3810,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1795536412212,
+      "updatedAt": 1795624193633,
       "endDay": null,
       "cycleSkip": {
         "week": "2026-11-16",
@@ -6913,6 +6913,57 @@
       "id": 1056,
       "completedNote": null,
       "cycleFrom": 980,
+      "cycleWeek": "2026-11-23",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-23"
+    },
+    {
+      "title": "obsidian的知识库结合小红书看到的产品搭建（maybe可以作为一个副业产品）",
+      "detail": "",
+      "day": "11/26",
+      "endDay": null,
+      "priority": "中",
+      "type": "个人",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/26",
+      "progress": 0,
+      "order": 3820,
+      "groupId": "g05",
+      "status": "todo",
+      "updatedAt": 1795624193633,
+      "cycleSkip": {
+        "week": "2026-11-16",
+        "days": [
+          "11/17"
+        ],
+        "flex": 0
+      },
+      "id": 1057,
+      "completedNote": null,
+      "cycleFrom": 983,
+      "cycleWeek": "2026-11-23"
+    },
+    {
+      "title": "每周四中午前把用户权限进度发给项目经理 红梅",
+      "detail": "",
+      "day": "11/26",
+      "endDay": null,
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/26",
+      "progress": 0,
+      "order": 3820,
+      "groupId": "g10",
+      "status": "todo",
+      "updatedAt": 1795624193633,
+      "id": 1058,
+      "completedNote": null,
+      "cycleFrom": 1016,
       "cycleWeek": "2026-11-23"
     }
   ],

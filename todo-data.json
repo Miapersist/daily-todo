@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795739876664,
+  "savedAt": 1795740213808,
   "groups": [
     {
       "id": "g05",
@@ -6994,6 +6994,25 @@
       "groupId": "g03",
       "status": "todo",
       "updatedAt": 1795739876659
+    },
+    {
+      "id": 1060,
+      "title": "跟业务确认是否真的存在人员角色重叠的场景，此需求会动到系统架构，历史没出现过这种调整，不行让业务跟定清沟通",
+      "detail": "",
+      "day": "11/27",
+      "endDay": "11/27",
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/27",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3840,
+      "groupId": "g03",
+      "status": "todo",
+      "updatedAt": 1795740213797
     }
   ],
   "notes": {},

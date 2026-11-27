@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795740213808,
+  "savedAt": 1795740899573,
   "groups": [
     {
       "id": "g05",
@@ -7013,6 +7013,25 @@
       "groupId": "g03",
       "status": "todo",
       "updatedAt": 1795740213797
+    },
+    {
+      "id": 1061,
+      "title": "用户权限蓝图PPT调整",
+      "detail": "",
+      "day": "11/27",
+      "endDay": "11/27",
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/27",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3850,
+      "groupId": "g03",
+      "status": "todo",
+      "updatedAt": 1795740899567
     }
   ],
   "notes": {},

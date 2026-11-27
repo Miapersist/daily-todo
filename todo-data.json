@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795709198900,
+  "savedAt": 1795739777421,
   "groups": [
     {
       "id": "g05",
@@ -5150,17 +5150,19 @@
       "endDay": "11/20",
       "priority": "高",
       "type": "工作",
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/26",
       "createdAt": "11/5",
       "startedAt": "11/5",
-      "progress": 50,
+      "progress": 100,
       "order": 3100,
       "groupId": "g03",
-      "status": "block",
-      "updatedAt": 1795140924928,
+      "status": "done",
+      "updatedAt": 1795739777411,
       "blocking": "等研发同事提供",
-      "blocked_by": "高鑫"
+      "blocked_by": "高鑫",
+      "completedNote": "研发终于提供了 已同步给廖老师",
+      "progressBefore": 50
     },
     {
       "id": 973,
@@ -6932,7 +6934,7 @@
       "order": 3820,
       "groupId": "g05",
       "status": "todo",
-      "updatedAt": 1795624193633,
+      "updatedAt": 1795709198946,
       "cycleSkip": {
         "week": "2026-11-16",
         "days": [
@@ -6943,7 +6945,9 @@
       "id": 1057,
       "completedNote": null,
       "cycleFrom": 983,
-      "cycleWeek": "2026-11-23"
+      "cycleWeek": "2026-11-23",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-23"
     },
     {
       "title": "每周四中午前把用户权限进度发给项目经理 红梅",
@@ -6960,11 +6964,13 @@
       "order": 3820,
       "groupId": "g10",
       "status": "todo",
-      "updatedAt": 1795624193633,
+      "updatedAt": 1795709198946,
       "id": 1058,
       "completedNote": null,
       "cycleFrom": 1016,
-      "cycleWeek": "2026-11-23"
+      "cycleWeek": "2026-11-23",
+      "cycleMissed": true,
+      "missedWeek": "2026-11-23"
     }
   ],
   "notes": {},

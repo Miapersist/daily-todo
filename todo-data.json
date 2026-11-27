@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795739830829,
+  "savedAt": 1795739847206,
   "groups": [
     {
       "id": "g05",
@@ -6883,15 +6883,17 @@
       "priority": "中",
       "type": "工作",
       "blocking": null,
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "11/26",
       "createdAt": "11/24",
-      "startedAt": null,
-      "progress": 0,
+      "startedAt": "11/24",
+      "progress": 100,
       "order": 3800,
       "groupId": "g03",
-      "status": "todo",
-      "updatedAt": 1795511230651
+      "status": "done",
+      "updatedAt": 1795739847193,
+      "completedNote": "没影响",
+      "progressBefore": 0
     },
     {
       "title": "做健身记录工具（目的：引体向上破1）",

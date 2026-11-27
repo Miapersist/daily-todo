@@ -1,6 +1,6 @@
 {
   "v": 3,
-  "savedAt": 1795739847206,
+  "savedAt": 1795739871201,
   "groups": [
     {
       "id": "g05",
@@ -6975,6 +6975,25 @@
       "cycleWeek": "2026-11-23",
       "cycleMissed": true,
       "missedWeek": "2026-11-23"
+    },
+    {
+      "id": 1059,
+      "title": "王国军老师开会过报表原型和找业务跟进对应疑问",
+      "detail": "",
+      "day": "11/27",
+      "endDay": "11/27",
+      "priority": "中",
+      "type": "工作",
+      "blocking": null,
+      "completed": false,
+      "completedAt": null,
+      "createdAt": "11/27",
+      "startedAt": null,
+      "progress": 0,
+      "order": 3830,
+      "groupId": "g03",
+      "status": "todo",
+      "updatedAt": 1795739871191
     }
   ],
   "notes": {},
